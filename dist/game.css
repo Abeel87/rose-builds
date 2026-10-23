@@ -21,3 +21,36 @@ body{background:radial-gradient(ellipse at 70% 0,#354b4f55,transparent 65%),#171
 .map-layers{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 13px}.map-layers button{display:flex;align-items:center;gap:7px;min-height:40px;padding:8px 12px;border:1px solid #697665;border-radius:5px;background:#1b2c34;color:#c3cec2;font:inherit;font-size:11px;cursor:pointer}.map-layers button.active{border-color:#d5b77b;background:#4f4933;color:#ffe1a4}.map-layers small{font-size:9px;opacity:.8}.map-layers .icon{width:15px;height:15px}.map-viewport img{height:auto}.map-caption{gap:8px;flex-wrap:wrap}.map-controls .icon-button{min-width:36px;min-height:36px}@media(max-width:580px){.map-layers{padding:0 12px 12px}.map-layers button{flex:1;justify-content:center;padding:8px;font-size:10px}.map-caption{font-size:10px}}
 
 .map-viewport{--map-fit-height:600px}.map-viewport img{display:block;min-width:0;width:calc(min(100%, calc(var(--map-fit-height) * var(--map-aspect,1))) * var(--map-zoom,1));height:auto;margin-inline:auto;max-width:none}@media(max-width:800px){.map-viewport{--map-fit-height:510px}}@media(max-width:580px){.map-viewport{--map-fit-height:440px}}
+
+/* Real in-game appearances, with a full-size viewer. */
+.monster-art{flex:none;display:block;object-fit:contain;filter:drop-shadow(0 6px 5px #07141b55)}
+.monster-card .monster-art{width:112px;height:112px;margin:-9px 0 3px}
+.monster-row .monster-art,.drop-source-row .monster-art{width:62px;height:62px}
+.related-monsters .monster-art{width:42px;height:42px}
+.journal-main .monster-art{width:48px;height:48px}
+.shortcut-item .monster-art{width:60px;height:60px}
+.king-tile .monster-art{width:118px;height:118px;margin:-8px auto 0}
+.screenshot-art{border-radius:5px;background:#182830}
+.portrait-button{display:flex;flex-direction:column;align-items:center;gap:7px;width:240px;border:1px solid #71816b;border-radius:8px;padding:10px;background:radial-gradient(ellipse at 50% 55%,#53605999,#192d3500 72%);color:#ebd49e;cursor:zoom-in;font:inherit;transition:border-color .15s,background .15s}
+.portrait-button:hover{border-color:#e5c486;background-color:#385047}
+.portrait-button .detail-portrait{width:218px;height:218px;min-width:0}
+.portrait-expand{display:flex;align-items:center;gap:7px;font-size:11px}
+.portrait-expand .icon{width:16px;height:16px}
+.king-figure figcaption{font-size:10px;margin-top:8px}
+.appearance-intro{font-size:12px;line-height:1.7;color:#c2cebc;max-width:36em}
+.appearance-viewer{margin:0 0 18px;text-align:center;background:radial-gradient(ellipse,#55625688,#192b3400 72%)}
+.appearance-viewer .expanded-portrait{width:100%;height:min(50vh,520px);max-width:100%;object-fit:contain;margin:auto;filter:drop-shadow(0 12px 10px #07141b66)}
+.appearance-viewer figcaption{font-size:11px;color:#d6c8a5;margin-top:12px}
+.dialog-body .appearance-note{font-size:12px;line-height:1.7}
+dialog:has(.appearance-viewer){max-width:850px}
+.atlas-coverage{display:flex;gap:12px;flex-wrap:wrap;align-items:center;color:#bbc9b5;font-size:12px;margin:-8px 0 22px}
+.atlas-coverage strong{color:#ead09a;font-size:14px}
+.map-variants{display:flex;flex-wrap:wrap;gap:7px;padding:0 18px 13px}
+.map-variants button{font:inherit;font-size:12px;min-height:40px;padding:8px 14px;background:#1c3037;color:#c9d2c4;border:1px solid #687965;border-radius:5px;cursor:pointer}
+.map-variants button.active{background:#4c4d35;border-color:#dbbc7d;color:#ffe4ad}
+@media(max-width:1000px){.detail-hero.with-appearance{flex-wrap:wrap}.detail-hero.with-appearance>.heading-actions{max-width:none;width:100%;flex-direction:row;margin:0}.detail-hero.with-appearance>.heading-actions .btn{flex:1}.portrait-button{width:210px}.portrait-button .detail-portrait{width:188px;height:188px}}
+@media(max-width:580px){.detail-hero.with-appearance{justify-content:center}.detail-hero.with-appearance>.king-figure{width:100%;display:grid;justify-items:center}.detail-hero.with-appearance>div:not(.heading-actions){width:100%;text-align:center}.detail-hero.with-appearance .detail-meta{justify-content:center}.portrait-button{width:min(100%,280px)}.portrait-button .detail-portrait{width:240px;height:240px;max-width:100%}.appearance-intro{margin-inline:auto}.king-tile .monster-art{width:92px;height:92px}.map-variants{padding:0 12px 12px}.map-variants button{flex:1}.appearance-viewer .expanded-portrait{height:min(45vh,400px)}}
+
+.map-availability{margin:0 18px 14px;padding:10px 12px;border:1px solid #88784f;border-radius:5px;background:#51473244;color:#e2c997;display:flex;align-items:flex-start;gap:9px;font-size:12px;line-height:1.6}.map-availability .icon{flex:none;width:17px;margin-top:2px}
+
+body:has(dialog[open]){overflow:hidden}dialog:has(.appearance-viewer) .dialog-top{position:sticky;top:0;z-index:2}dialog:has(.appearance-viewer) .dialog-actions{position:sticky;bottom:0;z-index:2}

@@ -1,4 +1,4 @@
-export const VERSION = '3.1.0';
+export const VERSION = '3.2.0';
 export const CHECKED = '2026-10-23';
 export const CLASSES = {
   Soldier: ['Knight', 'Champion'], Muse: ['Cleric', 'Mage'],
@@ -19,7 +19,11 @@ export const PLANETS = [
 const revision = '613d91e2d37a3c445877e28219c60652cf9774db';
 const forum = 'https://forum.roseonlinegame.com/topic/';
 export const SOURCES = {
-  'community-art': { title:'Ikony przedmiotów i Effigy',type:'community',date:CHECKED,url:`https://github.com/DrezByte/RoseLite/tree/${revision}/RoseData/game-icons`,note:'Oryginalne ikony gry z katalogu RoseLite. Miniatura potwora pochodzi z jego przedmiotu Imbued Effigy; to ikona 40×40, nie pełny render modelu.' },
+  "client-npc-current": {"title": "Aktualny oficjalny klient Global — katalog NPC", "type": "official", "date": "2026-10-13", "url": "https://updates.roseonlinegame.com/manifest.json", "note": "LIST_NPC.STB i angielski LIST_NPC_S.STL z oficjalnej aktualizacji ci-38925666467-1, pobranej23.10.2026. Poziom265 i nazwa Kepris są zapisane w bieżącej tabeli klienta; nie jest to odczyt parametrów serwera na żywo."},
+  "patch-ocf-temple": {"title": "Orlo Clan Field Temple — Kepris i Black Scarabs", "type": "official", "date": "2024-10-31", "publishedAt": "2024-10-30T18:19:52+0000", "url": "https://forum.roseonlinegame.com/topic/6224-patch-notes-2024-10-31-orlo-clan-field-temple/", "note": "Patch nazywa osobną strefę Orlo Clan Field Temple, nowego bossa Kepris oraz towarzyszące mu Black Scarabs. Nie publikuje pełnej tabeli dropów."},
+  "client-npc-2024": {"title": "Oryginalny klient Global — katalog NPC", "type": "official", "date": "2024-11-22", "url": "https://www.roseonlinegame.com/download", "note": "Nazwy, identyfikatory, rangi i poziomy z LIST_NPC.STB oraz angielskiego LIST_NPC_S.STL w oficjalnym instalatorze. Data to znacznik tabeli; nie oznacza potwierdzenia poziomów na serwerze w 2026 r."},
+
+  'community-art': { title:'Grafiki gry, bossy i ikony',type:'community',date:CHECKED,url:`https://github.com/DrezByte/RoseLite/tree/${revision}/RoseData/game-icons`,note:'Oryginalne ikony przedmiotów z katalogu RoseLite. Wygląd bossów pokazują osobno podglądy modeli klienta Global oraz oficjalne zrzuty; źródło jest dostępne przy powiększonym wizerunku.' },
   'community-maps': { title:'Mapy z klienta ROSE Online Global',type:'community',date:'2025-04-18',url:'https://marronglace-presso.hatenablog.com/entry/2025/04/18/141821',note:'Zrzuty map z klienta Global autorstwa marronglace_presso. Artykuł opisuje Jelly Kinga w Adventurer’s Plains. Oznaczenia na zrzutach pochodzą od autora; nie potwierdzamy dokładnych aktualnych spawnów.' },
   'community-skills': { title:'Katalog umiejętności i ikon',type:'community',date:CHECKED,url:'https://roseonlinetoolbox.com/builds',note:'Nazwy, klasy i ikony z publicznego katalogu ROSE Online Toolbox. Ikony: luckystriike / prawa właścicieli gry. Bez potwierdzania puli SP, kosztów rang ani zależności drzewka.' },
   'community-drops': { title: 'RoseLite / RoseUtils — katalog i dropy', type: 'community', date: CHECKED, url: `https://github.com/DrezByte/RoseLite/tree/${revision}/RoseData`, note: 'Publiczna migawka danych społecznościowych. Data pobrania nie jest datą potwierdzenia wszystkich wpisów na serwerze. Część lokalizacji i nagród instancji jest niepełna.' },

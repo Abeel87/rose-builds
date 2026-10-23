@@ -19,6 +19,9 @@ test('offline navigation and complete catalog work in a subdirectory after insta
   assert.equal(await h.request(`${h.scope}data/world.json`),`cached:${h.scope}data/world.json`);
   assert.equal(await h.request(`${h.scope}assets/game/items-00.webp`),`cached:${h.scope}assets/game/items-00.webp`);
   assert.equal(await h.request(`${h.scope}game.css`),`cached:${h.scope}game.css`);
+  assert.equal(await h.request(`${h.scope}bootstrap.js`),`cached:${h.scope}bootstrap.js`);
+  const world=JSON.parse(readFileSync(new URL('../dist/data/world.json',import.meta.url)));
+  for(const file of [world.monsters['203'].image,world.maps.find(m=>m.name==='Golden Ring').image,world.maps.find(m=>m.name==='Orlo Clan Field').image])assert.equal(await h.request(`${h.scope}${file}`),`cached:${h.scope}${file}`);
 });
 test('service worker leaves unrelated caches, non-GET and external requests alone',async()=>{
   const h=harness();await h.event('activate');

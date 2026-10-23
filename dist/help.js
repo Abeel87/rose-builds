@@ -17,7 +17,7 @@ export const ARTICLES = {
   'patch-october': {
     title:'Kingi Orlo, Wandering i Super Ulverick',
     intro:'Zmiany z 16 października 2026 są uwzględnione w kartach potworów.',
-    facts:['Kingi Orlo mają poziom 250.', 'Wandering mają przedział odrodzenia 5–90 minut. Zapis zabicia uruchamia lokalne odliczanie okna, nie śledzenie serwera.', 'Super Ulverick jest powiązany z wydarzeniem w Desert of the Dead. Nie jest tym samym wpisem co Ulverick w instancji Cave of Ulverick.', 'Nagrody wydarzenia, w tym mount i banner, są pokazane oddzielnie od bezpośredniego dropu.'],
+    facts:['Kingi otwartego świata Orlo mają poziom 250; osobne warianty Clan Field mają własne dane.', 'Wandering mają przedział odrodzenia 5–90 minut. Zapis zabicia uruchamia lokalne odliczanie okna, nie śledzenie serwera.', 'Super Ulverick jest powiązany z wydarzeniem w Desert of the Dead. Nie jest tym samym wpisem co Ulverick w instancji Cave of Ulverick.', 'Nagrody wydarzenia, w tym mount i banner, są pokazane oddzielnie od bezpośredniego dropu.'],
     links:[['atlas?planet=Orlo','Obejrzyj Kingów Orlo'],['atlas?q=Ulverick&kind=all','Warianty Ulvericka'],['journal','Zapisane zabicia']]
   },
   'patch-may': {

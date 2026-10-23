@@ -12,6 +12,15 @@ test('Xita Refuge map link retains planet, search and zoom through refresh', () 
   assert.equal(restored.mapLayer,'archive');
   assert.equal(routeHash(restored),href);
 });
+test('map floor and area selection survives a reload and a round trip through a boss',()=>{
+  for(const [zone,variant] of [['Junon Clan Field','13'],['Wastelands','79'],['Forgotten Temple','57']]){
+    const href=mapRoute(zone,{mapVariant:variant,zoom:1.5,mapQ:'a'});
+    const restored=readRoute(href);
+    assert.equal(restored.mapVariant,variant);
+    assert.equal(restored.zone,zone);
+    assert.equal(routeHash(restored),href);
+  }
+});
 test('back destination retains result page, filters and per-monster loot query', () => {
   for(const href of ['#/atlas?q=King&planet=Orlo&kind=all&page=3&located=1', '#/drops?q=Sikuku&type=Weapon&page=2&all=1', '#/monster/203?loot=Jelly&page=2']) {
     const before=readRoute(href),after=readRoute(routeHash(before));
