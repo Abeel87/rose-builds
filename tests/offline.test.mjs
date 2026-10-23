@@ -4,13 +4,20 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 
 function harness(){
-  const listeners={},stored=new Map(),deleted=[];let offline=false;
+  const listeners={},stored=new Map(),deleted=[],installRequests=[];let offline=false;
   const scope='https://rose.example/companion/';
   const self={registration:{scope},location:{origin:'https://rose.example'},addEventListener:(type,fn)=>listeners[type]=fn,skipWaiting:async()=>{},clients:{claim:async()=>{}}};
-  const caches={open:async name=>({addAll:async urls=>urls.forEach(url=>stored.set(url,`cached:${url}`)),match:async url=>stored.get(url)}),keys:async()=>['unrelated-app','rose-global-v1','rose-companion-old'],delete:async key=>{deleted.push(key);return true;}};
-  vm.runInNewContext(readFileSync(new URL('../dist/sw.js',import.meta.url),'utf8'),{self,caches,URL,fetch:async req=>{if(offline)throw new Error('offline');return `network:${req.url}`;}});
-  return {listeners,stored,deleted,scope,setOffline:()=>offline=true,async event(name){let promise;listeners[name]({waitUntil:p=>promise=p});await promise;},async request(url,mode='cors',method='GET'){let promise;listeners.fetch({request:{url,mode,method},respondWith:p=>promise=p});return await promise;}};
+  // A default request may reuse an older HTTP response even for a new SW cache.
+  const caches={open:async name=>({addAll:async requests=>requests.forEach(input=>{const req=new Request(input);installRequests.push(req);stored.set(req.url,`${req.cache==='reload'?'cached':'stale-http'}:${req.url}`);}),match:async url=>stored.get(url)}),keys:async()=>['unrelated-app','rose-global-v1','rose-companion-old'],delete:async key=>{deleted.push(key);return true;}};
+  const urls=vm.runInNewContext(readFileSync(new URL('../dist/sw.js',import.meta.url),'utf8')+'\nurls;',{self,caches,URL,Request,fetch:async req=>{if(offline)throw new Error('offline');return `network:${req.url}`;}});
+  return {listeners,stored,deleted,scope,urls,installRequests,setOffline:()=>offline=true,async event(name){let promise;listeners[name]({waitUntil:p=>promise=p});await promise;},async request(url,mode='cors',method='GET'){let promise;listeners.fetch({request:{url,mode,method},respondWith:p=>promise=p});return await promise;}};
 }
+test('installation refreshes every versioned asset instead of reusing stale HTTP cache',async()=>{
+  const h=harness();await h.event('install');h.setOffline();
+  assert.deepEqual(h.installRequests.map(req=>req.url),Array.from(h.urls));
+  assert.ok(h.installRequests.every(req=>req.cache==='reload'));
+  for(const url of h.urls)assert.equal(await h.request(url),`cached:${url}`,url);
+});
 test('offline navigation and complete catalog work in a subdirectory after installation',async()=>{
   const h=harness();await h.event('install');h.setOffline();
   assert.equal(await h.request(`${h.scope}#/atlas`,'navigate'),`cached:${h.scope}index.html`);
