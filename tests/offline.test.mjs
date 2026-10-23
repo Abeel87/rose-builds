@@ -16,6 +16,9 @@ test('offline navigation and complete catalog work in a subdirectory after insta
   assert.equal(await h.request(`${h.scope}#/atlas`,'navigate'),`cached:${h.scope}index.html`);
   assert.equal(await h.request(`${h.scope}data/catalog.json`),`cached:${h.scope}data/catalog.json`);
   assert.equal(await h.request(`${h.scope}assets/fonts/manrope-latin-ext.woff2`),`cached:${h.scope}assets/fonts/manrope-latin-ext.woff2`);
+  assert.equal(await h.request(`${h.scope}data/world.json`),`cached:${h.scope}data/world.json`);
+  assert.equal(await h.request(`${h.scope}assets/game/items-00.webp`),`cached:${h.scope}assets/game/items-00.webp`);
+  assert.equal(await h.request(`${h.scope}game.css`),`cached:${h.scope}game.css`);
 });
 test('service worker leaves unrelated caches, non-GET and external requests alone',async()=>{
   const h=harness();await h.event('activate');

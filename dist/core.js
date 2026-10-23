@@ -38,7 +38,7 @@ export function normalizeBuild(input, { legacy=false }={}) {
   if (input.skills?.length>80) throw new Error('Build może zawierać najwyżej 80 umiejętności.');
   out.skills = (input.skills ?? []).map(s=>{
     if (!plain(s) || !text(s.name).trim() || !Number.isInteger(s.rank) || s.rank<0 || s.rank>100) throw new Error('Niepoprawna umiejętność lub ranga.');
-    return { id:text(s.id,100)||makeId(), name:text(s.name,100), rank:s.rank, note:text(s.note,300) };
+    return { id:text(s.id,100)||makeId(), name:text(s.name,100), rank:s.rank, note:text(s.note,300), ...(text(s.catalogId,100)?{catalogId:text(s.catalogId,100)}:{}) };
   });
   if (legacy && plain(input.ranks)) {
     out.skills = Object.entries(input.ranks).filter(([,rank])=>Number.isInteger(rank)&&rank>0).slice(0,80)

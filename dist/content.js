@@ -1,4 +1,4 @@
-export const VERSION = '2.0.0';
+export const VERSION = '3.0.0';
 export const CHECKED = '2026-10-23';
 export const CLASSES = {
   Soldier: ['Knight', 'Champion'], Muse: ['Cleric', 'Mage'],
@@ -19,6 +19,9 @@ export const PLANETS = [
 const revision = '613d91e2d37a3c445877e28219c60652cf9774db';
 const forum = 'https://forum.roseonlinegame.com/topic/';
 export const SOURCES = {
+  'community-art': { title:'Ikony przedmiotów i Effigy',type:'community',date:CHECKED,url:`https://github.com/DrezByte/RoseLite/tree/${revision}/RoseData/game-icons`,note:'Oryginalne ikony gry z katalogu RoseLite. Miniatura potwora pochodzi z jego przedmiotu Imbued Effigy; to ikona 40×40, nie pełny render modelu.' },
+  'community-maps': { title:'Mapy z klienta ROSE Online Global',type:'community',date:'2025-04-18',url:'https://marronglace-presso.hatenablog.com/entry/2025/04/18/141821',note:'Zrzuty map z klienta Global autorstwa marronglace_presso. Artykuł opisuje Jelly Kinga w Adventurer’s Plains. Oznaczenia na zrzutach pochodzą od autora; nie potwierdzamy dokładnych aktualnych spawnów.' },
+  'community-skills': { title:'Katalog umiejętności i ikon',type:'community',date:CHECKED,url:'https://roseonlinetoolbox.com/builds',note:'Nazwy, klasy i ikony z publicznego katalogu ROSE Online Toolbox. Ikony: luckystriike / prawa właścicieli gry. Bez potwierdzania puli SP, kosztów rang ani zależności drzewka.' },
   'community-drops': { title: 'RoseLite / RoseUtils — katalog i dropy', type: 'community', date: CHECKED, url: `https://github.com/DrezByte/RoseLite/tree/${revision}/RoseData`, note: 'Publiczna migawka danych społecznościowych. Data pobrania nie jest datą potwierdzenia wszystkich wpisów na serwerze. Część lokalizacji i nagród instancji jest niepełna.' },
   'community-kings': { title: 'RoseLite — lokalizacje Kingów', type: 'community', date: CHECKED, url: `https://github.com/DrezByte/RoseLite/blob/${revision}/overlay/kings.json`, note: 'Nazwy i mapy ze społecznościowej listy. Nie kopiujemy niepotwierdzonych, dokładnych czasów odrodzenia. Rozbieżności poziomów oznaczamy przy potworze.' },
   'patch-october': { title: 'Dolphin Island, Orlo i Super Ulverick', type: 'official', date: '2026-10-16', url: `${forum}7789-patch-notes-2026-10-16-dolphin-island-rmlui-desert-of-the-dead/`, note: 'Kingowie Orlo: poziom 250. Wandering: przedział odrodzenia 5–90 min. Wydarzenia i nowe nagrody nie oznaczają automatycznie potwierdzonego dropu z każdego bossa.' },

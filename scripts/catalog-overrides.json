@@ -1,5 +1,6 @@
 {
   "monsters": {
+    "203": {"locations":[{"zone":"Adventurer's Plains","planet":"Junon","source":"community-maps"}]},
     "69": {"locations":[{"zone":"El Verloon Desert","planet":"Junon","source":"community-kings"}]},
     "205": {"locations":[{"zone":"Canyon City of Zant","planet":"Junon","source":"community-kings"}],"note":"Źródła społecznościowe podają różne poziomy (25/29). Sprawdź wariant w Monster Inspector."},
     "207": {"locations":[{"zone":"Anima Lake","planet":"Junon","source":"community-kings"}]},

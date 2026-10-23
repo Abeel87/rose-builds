@@ -4,6 +4,14 @@ Polski niezbędnik gracza **oficjalnego ROSE Online Global (Rednim Games)**. Prz
 
 [Otwórz ROSE Companion](https://rose-global-build-planner.gipgibon.chatgpt.site)
 
+## Nowy interfejs 3.0
+
+Plecak z oryginalnymi ikonami ponad 15 tysięcy itemów; bestiariusz z 59 ikonami Effigy; trzy prawdziwe mapy z klienta i indeks pozostałych opisanych stref. Właściwa ścieżka to item → King → mapa, na tej samej stronie. Poradniki otwierają się wewnątrz aplikacji, a zewnętrzne materiały są opcjonalnymi źródłami.
+
+Kreator ma portrety ośmiu klas, sloty ekwipunku i okno wyboru itemów oraz katalog 476 skilli z wyszukiwaniem. Warianty o tej samej nazwie zachowują własne identyfikatory i ikony w zapisach i linkach. Część ikon skilli jest ładowana z Toolbox; w razie niedostępności widoczna jest nazwa i informacja o braku ikony. Pozostałe grafiki, mapy, dane i poradniki są lokalne.
+
+Zakres map jest jawny: obecnie obrazy mają Adventurer’s Plains, Valley of Luxem Tower i Canyon City of Zant. Pozostałe strefy pokazują potwory i opis lokalizacji. Nie generujemy pozornych map ani aktualnych spawnów na podstawie niepotwierdzonych danych.
+
 ## Funkcje
 
 - Katalog 19 474 przedmiotów i 640 potworów, odwrotne wyszukiwanie dropów po przedmiocie, potworze lub znanej mapie.
@@ -43,7 +51,7 @@ npm test
 
 Testy obejmują migrację, odzyskiwanie uszkodzonych zapisów, błędy pamięci, import bez nadpisywania, linki UTF-8, integralność źródeł/dropów, filtry, poprawki oficjalne, kary poziomowe, timery i działanie cache offline.
 
-Po zmianie zasobów aplikacji uruchom `node scripts/generate-sw.mjs`. Kontrola `npm run check` odrzuci nieaktualny hash cache lub brakujące pliki. PWA pobiera komplet wersji podczas instalacji. Po aktualizacji otwartej karty odśwież stronę, aby przejść do nowej wersji.
+Po zmianie zasobów aplikacji uruchom `node scripts/generate-sw.mjs`. Kontrola `npm run check` odrzuci nieaktualny hash cache lub brakujące pliki. PWA pobiera komplet lokalnych zasobów wersji podczas instalacji. Zewnętrzne ikony skilli wymagają sieci; ich brak nie blokuje edycji buildu. Po aktualizacji otwartej karty odśwież stronę, aby przejść do nowej wersji.
 
 ## Aktualizacja katalogu
 
