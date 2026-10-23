@@ -4,6 +4,7 @@ import { icon, isOfficial, sourceLink, tag, empty, planetOptions, pageHead, slot
 
 import { setVisuals, visualData, itemImage as itemSymbol, classImage, monsterImage, skillImage, matchingSkill, mapForZone } from './visuals.js';
 import { ARTICLES } from './help.js';
+import { readRoute, routeHash, mapRoute, selectedZone } from './navigation.js';
 
 const $ = selector => document.querySelector(selector);
 const number = n => new Intl.NumberFormat('pl-PL').format(n);
@@ -12,7 +13,10 @@ const PAGE_SIZE=24;
 let data,index,library,draft,storageError=null,dirty=false,storage;
 let state={view:'home',id:null,q:'',planet:'',kind:'kings',type:'',onlyDrops:true,officialOnly:false,knownLocation:false,page:1,detailQ:'',buildTab:'stats',savedQuery:'',journalFilter:'all'};
 let toastTimer,queryTimer,autoSaveTimer,pendingAction;
-let lastDrops='#/drops',lastAtlas='#/atlas',pickerSlot='Weapon',pickerQuery='',skillQuery='',skillCategory='',mapZoom=1;
+let pickerSlot='Weapon',pickerQuery='',skillQuery='',skillCategory='',mapZoom=1;
+let currentRoute='',currentEntry=null;
+const routeMemory=new Map(),lastRoutes=new Map();
+history.scrollRestoration='manual';
 
 function toast(message,error=false) {
   const el=$('#toast');el.textContent=message;el.className=`toast visible ${error?'error':''}`;
@@ -32,6 +36,11 @@ function scheduleDraft() {
     }
   },400);
 }
+function flushDraft() {
+  clearTimeout(autoSaveTimer);
+  if(!dirty||!draft||!library||storageError||validateBuild(draft).length)return;
+  try {library=saveLibrary(storage,{...library,draft:structuredClone(draft)});} catch {}
+}
 function target(kind,id) { return library.targets.find(t=>t.kind===kind&&t.id===id); }
 function pinButton(kind,id,large=false) {
   const pinned=!!target(kind,id);
@@ -48,7 +57,7 @@ function shell(content) {
   const active=state.view==='item'?'drops':state.view==='monster'?'atlas':state.view==='help'?'guide':state.view;
   return `<button class="sidebar-backdrop" aria-label="Zamknij menu" data-action="menu"></button>
   <aside class="sidebar"><a href="#/home" class="brand" aria-label="ROSE Companion — strona główna"><span class="brand-mark">${icon('spark')}</span><span><strong>ROSE</strong><small>COMPANION</small></span></a>
-    <div class="sidebar-label">TWÓJ ŚWIAT. TWOJA PRZYGODA.</div><nav aria-label="Menu główne">${links.map(([route,symbol,label])=>`<a href="#/${route}" class="nav-link ${active===route?'active':''}" ${active===route?'aria-current="page"':''}>${icon(symbol)}<span>${label}</span>${route==='saved'?`<span class="nav-count">${library.builds.length}</span>`:route==='journal'&&library.targets.length?`<span class="nav-count">${library.targets.filter(t=>!t.done).length}</span>`:''}</a>`).join('')}</nav>
+    <div class="sidebar-label">TWÓJ ŚWIAT. TWOJA PRZYGODA.</div><nav aria-label="Menu główne">${links.map(([route,symbol,label])=>`<a href="${e(lastRoutes.get(route)??`#/${route}`)}" class="nav-link ${active===route?'active':''}" ${active===route?'aria-current="page"':''}>${icon(symbol)}<span>${label}</span>${route==='saved'?`<span class="nav-count">${library.builds.length}</span>`:route==='journal'&&library.targets.length?`<span class="nav-count">${library.targets.filter(t=>!t.done).length}</span>`:''}</a>`).join('')}</nav>
     <div class="sidebar-bottom"><div class="world-status"><i></i> ROSE ONLINE GLOBAL</div><p>Fanowski niezbędnik gracza.<br>Przygoda zaczyna się tutaj.</p><a href="#/help/community-art">O grafikach i danych ${icon('info')}</a><div class="version">v${VERSION} · dane ${date(CHECKED)}</div></div>
   </aside><div class="workspace"><header class="topbar"><button class="icon-button mobile-menu" data-action="menu" aria-label="Otwórz menu">${icon('menu')}</button><div class="breadcrumbs">Niezbędnik gracza <span>/</span> <strong>${e(links.find(l=>l[0]===active)?.[2]??'Atlas')}</strong></div><form id="global-search-form" class="top-search" role="search"><label class="sr-only" for="global-search">Szukaj w całej bazie</label>${icon('search')}<input id="global-search" name="q" type="search" placeholder="Szukaj przedmiotu lub Kinga…" autocomplete="off"><button type="submit" aria-label="Szukaj">${icon('arrow')}</button></form><a href="#/help/patch-october" class="patch-pill"><span></span> Patch 16.10.2026</a></header>
     <main id="main" tabindex="-1" class="main-content">${storageError?`<div class="notice error">${icon('info')}<div><strong>Nie można odczytać zapisów.</strong> Oryginał pozostał nienaruszony. <button class="text-button" data-action="recovery">Pobierz kopię ratunkową</button></div></div>`:''}${content}</main>
@@ -99,7 +108,7 @@ function drops() {
     return (bb===q?2:bb.startsWith(q)?1:0)-(aa===q?2:aa.startsWith(q)?1:0)||a.name.localeCompare(b.name);
   });
   const matchedMonsters=state.q?filterMonsters(data.monsters,{query:state.q,planet:state.planet}).slice(0,5):[];
-  return `${pageHead('PLECAK · KATALOG PRZEDMIOTÓW','Wybierz item. Znajdź drop.','Od przedmiotu do potwora i miejsca farmienia — w jednej wyszukiwarce.',`<a class="btn secondary" href="#/journal">${icon('bookmark')}Mój plan farmienia</a>`)}
+  return `${currentEntry?.from?.hash.startsWith('#/map')?backLink('#/map'):''}${pageHead('PLECAK · KATALOG PRZEDMIOTÓW','Wybierz item. Znajdź drop.','Od przedmiotu do potwora i miejsca farmienia — w jednej wyszukiwarce.',`<a class="btn secondary" href="#/journal">${icon('bookmark')}Mój plan farmienia</a>`)}
   <div class="filter-bar panel"><div class="search-field">${icon('search')}<label class="sr-only" for="drop-query">Szukaj przedmiotu, potwora lub mapy</label><input id="drop-query" data-query type="search" value="${e(state.q)}" placeholder="Przedmiot, potwór lub mapa…"></div><label class="filter-select">Kategoria<select id="type-filter" data-filter="type"><option value="">Wszystkie przedmioty</option>${Object.entries(TYPES).map(([key,label])=>`<option value="${key}" ${state.type===key?'selected':''}>${label}</option>`).join('')}</select></label><label class="filter-select">Planeta<select id="planet-filter" data-filter="planet">${planetOptions(state.planet)}</select></label></div>
   <div class="filter-options"><label class="checkbox-label"><input type="checkbox" data-filter="onlyDrops" ${state.onlyDrops?'checked':''}>Tylko przedmioty ze źródłem dropu</label><label class="checkbox-label"><input type="checkbox" data-filter="officialOnly" ${state.officialOnly?'checked':''}>Tylko dropy potwierdzone w patchach</label><button class="text-button" data-action="clear-filters">Wyczyść filtry</button></div>
   ${matchedMonsters.length?`<section class="related-monsters"><span class="eyebrow">PASUJĄCE POTWORY I BOSSY</span><div>${matchedMonsters.map(m=>`<a href="#/monster/${e(m.id)}">${monsterImage(m)}${e(m.name)}${icon('arrow')}</a>`).join('')}</div></section>`:''}
@@ -113,7 +122,7 @@ function monsterDetail() {
   if(!m)return empty('Nie ma takiego potwora w katalogu','Wpis mógł zostać zmieniony.',`<a class="btn primary" href="#/atlas">Wróć do atlasu</a>`);
   const loot=m.drops.map(id=>index.items.get(id)).filter(i=>normalizeText(i.name).includes(normalizeText(state.detailQ))).sort((a,b)=>(m.officialDrops[b.id]?1:0)-(m.officialDrops[a.id]?1:0)||a.name.localeCompare(b.name));
   const saved=target('monster',m.id);
-  return `<a class="back-link" href="${e(lastAtlas)}">${icon('back')} Wróć do wyników</a><section class="detail-hero panel"><figure class="king-figure">${monsterImage(m,'detail-portrait')}<figcaption>${visualData().monsters[m.id]?'Ikona Effigy z gry':''}</figcaption></figure><div><span class="eyebrow">${e(KINDS[m.kind])}${m.habitat==='clan'?' · CLAN FIELD / PVP':m.habitat==='dungeon'?' · DUNGEON':''}</span><h1 id="page-title" tabindex="-1">${e(m.name)}</h1><div class="detail-meta">${m.level?tag(`Poziom ${m.level}`,'gold-tag'):tag('Poziom do potwierdzenia')}${sourceLink(m.levelSource??m.source)}${tag(`${m.drops.length} możliwych dropów`)}</div></div><div class="heading-actions">${pinButton('monster',m.id,true)}<button class="btn primary" data-action="kill" data-id="${e(m.id)}">${icon('clock')}Zapisz zabicie</button></div></section>
+  return `${backLink('#/atlas')}<section class="detail-hero panel"><figure class="king-figure">${monsterImage(m,'detail-portrait')}<figcaption>${visualData().monsters[m.id]?'Ikona Effigy z gry':''}</figcaption></figure><div><span class="eyebrow">${e(KINDS[m.kind])}${m.habitat==='clan'?' · CLAN FIELD / PVP':m.habitat==='dungeon'?' · DUNGEON':''}</span><h1 id="page-title" tabindex="-1">${e(m.name)}</h1><div class="detail-meta">${m.level?tag(`Poziom ${m.level}`,'gold-tag'):tag('Poziom do potwierdzenia')}${sourceLink(m.levelSource??m.source)}${tag(`${m.drops.length} możliwych dropów`)}</div></div><div class="heading-actions">${pinButton('monster',m.id,true)}<button class="btn primary" data-action="kill" data-id="${e(m.id)}">${icon('clock')}Zapisz zabicie</button></div></section>
   <div class="detail-columns"><section class="panel detail-info"><h2>${icon('pin')} Gdzie go znaleźć?</h2>${m.locations.length?m.locations.map(l=>`<div class="location-row"><span>${e(l.planet)}</span><a href="#/map?zone=${encodeURIComponent(l.zone)}">${e(l.zone)} ${icon('arrow')}</a>${sourceLink(l.source)}</div>`).join(''):`<p>BRAK POTWIERDZONYCH DANYCH o dokładnej lokalizacji.${m.planet?` Planeta: ${e(m.planet)}.`:''}</p>`}${m.note?`<p class="info-note">${e(m.note)}</p>${m.noteSource?sourceLink(m.noteSource):''}`:''}</section><section class="panel detail-info"><h2>${icon('clock')} Twoja obserwacja</h2><p>${saved?.killedAt?`Ostatnio zapisane zabicie: <strong>${new Date(saved.killedAt).toLocaleString('pl-PL')}</strong>.`:'Zapisz zabicie, aby wrócić do tej obserwacji w planie farmienia.'}</p>${m.respawn?`<div class="respawn-window"><strong>${m.respawn[0]}–${m.respawn[1]}</strong><span>minut · przedział odrodzenia</span></div>${sourceLink(m.respawnSource)}`:'<div class="muted-box">Czas odrodzenia: brak potwierdzonych danych.</div>'}<p class="small-note">To lokalny dziennik. Aplikacja nie odczytuje obecności bossa na serwerze.</p></section></div>
   ${m.locations.length?mapPreview(m.locations[0].zone):''}
   ${m.rewards?.length?`<section class="panel rewards-panel"><h2>Nagrody powiązane z wydarzeniem</h2><p>Patch wymienia poniższe przedmioty. Nie potwierdza bezpośredniego dropu z tego bossa.</p>${m.rewards.map(id=>itemRow(index.items.get(id),'patch-october')).join('')}</section>`:''}
@@ -127,10 +136,10 @@ function itemDetail() {
   const mobs=[...(index.droppedBy.get(item.id)??[])].sort((a,b)=>(b.officialDrops[item.id]?1:0)-(a.officialDrops[item.id]?1:0)||b.locations.length-a.locations.length||(a.level??0)-(b.level??0));
   const zoneDrops=data.zoneDrops.filter(z=>z.items.includes(item.id)),rewards=data.monsters.filter(m=>m.rewards?.includes(item.id));
   const fields={attack_power:'Atak',defense:'Obrona',magic_defense:'Obrona magiczna',dodge_rate:'Unik',movement_speed:'Szybkość ruchu',pvm_atk:'PvM offense',pvm_def:'PvM defense',pvp_atk:'PvP offense',pvp_def:'PvP defense'};
-  return `<a class="back-link" href="${e(lastDrops)}">${icon('back')} Wróć do wyników</a><section class="detail-hero panel">${itemSymbol(item,'detail-item')}<div><span class="eyebrow">${e(TYPES[item.type]??item.type)}</span><h1 id="page-title" tabindex="-1">${e(item.name)}</h1><div class="detail-meta">${item.level?tag(`Wymagany Lv. ${item.level}`,'gold-tag'):''}${sourceLink(item.source??'community-drops')}</div></div><div class="heading-actions">${pinButton('item',item.id,true)}${slotFor(item.type)?`<button class="btn primary" data-action="equip" data-id="${e(item.id)}">${icon('sword')}Dodaj do buildu</button>`:''}</div></section>
+  return `${backLink('#/drops')}<section class="detail-hero panel">${itemSymbol(item,'detail-item')}<div><span class="eyebrow">${e(TYPES[item.type]??item.type)}</span><h1 id="page-title" tabindex="-1">${e(item.name)}</h1><div class="detail-meta">${item.level?tag(`Wymagany Lv. ${item.level}`,'gold-tag'):''}${sourceLink(item.source??'community-drops')}</div></div><div class="heading-actions">${pinButton('item',item.id,true)}${slotFor(item.type)?`<button class="btn primary" data-action="equip" data-id="${e(item.id)}">${icon('sword')}Dodaj do buildu</button>`:''}</div></section>
   ${item.note?`<div class="notice">${icon('info')}<p>${e(item.note)}</p></div>`:''}
   ${item.stats||item.requirement?`<section class="panel item-properties"><h2>Parametry katalogowe</h2><div class="property-grid">${Object.entries(item.stats??{}).map(([key,value])=>`<div><span>${e(fields[key]??key)}</span><strong>${e(value)}${key.startsWith('pv')?'%':''}</strong></div>`).join('')}${item.requirement?`<div><span>Wymaganie</span><strong>${e(item.requirement.stat_name)} ${e(item.requirement.value)}</strong></div>`:''}</div><p class="small-note">Dane społecznościowe dla podstawowego przedmiotu. Nie obejmują refine, opcji ani pełnych bonusów postaci.</p></section>`:''}
-  ${zoneDrops.length?`<section class="panel detail-info"><h2>${icon('pin')} Potwierdzone źródła mapowe</h2>${zoneDrops.map(z=>`<div class="location-row"><span>${e(z.planet)}</span><strong>${e(z.zone)}</strong><p>${e(z.note)}</p>${sourceLink(z.source)}</div>`).join('')}</section>`:''}
+  ${zoneDrops.length?`<section class="panel detail-info"><h2>${icon('pin')} Potwierdzone źródła mapowe</h2>${zoneDrops.map(z=>`<div class="location-row"><span>${e(z.planet)}</span><a href="${e(mapRoute(z.zone))}">${e(z.zone)} ${icon('arrow')}</a><p>${e(z.note)}</p>${sourceLink(z.source)}</div>`).join('')}</section>`:''}
   ${rewards.length?`<section class="panel detail-info"><h2>Powiązane wydarzenie</h2><p>Źródło wymienia nagrodę wydarzenia, nie bezpośredni drop.</p>${rewards.map(m=>monsterRow(m)).join('')}</section>`:''}
   <div class="section-heading"><div><span class="eyebrow">SKĄD ZDOBYĆ</span><h2>Potwory z tym dropem <span class="count-badge">${mobs.length}</span></h2></div></div>
   <section class="panel source-table">${slice(mobs).map(m=>`<article class="drop-source-row">${monsterImage(m)}<div><a href="#/monster/${e(m.id)}"><strong>${e(m.name)}</strong></a><small>${e(m.locations.map(l=>`${l.planet} · ${l.zone}`).join(' / ')||'Lokalizacja do potwierdzenia')}${m.level?` · Lv. ${m.level}`:''}</small></div>${m.locations[0]?`<a class="text-link" href="#/map?zone=${encodeURIComponent(m.locations[0].zone)}">${icon('pin')}Mapa</a>`:''}${sourceLink(m.officialDrops[item.id]??m.source)}<a class="btn small" href="#/monster/${e(m.id)}">Zobacz ${icon('arrow')}</a></article>`).join('')||empty('Brak przypisanej tabeli potwora','Przedmiot może pochodzić z questu, craftingu, sklepu lub wydarzenia; baza nie potwierdza wszystkich źródeł.')}</section>${pagination(mobs.length)}<p class="data-footnote">${icon('info')} Przypisania społecznościowe wymagają sprawdzenia w grze. Nie znamy procentowej szansy na ten przedmiot.</p>`;
@@ -170,13 +179,36 @@ function allZones() {
   return [...zones.values()].sort((a,b)=>Number(!!mapForZone(b.name))-Number(!!mapForZone(a.name))||a.name.localeCompare(b.name));
 }
 function worldMap() {
-  const zones=allZones(),visible=zones.filter(z=>(!state.planet||z.planet===state.planet)&&normalizeText(z.name).includes(normalizeText(state.mapQ)));
-  const selected=zones.find(z=>z.name===state.zone)??visible[0];
-  if(!selected)return `${pageHead('MAPY ŚWIATA','Wybierz miejsce wyprawy','Wybierz planetę i strefę.')}<div class="planet-tabs"><a href="#/map">Wszystkie strefy</a></div>${empty('Nie znaleziono strefy','Wybierz inną planetę.')}`;
-  const map=mapForZone(selected.name),mobs=data.monsters.filter(m=>m.locations.some(l=>l.zone===selected.name)).sort((a,b)=>Number(b.kind!=='monster')-Number(a.kind!=='monster')||(a.level??999)-(b.level??999));
-  const zoneLoot=data.zoneDrops.filter(z=>z.zone===selected.name);
-  return `${pageHead('MAPA ŚWIATA','Dokąd ruszamy?','Wybierz strefę. Jej Kingi, potwory i dropy znajdziesz obok mapy.')}<div class="planet-tabs"><a class="${!state.planet?'active':''}" href="#/map">Wszystkie planety</a>${PLANETS.map(p=>`<a class="${state.planet===p.name?'active':''}" href="#/map?planet=${p.name}">${icon(p.symbol)}${p.name}</a>`).join('')}</div><div class="world-map-layout"><aside class="panel zone-sidebar"><label for="map-query">Znajdź strefę</label><input id="map-query" type="search" value="${e(state.mapQ??'')}" placeholder="Nazwa mapy…"><nav aria-label="Strefy świata">${visible.map(z=>`<a class="zone-choice ${z.name===selected.name?'active':''}" href="#/map?zone=${encodeURIComponent(z.name)}${state.planet?`&planet=${state.planet}`:''}" ${z.name===selected.name?'aria-current="page"':''}>${icon(mapForZone(z.name)?'eye':'pin')}<span>${e(z.name)}<small>${e(z.planet)}${mapForZone(z.name)?' · obraz mapy':''}</small></span><b>${data.monsters.filter(m=>m.locations.some(l=>l.zone===z.name)).length}</b></a>`).join('')||'<p class="small-note">Brak pasujących stref.</p>'}</nav></aside><section class="map-main"><div class="panel map-panel"><div class="map-title"><div><span class="eyebrow">${e(selected.planet)}</span><h2>${e(selected.name)}</h2></div>${map?`<div class="map-controls"><button class="icon-button" data-action="map-zoom" data-step="-0.25" aria-label="Pomniejsz mapę">−</button><output id="map-scale">100%</output><button class="icon-button" data-action="map-zoom" data-step="0.25" aria-label="Powiększ mapę">+</button><button class="btn small" data-action="map-reset">Reset</button></div>`:''}</div>${map?`<div class="map-viewport" tabindex="0" aria-label="Mapa ${e(selected.name)}. Po powiększeniu przewijaj obraz."><img id="world-map-image" src="./${e(map.image)}" alt="${e(map.name)} — rzeczywisty zrzut mapy z gry" style="width:100%"></div><div class="map-caption"><span>Obraz z gry · ${date(map.date)}</span><span>${icon('info')}Znaczniki na zrzucie nie są listą aktualnych spawnów.</span></div><details class="source-details"><summary>Oznaczenia, autor i źródło mapy</summary><p>${e(map.note)}</p><p>Autor: ${e(map.author)}. <a href="${e(map.sourceUrl)}" target="_blank" rel="noopener noreferrer">Oryginał materiału ${icon('external')}</a></p></details>`:`<div class="map-placeholder"><span>${icon('pin')}</span><h3>${e(selected.name)}</h3><p>Mamy przypisania potworów do tej strefy, ale jeszcze nie mamy jej zweryfikowanego obrazu. Cele wyprawy znajdziesz poniżej.</p><a class="btn secondary" href="#/map?zone=Adventurer%27s%20Plains">Obejrzyj dostępną mapę</a></div>`}</div><div class="section-heading"><div><span class="eyebrow">CELE W TEJ STREFIE</span><h2>Kingi i potwory <span class="count-badge">${mobs.length}</span></h2></div><a class="text-link" href="#/drops?q=${encodeURIComponent(selected.name)}">Dropy tej strefy ${icon('arrow')}</a></div><section class="panel map-monsters">${mobs.map(m=>monsterRow(m,true)).join('')||'<p>Nie mamy jeszcze przypisanych potworów. Brak wpisu nie oznacza pustej mapy.</p>'}</section>${zoneLoot.length?`<h3 class="zone-loot-heading">Drop mapowy</h3><div class="inventory-grid">${[...new Set(zoneLoot.flatMap(z=>z.items))].map(id=>index.items.get(id)).filter(Boolean).map(i=>itemCard(i,zoneLoot[0].source)).join('')}</div>`:''}</section></div><p class="small-note">Dostępne obrazy map: ${visualData().maps.length}. Pozostałe strefy mają opisy lokalizacji z katalogu; nie nanosimy niepotwierdzonych współrzędnych.</p>`;
+  const zones=allZones(),selected=selectedZone(zones,state);
+  const visible=zones.filter(z=>(!state.planet||z.planet===state.planet)&&normalizeText(z.name).includes(normalizeText(state.mapQ)));
+  const terrainMap=selected&&mapForZone(selected.name);
+  const archiveLayer=state.mapLayer==='archive'&&terrainMap?.archive;
+  const map=archiveLayer?{...terrainMap,...terrainMap.archive}:terrainMap;
+  const mobs=selected?data.monsters.filter(m=>m.locations.some(l=>l.zone===selected.name)).sort((a,b)=>Number(b.kind!=='monster')-Number(a.kind!=='monster')||(a.level??999)-(b.level??999)):[];
+  const zoneLoot=selected?data.zoneDrops.filter(z=>z.zone===selected.name):[];
+  const planetLink=planet=>mapRoute(selected&&(!planet||selected.planet===planet)?selected.name:'',{planet});
+  const zoneLink=zone=>mapRoute(zone,{planet:state.planet,mapQ:state.mapQ});
+  return `${currentEntry?.from?backLink('#/atlas'):''}${pageHead('MAPA ŚWIATA','Dokąd ruszamy?','Wybierz strefę. Obejrzyj mapę i sprawdź jej Kingi oraz dropy.')}
+  <div class="planet-tabs"><a class="${!state.planet?'active':''}" href="${e(planetLink(''))}">Wszystkie planety</a>${PLANETS.map(p=>`<a class="${state.planet===p.name?'active':''}" href="${e(planetLink(p.name))}">${icon(p.symbol)}${p.name}</a>`).join('')}</div>
+  <div class="world-map-layout"><aside class="panel zone-sidebar">
+    <label for="map-query">Znajdź strefę</label><div class="map-search"><input id="map-query" type="search" value="${e(state.mapQ??'')}" placeholder="Nazwa mapy…">${state.mapQ?'<button class="icon-button" data-action="map-clear-query" aria-label="Wyczyść wyszukiwanie map">×</button>':''}</div>
+    <div class="mobile-zone-picker"><label for="map-zone">Przejdź do mapy</label><select id="map-zone"><option value="">Wybierz strefę (${visible.length})</option>${visible.map(z=>`<option value="${e(z.name)}" ${z.name===selected?.name?'selected':''}>${e(z.name)} · ${e(z.planet)}</option>`).join('')}</select></div>
+    <nav aria-label="Strefy świata">${visible.map(z=>`<a class="zone-choice ${z.name===selected?.name?'active':''}" href="${e(zoneLink(z.name))}" ${z.name===selected?.name?'aria-current="page"':''}>${icon(mapForZone(z.name)?'eye':'pin')}<span>${e(z.name)}<small>${e(z.planet)}${mapForZone(z.name)?' · obraz mapy':''}</small></span><b>${data.monsters.filter(m=>m.locations.some(l=>l.zone===z.name)).length}</b></a>`).join('')}</nav>
+    ${!visible.length?'<p class="small-note" role="status">Brak pasujących stref. Wyczyść lub zmień nazwę powyżej.</p>':''}
+  </aside><section class="map-main">${selected?`
+    <div class="panel map-panel"><div class="map-title"><div><span class="eyebrow">${e(selected.planet)}</span><h2 id="selected-map-title">${e(selected.name)}</h2></div>${map?`<div class="map-controls"><button class="icon-button" data-action="map-zoom" data-step="-0.25" aria-label="Pomniejsz mapę">−</button><output id="map-scale">${Math.round(mapZoom*100)}%</output><button class="icon-button" data-action="map-zoom" data-step="0.25" aria-label="Powiększ mapę">+</button><button class="btn small" data-action="map-reset">Dopasuj</button></div>`:''}</div>
+    ${terrainMap?.archive?`<div class="map-layers" role="group" aria-label="Widok mapy"><button class="${!archiveLayer?'active':''}" data-action="map-layer" data-layer="terrain" aria-pressed="${!archiveLayer}">${icon('eye')}Teren z gry</button><button class="${archiveLayer?'active':''}" data-action="map-layer" data-layer="archive" aria-pressed="${!!archiveLayer}">${icon('pin')}Oznaczenia z wiki <small>archiwum</small></button></div>`:''}
+    ${map?`<div class="map-viewport" tabindex="0" aria-label="Mapa ${e(selected.name)}. Po powiększeniu przewijaj obraz."><img id="world-map-image" src="./${e(map.image)}" alt="${e(map.name)} — ${archiveLayer?'archiwalne oznaczenia społeczności':'mapa terenu z gry'}" ${map.width&&map.height?`width="${map.width}" height="${map.height}"`:''} style="--map-zoom:${mapZoom};--map-aspect:${map.width&&map.height?map.width/map.height:1}"></div>
+      <div class="map-caption"><span>${map.origin==='official-client'?'Teren z instalatora gry':map.historical?'Archiwalna mapa':'Mapa społeczności'} · ${date(map.date)}</span><span>${icon('info')}${archiveLayer?'Archiwalne znaczniki z wiki. Aktualne spawny sprawdź w grze.':map.origin==='official-client'?'Mapa terenu. Lista Kingów i potworów znajduje się poniżej.':'Widoczne oznaczenia pochodzą od autora zrzutu.'}</span></div>
+      <details class="source-details"><summary>Oznaczenia i źródło mapy</summary><p>${e(map.note)}</p><p>Autor / źródło: ${e(map.author)}. <a href="${e(map.sourceUrl)}" target="_blank" rel="noopener noreferrer">Oryginał materiału ${icon('external')}</a></p></details>`:
+      `<div class="map-placeholder"><span>${icon('pin')}</span><h3>${e(selected.name)}</h3><p>Obraz tej mapy jest jeszcze do uzupełnienia. Poniżej znajdziesz przypisane do niej cele i dropy.</p><a class="btn secondary" href="#/drops?q=${encodeURIComponent(selected.name)}">Sprawdź dropy w ${e(selected.name)} ${icon('arrow')}</a></div>`}
+    </div><div class="section-heading"><div><span class="eyebrow">CELE W TEJ STREFIE</span><h2>Kingi i potwory <span class="count-badge">${mobs.length}</span></h2></div><a class="text-link" href="#/drops?q=${encodeURIComponent(selected.name)}">Dropy tej strefy ${icon('arrow')}</a></div>
+    <section class="panel map-monsters">${mobs.map(m=>monsterRow(m,true)).join('')||'<p>Nie mamy jeszcze przypisanych potworów. Brak wpisu nie oznacza pustej mapy.</p>'}</section>
+    ${zoneLoot.length?`<h3 class="zone-loot-heading">Drop mapowy</h3><div class="inventory-grid">${[...new Set(zoneLoot.flatMap(z=>z.items))].map(id=>index.items.get(id)).filter(Boolean).map(i=>itemCard(i,zoneLoot[0].source)).join('')}</div>`:''}`:
+    empty('Nie znaleziono tej strefy',state.zone?`Nie ma mapy „${state.zone}” w katalogu. Wybierz inną strefę z listy.`:'Wybierz inną planetę lub strefę.')}
+  </section></div><p class="small-note">${visualData().maps.length} obrazów map. Lokalizacje potworów pochodzą z katalogu Global; nie nanosimy niepotwierdzonych punktów odrodzenia.</p>`;
 }
+
 function helpArticle() {
   const source=SOURCES[state.id];if(!source)return empty('Nie znaleziono poradnika','Wybierz temat z listy.',`<a class="btn primary" href="#/guide">Poradnik gracza</a>`);
   const article=ARTICLES[state.id]??{title:source.title,intro:source.note,facts:state.id==='community-art'?['Ikony przedmiotów są oryginalnymi grafikami gry, spakowanymi lokalnie w katalogu.', 'Wizerunki Kingów pochodzą z odpowiadających im ikon Imbued Effigy. Mają oryginalną rozdzielczość 40×40; nie przedstawiamy ich jako dużych modeli 3D.', 'Portrety ośmiu klas pochodzą z tych samych publicznych materiałów gry.']:['Każdy potwór pokazuje wszystkie przypisane mu w tej bazie przedmioty. Nie jest to gwarancja dropu.', 'Dane społecznościowe są oddzielone od konkretnych informacji potwierdzonych przez oficjalne patche.', 'Gdy brakuje mapy, procentów lub pełnej tabeli instancji, strona informuje o tym wprost.'],links:[['drops','Katalog przedmiotów'],['atlas','Kingi i potwory'],['map','Mapy świata']]};
@@ -217,36 +249,73 @@ function guide() {
   return `${pageHead('WIEDZA NA DOBRY POCZĄTEK','Mniej zgadywania. Więcej przygód.','Praktyczne wskazówki, aktualne zmiany i jasne źródła danych.')}
   <div class="guide-grid">${GUIDES.map(g=>`<article class="panel guide-card"><span class="guide-icon">${icon(g.icon)}</span><h2>${g.title}</h2><p>${g.text}</p><a class="btn secondary small" href="#/help/${g.source}">Otwórz poradnik ${icon('arrow')}</a></article>`).join('')}</div>
   <section class="panel penalty-panel"><div><span class="eyebrow">POZIOM MA ZNACZENIE</span><h2>Sprawdź karę do dropu</h2><p>Standardowe progi z przewodnika dla otwartego świata. Nie są procentową szansą na przedmiot.</p>${sourceLink('drop-guide')}</div><form id="penalty-form"><label for="player-level">Twój poziom<input id="player-level" type="number" min="1" max="250" value="250" required></label><label for="monster-level">Poziom potwora<input id="monster-level" type="number" min="1" max="999" value="250" required></label><button class="btn primary" type="submit">Oblicz</button><output id="penalty-result" aria-live="polite">0% kary przy równych poziomach.</output></form><p class="small-note">Specjalne strefy, potwory, dungeony i Clan Fields mogą stosować inne zasady. Ostateczną karę sprawdź w Monster Inspector.</p></section>
-  <section class="panel coverage-panel"><span class="eyebrow">UCZCIWIE O DANYCH</span><h2>Co obejmuje ta baza?</h2><div class="coverage-grid"><div><strong>${number(data.items.length)}</strong><span>przedmiotów w katalogu</span></div><div><strong>${number(data.monsters.length)}</strong><span>potworów i wydarzeń</span></div><div><strong>${number(located)}</strong><span>wpisów z podaną mapą</span></div><div><strong>${number(data.monsters.reduce((n,m)=>n+m.drops.length,0))}</strong><span>powiązań z dropami</span></div></div><p>Katalog jest migawką społecznościową RoseLite / RoseUtils pobraną ${date(CHECKED)}. Nie mamy dostępu do bazy serwera. Dodaliśmy osobno udokumentowane poprawki z oficjalnych patchy do 16.10.2026. Brakujące lokalizacje, szanse, kompletne tabele instancji i formuły buildów pozostają niepotwierdzone.</p><div class="source-legend">${tag('Oficjalny patch','green-tag')} <span>Potwierdza wskazaną informację.</span>${tag('Społeczność','gold-tag')} <span>Wymaga sprawdzenia w aktualnym kliencie.</span></div><p class="small-note">Tylko ROSE Online Global / Rednim Games. Nie korzystamy z tabel prywatnych serwerów. Obrazy map są zrzutami klienta z 2025 r. Miniatury Kingów pochodzą z ikon Effigy; dokładne spawny nie są potwierdzone.</p></section>
+  <section class="panel coverage-panel"><span class="eyebrow">UCZCIWIE O DANYCH</span><h2>Co obejmuje ta baza?</h2><div class="coverage-grid"><div><strong>${number(data.items.length)}</strong><span>przedmiotów w katalogu</span></div><div><strong>${number(data.monsters.length)}</strong><span>potworów i wydarzeń</span></div><div><strong>${number(located)}</strong><span>wpisów z podaną mapą</span></div><div><strong>${number(data.monsters.reduce((n,m)=>n+m.drops.length,0))}</strong><span>powiązań z dropami</span></div></div><p>Katalog jest migawką społecznościową RoseLite / RoseUtils pobraną ${date(CHECKED)}. Nie mamy dostępu do bazy serwera. Dodaliśmy osobno udokumentowane poprawki z oficjalnych patchy do 16.10.2026. Brakujące lokalizacje, szanse, kompletne tabele instancji i formuły buildów pozostają niepotwierdzone.</p><div class="source-legend">${tag('Oficjalny patch','green-tag')} <span>Potwierdza wskazaną informację.</span>${tag('Społeczność','gold-tag')} <span>Wymaga sprawdzenia w aktualnym kliencie.</span></div><p class="small-note">Tylko ROSE Online Global / Rednim Games. Nie korzystamy z tabel prywatnych serwerów. Mapy obejmują obrazy społeczności z lat 2023–2025; datę i źródło znajdziesz przy każdej z nich. Miniatury Kingów pochodzą z ikon Effigy; dokładne spawny nie są potwierdzone.</p></section>
   <details class="panel source-details"><summary>Źródła, autorzy i daty aktualizacji</summary><section class="sources-list">${Object.entries(SOURCES).map(([,s])=>`<article><div><span class="source-date">${date(s.date)}${s.type==='community'?' · pobrano':''}</span><h3><a href="${e(s.url)}" target="_blank" rel="noopener noreferrer">${e(s.title)} ${icon('external')}</a></h3><p>${e(s.note)}</p></div>${tag(s.type==='official'?'Oficjalne':'Społeczność',s.type==='official'?'green-tag':'gold-tag')}</article>`).join('')}</section></details><div class="notice">${icon('info')}<p>ROSE Online, nazwy i dane gry należą do odpowiednich właścicieli. Ten projekt jest fanowską pomocą i nie jest powiązany z Rednim Games ani Gravity. <a href="https://roseutils.com/" target="_blank" rel="noopener noreferrer">RoseUtils</a> · <a href="https://github.com/DrezByte/RoseLite" target="_blank" rel="noopener noreferrer">RoseLite / DrezByte</a> · <a href="./assets/fonts/OFL-1.1.txt" target="_blank" rel="noopener">Licencja fontów</a></p></div>`;
 }
 
 function render({focusHeading=false}={}) {
   const active=document.activeElement,focusId=active?.id,selection=active?.selectionStart;
+  const previousMap=$('#world-map-image')?.getAttribute('src'),mapPosition=[$('.map-viewport')?.scrollLeft??0,$('.map-viewport')?.scrollTop??0],zonePosition=$('.zone-sidebar>nav')?.scrollTop??0;
   const views={home,drops,atlas,monster:monsterDetail,item:itemDetail,build:builder,saved:savedBuilds,journal,guide,map:worldMap,help:helpArticle};
   $('#app').innerHTML=shell((views[state.view]??home)());
   document.title=`${({home:'Twój niezbędnik gracza',drops:'Gdzie dropi?',atlas:'Kingi i potwory',map:'Mapy świata',help:'Poradnik',build:'Kreator buildu',saved:'Moje buildy',journal:'Plan farmienia',guide:'Poradnik i źródła',monster:index.monsters.get(state.id)?.name,item:index.items.get(state.id)?.name})[state.view]??'Atlas'} · ROSE Companion`;
+  if(!focusHeading){const viewport=$('.map-viewport');if(viewport&&previousMap===$('#world-map-image')?.getAttribute('src')){viewport.scrollLeft=mapPosition[0];viewport.scrollTop=mapPosition[1];}if($('.zone-sidebar>nav'))$('.zone-sidebar>nav').scrollTop=zonePosition;}
   if(focusHeading){$('#page-title')?.focus({preventScroll:true});window.scrollTo(0,0);}
   else if(focusId){const el=document.getElementById(focusId);el?.focus({preventScroll:true});if(selection!=null&&['text','search'].includes(el?.type))el.setSelectionRange(selection,selection);}
 }
+function routeLabel() {
+  if(state.view==='map')return `mapy ${state.zone}`;
+  if(state.view==='monster')return index.monsters.get(state.id)?.name??'potwora';
+  if(state.view==='item')return index.items.get(state.id)?.name??'przedmiotu';
+  return ({atlas:'wyników Kingów',drops:'wyników dropów',build:'buildu',journal:'planu farmienia',home:'strony głównej',saved:'zapisanych buildów',help:'poradnika',guide:'poradnika'})[state.view]??'poprzedniej strony';
+}
+function rememberRoute(commit=false) {
+  if(!currentEntry)return;
+  const viewport=$('.map-viewport'),sidebar=$('.zone-sidebar>nav');
+  currentEntry={...currentEntry,scroll:window.scrollY,mapScroll:[viewport?.scrollLeft??0,viewport?.scrollTop??0],sidebarScroll:sidebar?.scrollTop??0,local:{buildTab:state.buildTab,savedQuery:state.savedQuery,journalFilter:state.journalFilter}};
+  routeMemory.set(currentEntry.key,currentEntry);
+  if(routeMemory.size>100)routeMemory.delete(routeMemory.keys().next().value);
+  if(commit)history.replaceState({...history.state,roseNav:currentEntry},'',currentRoute);
+}
+function backLink(fallback) {
+  const from=currentEntry?.from;
+  return `<a class="back-link" data-nav-back href="${e(from?.hash??fallback)}">${icon('back')} Wróć do ${e(from?.label??'wyników')}</a>`;
+}
 function navigate() {
-  if(state.view==='drops')lastDrops=location.hash.startsWith('#/drops')?location.hash:lastDrops;
-  clearTimeout(queryTimer);document.body.classList.remove('menu-open');mapZoom=1;
-  const [route,search='']=location.hash.replace(/^#\/?/,'').split('?');
-  const [view='home',id]=route.split('/'),params=new URLSearchParams(search);
-  state={...state,view:view||'home',id:id??null,q:params.get('q')??'',planet:params.get('planet')??'',type:params.get('type')??'',kind:params.get('kind')==='all'?'':params.get('kind')??'kings',page:1,detailQ:'',knownLocation:params.get('located')==='1',officialOnly:params.get('official')==='1',onlyDrops:params.get('all')!=='1',zone:params.get('zone')??'',mapQ:''};
-  if(view==='drops')lastDrops=location.hash;if(view==='atlas')lastAtlas=location.hash;
-  render({focusHeading:true});if(view==='build'&&params.get('data'))receiveShared(params.get('data'));
+  const incoming=history.state?.roseNav;
+  if(currentEntry&&incoming?.key===currentEntry.key&&currentRoute===location.hash)return;
+  rememberRoute();clearTimeout(queryTimer);document.body.classList.remove('menu-open');
+  currentEntry=(incoming&&incoming.key!==currentEntry?.key?routeMemory.get(incoming.key)??incoming:null)??{key:makeId(),from:null,scroll:0};
+  currentRoute=location.hash||'#/home';
+  state={...state,...currentEntry.local,...readRoute(currentRoute)};mapZoom=state.zoom;
+  if(state.view==='map'&&!state.zone)state.zone=selectedZone(allZones(),state)?.name??'';
+  syncFilters();
+  render({focusHeading:true});
+  const entryKey=currentEntry.key,restore=currentEntry;
+  requestAnimationFrame(()=>{
+    if(currentEntry.key!==entryKey)return;
+    window.scrollTo(0,restore.scroll??0);
+    const viewport=$('.map-viewport'),sidebar=$('.zone-sidebar>nav');
+    if(viewport){viewport.scrollLeft=restore.mapScroll?.[0]??0;viewport.scrollTop=restore.mapScroll?.[1]??0;}
+    if(sidebar)sidebar.scrollTop=restore.sidebarScroll??0;
+  });
+  if(state.view==='build'&&state.sharedBuild)receiveShared(state.sharedBuild);
 }
 function syncFilters() {
-  const params=new URLSearchParams();
-  if(state.q)params.set('q',state.q);if(state.planet)params.set('planet',state.planet);if(state.type)params.set('type',state.type);
-  if(state.view==='atlas'&&state.kind!=='kings')params.set('kind',state.kind||'all');
-  if(!state.onlyDrops)params.set('all','1');if(state.officialOnly)params.set('official','1');if(state.knownLocation)params.set('located','1');
-  history.replaceState(null,'',`#/${state.view}${params.size?'?'+params:''}`);
-  if(state.view==='drops')lastDrops=location.hash;if(state.view==='atlas')lastAtlas=location.hash;
+  currentRoute=routeHash({...state,zoom:mapZoom});
+  history.replaceState({...history.state,roseNav:currentEntry},'',currentRoute);
+  lastRoutes.set(state.view,currentRoute);
+  const activeLink=$('.nav-link[aria-current="page"]');
+  if(activeLink&&['home','drops','atlas','map','build','saved','journal','guide'].includes(state.view))activeLink.setAttribute('href',currentRoute);
 }
-function go(route) {if(location.hash===`#/${route}`)render();else location.hash=`/${route}`;}
+function navigateTo(hash) {
+  if(hash===currentRoute)return;
+  rememberRoute(true);
+  const entry={key:makeId(),from:currentEntry?{key:currentEntry.key,hash:currentRoute,label:routeLabel()}:null,scroll:0};
+  history.pushState({roseNav:entry},'',hash);navigate();
+}
+function go(route) {navigateTo(`#/${route}`);}
+
 function dialog(title,body,buttons) {
   const el=$('#dialog');el.innerHTML=`<div class="dialog-top"><h2 id="dialog-title">${e(title)}</h2><button class="icon-button" data-action="close-dialog" aria-label="Zamknij">${icon('close')}</button></div><div class="dialog-body">${body}</div><div class="dialog-actions">${buttons}</div>`;
   if(!el.open)el.showModal();
@@ -276,7 +345,9 @@ function receiveShared(encoded) {
 
 async function action(name,el) {
   const id=el.dataset.id,kind=el.dataset.kind;
-  if(name==='map-zoom'||name==='map-reset'){mapZoom=name==='map-reset'?1:Math.max(1,Math.min(3,mapZoom+Number(el.dataset.step)));const img=$('#world-map-image');if(img)img.style.width=`${mapZoom*100}%`;if($('#map-scale'))$('#map-scale').textContent=`${Math.round(mapZoom*100)}%`;return;}
+  if(name==='map-layer'){state.mapLayer=el.dataset.layer==='archive'?'archive':'terrain';syncFilters();render();return;}
+  if(name==='map-clear-query'){state.mapQ='';syncFilters();render();$('#map-query')?.focus();return;}
+  if(name==='map-zoom'||name==='map-reset'){mapZoom=name==='map-reset'?1:Math.max(1,Math.min(3,mapZoom+Number(el.dataset.step)));const img=$('#world-map-image');if(img)img.style.setProperty('--map-zoom',mapZoom);if($('#map-scale'))$('#map-scale').textContent=`${Math.round(mapZoom*100)}%`;syncFilters();return;}
   if(name==='pick-gear'){openGearPicker(el.dataset.slot);return;}
   if(name==='choose-gear'){const item=index.items.get(id);if(!item||slotFor(item.type)!==pickerSlot)return;draft.gear[pickerSlot]=item.name;scheduleDraft();$('#dialog').close();render();toast(`Założono: ${item.name}. Zapisz build, aby zachować konfigurację.`);return;}
   if(name==='clear-gear'){draft.gear[el.dataset.slot]='';scheduleDraft();render();return;}
@@ -287,7 +358,7 @@ async function action(name,el) {
   if(name==='confirm'){const fn=pendingAction;pendingAction=null;$('#dialog').close();fn?.();return;}
   if(name==='clear-filters'){clearTimeout(queryTimer);state={...state,q:'',planet:'',type:'',kind:'',page:1,onlyDrops:true,officialOnly:false,knownLocation:false};syncFilters();render();return;}
   if(name==='planet'){clearTimeout(queryTimer);state.planet=el.dataset.planet;state.page=1;syncFilters();render();return;}
-  if(name==='page'){state.page=Math.max(1,Number(el.dataset.page));render();$('#main').scrollIntoView({behavior:'smooth',block:'start'});return;}
+  if(name==='page'){state.page=Math.max(1,Number(el.dataset.page));syncFilters();render();$('#main').scrollIntoView({behavior:'smooth',block:'start'});return;}
   if(name==='pin') {
     const next=structuredClone(library),existing=target(kind,id);
     if(existing)next.targets=next.targets.filter(t=>!(t.kind===kind&&t.id===id));else next.targets.push({kind,id,done:false,notes:'',killedAt:null});
@@ -324,6 +395,8 @@ async function action(name,el) {
 }
 
 document.addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#/"]');
+  if(link&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&!event.altKey&&event.button===0&&link.target!=='_blank'){event.preventDefault();if(link.hasAttribute('data-nav-back')&&currentEntry?.from){rememberRoute(true);history.back();}else navigateTo(link.getAttribute('href'));return;}
   if(event.target.closest('.skip-link')){event.preventDefault();$('#main')?.focus();return;}
   const button=event.target.closest('[data-action]');if(button){event.preventDefault();action(button.dataset.action,button).catch(error=>toast(`Nie udało się wykonać akcji: ${error.message}`,true));}
 });
@@ -336,9 +409,9 @@ document.addEventListener('input',event=>{
   const el=event.target;
   if(el.id==='gear-picker-query'){pickerQuery=el.value;$('#gear-picker-results').innerHTML=gearPickerRows();}
   if(el.id==='skill-query'){skillQuery=el.value;render();}
-  if(el.id==='map-query'){state.mapQ=el.value;render();}
-  if(el.matches('[data-query]')){const value=el.value;clearTimeout(queryTimer);queryTimer=setTimeout(()=>{state.q=value;state.page=1;syncFilters();render();},140);}
-  if(el.matches('[data-detail-query]')){const value=el.value;clearTimeout(queryTimer);queryTimer=setTimeout(()=>{state.detailQ=value;state.page=1;render();},140);}
+  if(el.id==='map-query'){state.mapQ=el.value;syncFilters();render();}
+  if(el.matches('[data-query]')){state.q=el.value;state.page=1;syncFilters();clearTimeout(queryTimer);queryTimer=setTimeout(()=>render(),140);}
+  if(el.matches('[data-detail-query]')){state.detailQ=el.value;state.page=1;syncFilters();clearTimeout(queryTimer);queryTimer=setTimeout(()=>render(),140);}
   if(el.id==='saved-query'){state.savedQuery=el.value;render();}
   if(el.matches('[data-build-field]')){draft[el.dataset.buildField]=el.type==='number'?Number(el.value):el.value;scheduleDraft();}
   if(el.matches('[data-stat]')){draft.stats[el.dataset.stat]=Number(el.value);scheduleDraft();}
@@ -348,6 +421,7 @@ document.addEventListener('input',event=>{
 });
 document.addEventListener('change',async event=>{
   const el=event.target;
+  if(el.id==='map-zone'&&el.value){navigateTo(mapRoute(el.value,{planet:state.planet,mapQ:state.mapQ}));return;}
   if(el.matches('[data-filter]')){clearTimeout(queryTimer);state[el.dataset.filter]=el.type==='checkbox'?el.checked:el.value;state.page=1;syncFilters();render();}
   if(el.matches('[data-target-done]')){const next=structuredClone(library),t=next.targets.find(t=>t.kind===el.dataset.kind&&t.id===el.dataset.id);if(t){t.done=el.checked;if(persist(next))render();}}
   if(el.id==='import-file'&&el.files[0]){try{const file=el.files[0];if(file.size>2_000_000)throw new Error('Maksymalny rozmiar kopii: 2 MB.');const incoming=parseImport(await file.text());const merged=mergeLibraries(library,incoming);if(persist(merged,`Import zakończony: ${incoming.builds.length} buildów i ${incoming.targets.length} celów. Istniejące zapisy zachowano.`))render();}catch(error){toast(`Import przerwany: ${error.message}`,true);}finally{el.value='';}}
@@ -361,7 +435,10 @@ setInterval(()=>{
   });
 },15000);
 window.addEventListener('hashchange',navigate);
-window.addEventListener('beforeunload',()=>{clearTimeout(autoSaveTimer);if(dirty&&draft&&!validateBuild(draft).length&&!storageError){try{saveLibrary(storage,{...library,draft});}catch{}}});
+window.addEventListener('popstate',navigate);
+window.addEventListener('pagehide',()=>{rememberRoute(true);flushDraft();});
+window.addEventListener('beforeunload',flushDraft);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'){rememberRoute(true);flushDraft();}});
 window.addEventListener('storage',event=>{if(event.key!==STORAGE_KEY||!event.newValue)return;try{const result=loadLibrary(storage);if(!result.error){library=result.library;render();toast('Zaktualizowano kolekcję po zmianie w drugiej karcie.');}}catch{}});
 
 async function start() {

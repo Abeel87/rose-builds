@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {setVisuals,itemImage,monsterImage,matchingSkill,mapForZone} from '../dist/visuals.js';
 import {sourceLink} from '../dist/ui.js';
 import {createBuild,normalizeBuild,encodeBuild,decodeBuild} from '../dist/core.js';
@@ -18,8 +19,19 @@ test('all sprite references resolve to bundled sheets and remain within their at
   assert.ok(monsterImage(catalog.monsters.find(m=>m.id==='203')).includes('Effigy'));
 });
 test('map imagery has local files, attribution, and a matching actual catalog location',()=>{
-  assert.equal(world.maps.length,3);
-  for(const m of world.maps){assert.ok(existsSync(new URL(`../dist/${m.image}`,import.meta.url)));assert.ok(m.sourceUrl.startsWith('https://'));assert.ok(m.author);assert.ok(m.date);assert.equal(mapForZone(m.name).id,m.id);}
+  assert.ok(world.maps.length>=11);
+  assert.equal(new Set(world.maps.map(m=>m.id)).size,world.maps.length);
+  for(const m of world.maps){
+    assert.equal(mapForZone(m.name).id,m.id);
+    for(const layer of [m,...(m.archive?[m.archive]:[])]){
+      const path=new URL(`../dist/${layer.image}`,import.meta.url);
+      assert.ok(existsSync(path));assert.ok(layer.sourceUrl.startsWith('https://'));assert.ok(layer.author);assert.ok(layer.date);
+      if(layer.sha256)assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex'),layer.sha256,layer.image);
+      if(layer.origin==='official-client')assert.equal(layer.currentGlobalSpawnsVerified,false);
+    }
+  }
+  assert.equal(mapForZone('Xita Refuge').origin,'official-client');
+  assert.equal(mapForZone('Xita Refuge').archive.currentGlobalSpawnsVerified,false);
   assert.equal(mapForZone('Golden Ring'),undefined);
   assert.ok(catalog.monsters.find(m=>m.id==='203').locations.some(l=>l.zone==="Adventurer's Plains"&&l.source==='community-maps'));
 });

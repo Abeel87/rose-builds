@@ -4,13 +4,23 @@ Polski niezbędnik gracza **oficjalnego ROSE Online Global (Rednim Games)**. Prz
 
 [Otwórz ROSE Companion](https://rose-global-build-planner.gipgibon.chatgpt.site)
 
-## Nowy interfejs 3.0
+## Mapy i nawigacja 3.1
 
-Plecak z oryginalnymi ikonami ponad 15 tysięcy itemów; bestiariusz z 59 ikonami Effigy; trzy prawdziwe mapy z klienta i indeks pozostałych opisanych stref. Właściwa ścieżka to item → King → mapa, na tej samej stronie. Poradniki otwierają się wewnątrz aplikacji, a zewnętrzne materiały są opcjonalnymi źródłami.
+Plecak z oryginalnymi ikonami ponad 15 tysięcy itemów; bestiariusz z 59 ikonami Effigy; obrazy 12 stref i indeks pozostałych opisanych lokalizacji. Właściwa ścieżka to item → King → mapa, na tej samej stronie. Poradniki otwierają się wewnątrz aplikacji, a zewnętrzne materiały są opcjonalnymi źródłami.
 
 Kreator ma portrety ośmiu klas, sloty ekwipunku i okno wyboru itemów oraz katalog 476 skilli z wyszukiwaniem. Warianty o tej samej nazwie zachowują własne identyfikatory i ikony w zapisach i linkach. Część ikon skilli jest ładowana z Toolbox; w razie niedostępności widoczna jest nazwa i informacja o braku ikony. Pozostałe grafiki, mapy, dane i poradniki są lokalne.
 
-Zakres map jest jawny: obecnie obrazy mają Adventurer’s Plains, Valley of Luxem Tower i Canyon City of Zant. Pozostałe strefy pokazują potwory i opis lokalizacji. Nie generujemy pozornych map ani aktualnych spawnów na podstawie niepotwierdzonych danych.
+Zakres map jest jawny: 12 stref ma lokalny obraz, dostępny bez opuszczania aplikacji:
+
+| Planeta | Mapy z obrazem |
+| --- | --- |
+| Junon | Adventurer’s Plains, Valley of Luxem Tower, Canyon City of Zant, Anima Lake, Forest of Wisdom, Breezy Hills, El Verloon Desert |
+| Luna | Arumic Valley, Crystal Snowfields, Mana Snowfields |
+| Eldeon | Xita Refuge, Forest of Wandering |
+
+Dziewięć map terenu wyodrębniono z oficjalnego pełnego instalatora gry. Pobrano go 23.10.2026, ale zachowany indeks ma datę 22.11.2024; numer wersji i aktualność po patchach nie są potwierdzone. Nazwy rozpoznano przez porównanie pełnych obrazów z nazwanymi źródłami. Dla ośmiu map przycisk **Oznaczenia z wiki** przełącza na oryginalną warstwę społecznościową z 2023 r. Jej czerwone znaczniki są archiwalne. Przełącznik **Teren z gry** przywraca czystą mapę z instalatora. Trzy pozostałe mapy to zrzuty Global z kwietnia 2025. Źródła i daty są pod każdym obrazem. Orlo nie ma jeszcze pewnie przypisanych obrazów map; zachowuje listy celów i dropów.
+
+Wersja 3.1 zachowuje wybraną strefę, wyszukiwanie, filtry, powiększenie i warstwę mapy w adresie strony. Przejście do Kinga lub przedmiotu i powrót zachowuje kontekst mapy oraz pozycję przewijania. Na telefonie można wybrać mapę z rozwijanej listy. Szkic buildu jest utrwalany także przy ukryciu karty.
 
 ## Funkcje
 
