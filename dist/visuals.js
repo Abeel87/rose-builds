@@ -1,7 +1,16 @@
 import { escapeHTML as e, normalizeText } from './core.js';
 
 let media={items:{},classes:{},sheets:[],effigies:{},cols:24}, monsters={},maps=[],skills=[];
-export function setVisuals(data,world={}) {media=data;monsters=world.monsters??{};maps=world.maps??[];skills=world.skills??[];}
+const mapsByZone=new Map();
+export function setVisuals(data,world={}) {
+  media=data;monsters=world.monsters??{};maps=world.maps??[];skills=world.skills??[];
+  mapsByZone.clear();
+  for(const map of maps)for(const alias of [map.name,...(map.zones??[])]) {
+    const name=normalizeText(alias);
+    // Preserve the first match when maps share a normalized name or alias.
+    if(name&&!mapsByZone.has(name))mapsByZone.set(name,map);
+  }
+}
 export const visualData=()=>({media,monsters,maps,skills});
 export function sprite(ref,label='',extra='') {
   if(!Array.isArray(ref)||!media.sheets[ref[0]])return `<span class="game-icon missing-icon ${extra}" aria-label="Brak ikony${label?': '+e(label):''}">?</span>`;
@@ -17,8 +26,7 @@ export function monsterImage(monster,extra='',appearance=null) {
 export function matchingSkill(name,job,catalogId) {const n=normalizeText(name);return catalogId?skills.find(s=>s.id===catalogId):skills.find(s=>normalizeText(s.name)===n&&(!job||s.jobs?.includes(job)||s.job===job));}
 export function skillImage(skill,extra='') {return skill?.sprite?sprite(skill.sprite,skill.name,`skill-sprite ${extra}`):skill?.image?`<img class="skill-icon ${extra}" src="${skill.image.startsWith('https://')?'':'./'}${e(skill.image)}" alt="${e(skill.name)}" width="40" height="40" loading="lazy" referrerpolicy="no-referrer">`:`<span class="skill-icon missing-icon ${extra}" aria-label="Własna umiejętność">✦</span>`;}
 export function mapForZone(zone) {
-  const name=normalizeText(zone);
-  return name?maps.find(m=>[m.name,...(m.zones??[])].some(z=>normalizeText(z)===name)):undefined;
+  return mapsByZone.get(normalizeText(zone));
 }
 export const canonicalZone=zone=>mapForZone(zone)?.name??zone;
 export function mapVariant(map,id='',zone='') {return map?.variants?.find(v=>v.id===id)??map?.variants?.find(v=>v.zones?.some(z=>normalizeText(z)===normalizeText(zone)))??map?.variants?.[0]??map;}

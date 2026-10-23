@@ -1,4 +1,4 @@
-export const VERSION = '3.4.0';
+export const VERSION = '3.4.1';
 export const CHECKED = '2026-10-23';
 export const CLASSES = {
   Soldier: ['Knight', 'Champion'], Muse: ['Cleric', 'Mage'],
