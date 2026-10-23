@@ -21,6 +21,18 @@ test('map floor and area selection survives a reload and a round trip through a 
     assert.equal(routeHash(restored),href);
   }
 });
+test('King filter, selected point and marker visibility survive map navigation',()=>{
+  const href=mapRoute('Wastelands',{mapVariant:'79',mapKing:'2226',mapMarker:'client-79-2226-example',zoom:1.75});
+  const restored=readRoute(href);
+  assert.equal(restored.mapKing,'2226');
+  assert.equal(restored.mapMarker,'client-79-2226-example');
+  assert.equal(restored.showMarkers,true);
+  assert.equal(routeHash(restored),href);
+  const hidden=mapRoute('Wastelands',{mapVariant:'78',showMarkers:false});
+  assert.equal(readRoute(hidden).showMarkers,false);
+  assert.equal(routeHash(readRoute(hidden)),hidden);
+  assert.equal(readRoute('#/map').showMarkers,true);
+});
 test('back destination retains result page, filters and per-monster loot query', () => {
   for(const href of ['#/atlas?q=King&planet=Orlo&kind=all&page=3&located=1', '#/drops?q=Sikuku&type=Weapon&page=2&all=1', '#/monster/203?loot=Jelly&page=2']) {
     const before=readRoute(href),after=readRoute(routeHash(before));

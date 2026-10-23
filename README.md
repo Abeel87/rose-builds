@@ -2,7 +2,19 @@
 
 Polski niezbędnik gracza **oficjalnego ROSE Online Global (Rednim Games)**. Przebudowa wcześniejszego ROSE Build Plannera: wyszukiwarka przedmiotów i dropów, atlas Kingów, kreator buildów i osobisty plan farmienia.
 
-[Otwórz ROSE Companion](https://rose-global-build-planner.gipgibon.chatgpt.site)
+[Otwórz ROSE Companion](https://rose-companion.gipgibon.chatgpt.site)
+
+## Kingi zaznaczone na mapach — wersja 3.3
+
+**427 miejsc dla 81 Kingów i bossów** jest zaznaczonych bezpośrednio na mapach klikalnymi koronami. Numer i kolor odpowiadają legendzie; kliknięcie pokazuje nazwę, oryginalny wygląd i odnośnik do dropów. Można wybrać konkretnego Kinga, ukryć znaczniki i powiększyć mapę. Korony skalują swoje położenie razem z terenem, a numeracja pozostaje stała przy filtrowaniu.
+
+**Wastelands** pokazuje sześć miejsc w Obszarze 1 (3 Grand Master Devourer, 2 Desert Scavenger King, 1 Ikaness Mecha) oraz pięć w Obszarze 2 (2 / 2 / 1). Każdy punkt jest przypisany do dokładnego ID strefy i sumy SHA256 obrazu, więc nie przenosi się na inne piętro, obszar ani archiwalną mapę. Wybrany King, punkt i widoczność koron pozostają w URL podczas odświeżenia oraz powrotu z opisu bossa. Miniatury map na kartach bossów także pokazują ich korony.
+
+Dane pochodzą z bloków MonsterSpawn/NPC bieżącego klienta Global, wydanie `ci-38925666467-1`, odczytane 23.10.2026. Przejrzano 1339 plików IFO w 44 strefach. 428 źródłowych obiektów dało 427 odrębnych miejsc na 38 widokach stref; dwa identyczne wpisy Giant Kaiman Ranger połączono w jedną koronę. Współrzędne sprawdzono niezależnie względem map społeczności i dwóch zrzutów Wastelands z widocznymi współrzędnymi gry.
+
+Lokalizacje wyprowadzone z punktów uzupełniają widok katalogu przy uruchomieniu, z etykietą **„Punkt z klienta gry”**. Obejmuje to 35 bossów, dla których starszy katalog nie podawał żadnej mapy. Plik bazowego katalogu i źródła istniejących wpisów pozostają zachowane. Dane o lokalizacji nie zmieniają źródeł dropów.
+
+**Korona wskazuje okolicę możliwego pojawienia się bossa, nie jego aktualną obecność na serwerze.** Dla 14 z 95 wpisów brak użytecznych dokładnych punktów w sprawdzonych plikach; aplikacja nie zgaduje ich współrzędnych. Niektóre spotkania mogą zależeć od skryptów, wydarzeń lub ustawień serwera. Zakres, pełna lista braków i odtwarzanie ekstrakcji: [raport punktów](docs/king-spawn-data.md), [pokrycie](scripts/spawn-coverage.json), [pochodzenie danych](scripts/spawn-provenance.json), [niezależna kontrola projekcji](docs/projection-qa-report.md).
 
 ## Mapy i wygląd bossów — wersja 3.2
 

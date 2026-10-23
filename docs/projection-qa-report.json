@@ -1,0 +1,717 @@
+{
+  "version": 1,
+  "date": "2026-10-23",
+  "scope": "Independent projection/zone-identity QA for King IFO markers; no app files changed.",
+  "result": "PASS: formula, full-canvas normalization, 64-pixel frame, Y direction and Wasteland variants 78/79 independently supported.",
+  "runtimeInput": {
+    "path": "/workspace/scratch/520b87b7114a/king-spawn-analysis/spawns-client.json",
+    "sha256": "f3027e62987c1b0075ebd75c6ffdae265375b9f62534770274bfc2594b5b7c0c",
+    "records": 428,
+    "uniqueBosses": 81
+  },
+  "evidenceInput": {
+    "path": "/workspace/scratch/520b87b7114a/king-spawn-analysis/spawns-client-evidence.json",
+    "sha256": "a042a2b66c5b6a0f7b454a8f6bec4d6adf5da6ca10d70609acdc658497ef4547"
+  },
+  "projection": {
+    "blockCm": "B = 16 * ZON.gridPerPatch * ZON.gridSize",
+    "globalCm": "globalXY = rawIFOxy + 32.5 * B",
+    "pixelX": "64 + (globalX - LIST_ZONE.minimapStartX * B) / (B / 64)",
+    "pixelY": "64 + ((65 - LIST_ZONE.minimapStartY) * B - globalY) / (B / 64)",
+    "normalize": "x = pixelX / full WEBP width; y = pixelY / full WEBP height",
+    "clamping": "Do not clamp QA values to mask mismatches.",
+    "sourceType": "Open source reference implementation, corroborated by Global screenshots; not official Rednim source code.",
+    "sources": [
+      {
+        "url": "https://github.com/exjam/rose-offline-client/blob/9802251b1f99921cc67408273e0c1e0133153a55/src/ui/ui_minimap_system.rs",
+        "lines": "25-26, 163-178, 220-232",
+        "localPath": "/workspace/scratch/520b87b7114a/official-maps/rose-client-reference/src/ui/ui_minimap_system.rs"
+      },
+      {
+        "url": "https://github.com/exjam/rose-offline/blob/4a648ba720278f69bb8ee6257564175c271e081c/rose-data-irose/src/zone_database.rs",
+        "lines": "create_monster_spawn and objects_offset in load_zone (near 165)",
+        "localPath": "/workspace/scratch/520b87b7114a/official-maps/rose-format-reference/rose-data-irose/src/zone_database.rs"
+      }
+    ]
+  },
+  "junonArchiveChecks": [
+    {
+      "clientZoneId": 23,
+      "monsterId": "1300",
+      "name": "Pomic King",
+      "runtimeRecordId": "client-23-1300-1ccffce297",
+      "image": "assets/maps/zone-023-breezy-hills.webp",
+      "imageSha256": "56ec76c0c44b55611369947b603f7062c1eb1116d865fa726c1ddf5ff5ca3e0f",
+      "width": 384,
+      "height": 448,
+      "rawIfoCm": [
+        8331.982421875,
+        8508.984375,
+        3450.999755859375
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        193.3279296875,
+        189.9640625
+      ],
+      "normalizedXY": [
+        0.5034581502278646,
+        0.42402692522321433
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        197.5,
+        192.5
+      ],
+      "archiveOuterRadiusApproxPx": 21,
+      "distanceToCircleCenterPx": 4.8823303551019706,
+      "insideArchiveArea": true,
+      "note": "Single Pomic King location circle.",
+      "archiveSource": {
+        "image": "assets/maps/breezy-hills-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Breezy_Hills",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/0/0e/BreezyHillsKing.png/revision/latest?cb=20230203123523",
+        "date": "2023-02-03",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 384,
+        "height": 448,
+        "sha256": "2b4cc62edf9d62e6b39f3ffc4696abe2993080ac68287455b57e12d71912f85e",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 25,
+      "monsterId": "209",
+      "name": "Grunter King",
+      "runtimeRecordId": "client-25-209-2a022b04c4",
+      "image": "assets/maps/zone-025-anima-lake.webp",
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        -9550.9765625,
+        -34235.0078125,
+        8146.0
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        121.79609375,
+        360.94003125
+      ],
+      "normalizedXY": [
+        0.2718662806919643,
+        0.8056697126116071
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        128,
+        361.5
+      ],
+      "archiveOuterRadiusApproxPx": 21,
+      "distanceToCircleCenterPx": 6.229126564757346,
+      "insideArchiveArea": true,
+      "note": "West of the two overlapping southwest circles; center approximately read from outer arc.",
+      "archiveSource": {
+        "image": "assets/maps/anima-lake-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Anima_Lake",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/3/3c/AnimaLakeKing.png/revision/latest?cb=20230204141852",
+        "date": "2023-02-04",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "ac63c2bec42ac329d87703591a3a934fa71ef59efefc6e65e76c812304c53706",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 25,
+      "monsterId": "209",
+      "name": "Grunter King",
+      "runtimeRecordId": "client-25-209-4379adc144",
+      "image": "assets/maps/zone-025-anima-lake.webp",
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        -372.021484375,
+        -33400.9765625,
+        6259.0
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        158.5119140625,
+        357.60390625
+      ],
+      "normalizedXY": [
+        0.35382123674665183,
+        0.7982230050223215
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        159,
+        352.5
+      ],
+      "archiveOuterRadiusApproxPx": 22,
+      "distanceToCircleCenterPx": 5.127190935704905,
+      "insideArchiveArea": true,
+      "note": "East of the two overlapping southwest circles; center approximately read from outer arc.",
+      "archiveSource": {
+        "image": "assets/maps/anima-lake-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Anima_Lake",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/3/3c/AnimaLakeKing.png/revision/latest?cb=20230204141852",
+        "date": "2023-02-04",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "ac63c2bec42ac329d87703591a3a934fa71ef59efefc6e65e76c812304c53706",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 26,
+      "monsterId": "208",
+      "name": "Guardian Tree",
+      "runtimeRecordId": "client-26-208-cad0bd9b18",
+      "image": "assets/maps/zone-026-forest-of-wisdom.webp",
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        -9685.0,
+        35338.0,
+        3418.0
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        121.25999999999999,
+        82.648
+      ],
+      "normalizedXY": [
+        0.27066964285714284,
+        0.18448214285714284
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        128,
+        90.5
+      ],
+      "archiveOuterRadiusApproxPx": 23,
+      "distanceToCircleCenterPx": 10.348019327388222,
+      "insideArchiveArea": true,
+      "note": "Northwest circle; identity assigned by nearby named IFO, not an individual wiki label.",
+      "archiveSource": {
+        "image": "assets/maps/forest-of-wisdom-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Forest_of_Wisdom",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/c/c1/ForestOfWisdomKing.png/revision/latest?cb=20230207212704",
+        "date": "2023-02-07",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "e55e20dcf56bbb54ff2894e6652023a099d4ee774dc40fb9890f36d386ed258a",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 26,
+      "monsterId": "208",
+      "name": "Guardian Tree",
+      "runtimeRecordId": "client-26-208-dc6d09bec3",
+      "image": "assets/maps/zone-026-forest-of-wisdom.webp",
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        -12900.0,
+        4570.0,
+        4238.0
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        108.4,
+        205.72
+      ],
+      "normalizedXY": [
+        0.24196428571428572,
+        0.45919642857142856
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        120,
+        214.5
+      ],
+      "archiveOuterRadiusApproxPx": 23,
+      "distanceToCircleCenterPx": 14.5481407746832,
+      "insideArchiveArea": true,
+      "note": "Western circle; identity assigned by nearby named IFO, not an individual wiki label.",
+      "archiveSource": {
+        "image": "assets/maps/forest-of-wisdom-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Forest_of_Wisdom",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/c/c1/ForestOfWisdomKing.png/revision/latest?cb=20230207212704",
+        "date": "2023-02-07",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "e55e20dcf56bbb54ff2894e6652023a099d4ee774dc40fb9890f36d386ed258a",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 26,
+      "monsterId": "208",
+      "name": "Guardian Tree",
+      "runtimeRecordId": "client-26-208-d312edf18a",
+      "image": "assets/maps/zone-026-forest-of-wisdom.webp",
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        21413.0,
+        -828.0,
+        3733.143310546875
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        245.652,
+        227.312
+      ],
+      "normalizedXY": [
+        0.5483303571428572,
+        0.5073928571428572
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        245.5,
+        220
+      ],
+      "archiveOuterRadiusApproxPx": 24,
+      "distanceToCircleCenterPx": 7.31357969806853,
+      "insideArchiveArea": true,
+      "note": "Central circle; identity assigned by nearby named IFO, not an individual wiki label.",
+      "archiveSource": {
+        "image": "assets/maps/forest-of-wisdom-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Forest_of_Wisdom",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/c/c1/ForestOfWisdomKing.png/revision/latest?cb=20230207212704",
+        "date": "2023-02-07",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "e55e20dcf56bbb54ff2894e6652023a099d4ee774dc40fb9890f36d386ed258a",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 26,
+      "monsterId": "1343",
+      "name": "Wise Clown",
+      "runtimeRecordId": "client-26-1343-356e64139c",
+      "image": "assets/maps/zone-026-forest-of-wisdom.webp",
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        43466.0,
+        -17217.0,
+        3525.322021484375
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        333.86400000000003,
+        292.868
+      ],
+      "normalizedXY": [
+        0.7452321428571429,
+        0.6537232142857142
+      ],
+      "exportDifferencePixels": 5.684341886080802e-14,
+      "archiveCircleCenterApproxPx": [
+        345.5,
+        295.5
+      ],
+      "archiveOuterRadiusApproxPx": 24,
+      "distanceToCircleCenterPx": 11.929958927003867,
+      "insideArchiveArea": true,
+      "note": "Eastern circle; identity assigned by nearby named IFO, not an individual wiki label.",
+      "archiveSource": {
+        "image": "assets/maps/forest-of-wisdom-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Forest_of_Wisdom",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/c/c1/ForestOfWisdomKing.png/revision/latest?cb=20230207212704",
+        "date": "2023-02-07",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "e55e20dcf56bbb54ff2894e6652023a099d4ee774dc40fb9890f36d386ed258a",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    },
+    {
+      "clientZoneId": 26,
+      "monsterId": "1343",
+      "name": "Wise Clown",
+      "runtimeRecordId": "client-26-1343-12a986c21d",
+      "image": "assets/maps/zone-026-forest-of-wisdom.webp",
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "width": 448,
+      "height": 448,
+      "rawIfoCm": [
+        24070.0,
+        -28414.0,
+        4340.49951171875
+      ],
+      "minimapOrigin": [
+        31,
+        30
+      ],
+      "independentlyComputedPixel": [
+        256.28,
+        337.656
+      ],
+      "normalizedXY": [
+        0.5720535714285714,
+        0.7536964285714286
+      ],
+      "exportDifferencePixels": 0.0,
+      "archiveCircleCenterApproxPx": [
+        258.5,
+        340.5
+      ],
+      "archiveOuterRadiusApproxPx": 24,
+      "distanceToCircleCenterPx": 3.607871394603761,
+      "insideArchiveArea": true,
+      "note": "Southern circle; identity assigned by nearby named IFO, not an individual wiki label.",
+      "archiveSource": {
+        "image": "assets/maps/forest-of-wisdom-community-2023.webp",
+        "sourceUrl": "https://roseonline.fandom.com/wiki/Forest_of_Wisdom",
+        "sourceImageUrl": "https://static.wikia.nocookie.net/roseonline/images/c/c1/ForestOfWisdomKing.png/revision/latest?cb=20230207212704",
+        "date": "2023-02-07",
+        "dateBasis": "Timestamp in original image revision URL; first publication date not independently established.",
+        "retrievedAt": "2026-10-23",
+        "author": "ROSE Online Wiki contributors; individual image author not identified",
+        "width": 448,
+        "height": 448,
+        "sha256": "e55e20dcf56bbb54ff2894e6652023a099d4ee774dc40fb9890f36d386ed258a",
+        "sourceType": "community-wiki",
+        "historical": true,
+        "official": false,
+        "generated": false,
+        "currentGlobalSpawnsVerified": false,
+        "note": "Archiwalny obraz terenu z ROSE Online Wiki. Czerwone oznaczenia są częścią oryginalnej grafiki społeczności i nie potwierdzają aktualnych spawnów Global. Nie dodano nowych pinezek.",
+        "origin": "community-wiki"
+      },
+      "assessment": "Historical area correspondence supports projection only; it does not validate present server spawning."
+    }
+  ],
+  "wastelandCoordinateChecks": [
+    {
+      "id": "wasteland-78",
+      "zoneId": 78,
+      "map": "assets/maps/zone-078-the-wasteland.webp",
+      "screenshot": "wasteland2.jpg.6c27b55590ba11810f6d98ee511130df.jpg",
+      "worldMetres": [
+        5512,
+        5141
+      ],
+      "arrowScreenPx": [
+        222,
+        149
+      ],
+      "fit": {
+        "scaleX": 0.43680038217810435,
+        "scaleY": 0.4371544021263846,
+        "offsetX": 97.4637822088016,
+        "offsetY": 69.00522156590715,
+        "photometricGain": 0.9760282527337171,
+        "photometricOffset": 0.015385156474471159,
+        "medianAbsoluteChannelError": 0.012670736848159225,
+        "samples": 3313,
+        "roi": [
+          142,
+          88,
+          276,
+          194
+        ],
+        "circleMask": [
+          222,
+          148,
+          79
+        ],
+        "method": "Robust affine texture registration; geometry fitted independently of player coordinates."
+      },
+      "expectedMapPx": [
+        284.8,
+        183.60000000000002
+      ],
+      "observedArrowMapPx": [
+        285.11013925903353,
+        182.98975841255685
+      ],
+      "projectedScreenPx": [
+        221.86453105312575,
+        149.2667697963114
+      ],
+      "pixelDistanceMap": 0.6845298788504564,
+      "pixelDistanceScreen": 0.29919552100798935,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "imageDimensions": [
+        448,
+        320
+      ],
+      "referenceSource": {
+        "url": "https://media.invisioncic.com/i318093/monthly_2024_12/wasteland2.jpg.6c27b55590ba11810f6d98ee511130df.jpg",
+        "kind": "wastelands",
+        "sourceUrl": "https://forum.roseonlinegame.com/topic/3604-dr-ega-in-need-of-repairs/",
+        "localPath": "/workspace/scratch/520b87b7114a/orlo-map-references/wasteland2.jpg.6c27b55590ba11810f6d98ee511130df.jpg",
+        "sha256": "d275764656dceef6d9568354890c14a3dcc529e9781d7027448b9f112a48f575",
+        "width": 383,
+        "height": 386,
+        "bytes": 53992,
+        "status": "downloaded"
+      },
+      "referenceAuthor": "HoneyBuns (Game Master account on official forum)",
+      "referencePostDate": "2023-01-15",
+      "referenceMediaPathMonth": "2024-12",
+      "dateNote": "The forum post is dated 2023-01-15; present media URLs contain 2024_12. Screenshot capture date is unknown.",
+      "coordinateReadPrecisionMetres": 1,
+      "arrowCenterReadPrecisionScreenPixels": 2,
+      "assessment": "Pass. Independently fitted map texture and numeric coordinate project to the player arrow within 1 map pixel. Coordinates are quest references, not King spawn claims."
+    },
+    {
+      "id": "wasteland-79",
+      "zoneId": 79,
+      "map": "assets/maps/zone-079-the-wasteland.webp",
+      "screenshot": "wasteland1.jpg.572021e42417454653789ea9895ebd8a.jpg",
+      "worldMetres": [
+        5601,
+        5045
+      ],
+      "arrowScreenPx": [
+        155,
+        134
+      ],
+      "fit": {
+        "scaleX": 0.9364939651418409,
+        "scaleY": 0.9363178274682928,
+        "offsetX": -145.4980109091185,
+        "offsetY": -73.15219426964067,
+        "photometricGain": 0.9873614093102933,
+        "photometricOffset": 0.00708663363057471,
+        "medianAbsoluteChannelError": 0.008333913117137548,
+        "samples": 3896,
+        "roi": [
+          77,
+          64,
+          226,
+          180
+        ],
+        "circleMask": [
+          154,
+          130,
+          77
+        ],
+        "method": "Robust affine texture registration; geometry fitted independently of player coordinates."
+      },
+      "expectedMapPx": [
+        320.40000000000003,
+        222.0
+      ],
+      "observedArrowMapPx": [
+        320.8755444180628,
+        221.24132232936216
+      ],
+      "projectedScreenPx": [
+        154.55465552232735,
+        134.71036342832036
+      ],
+      "pixelDistanceMap": 0.8953961701253388,
+      "pixelDistanceScreen": 0.8384198853131908,
+      "imageSha256": "002e8fab8521d384da742815fe8d5fe4426d40df88a99c49b4fd004dab73fd54",
+      "imageDimensions": [
+        448,
+        320
+      ],
+      "referenceSource": {
+        "url": "https://media.invisioncic.com/i318093/monthly_2024_12/wasteland1.jpg.572021e42417454653789ea9895ebd8a.jpg",
+        "kind": "wastelands",
+        "sourceUrl": "https://forum.roseonlinegame.com/topic/3604-dr-ega-in-need-of-repairs/",
+        "localPath": "/workspace/scratch/520b87b7114a/orlo-map-references/wasteland1.jpg.572021e42417454653789ea9895ebd8a.jpg",
+        "sha256": "c154f5ade6235f8b6e06fa639f73edf2b1c804cf7ea14b23353dc3026df5228e",
+        "width": 424,
+        "height": 475,
+        "bytes": 65546,
+        "status": "downloaded"
+      },
+      "referenceAuthor": "HoneyBuns (Game Master account on official forum)",
+      "referencePostDate": "2023-01-15",
+      "referenceMediaPathMonth": "2024-12",
+      "dateNote": "The forum post is dated 2023-01-15; present media URLs contain 2024_12. Screenshot capture date is unknown.",
+      "coordinateReadPrecisionMetres": 1,
+      "arrowCenterReadPrecisionScreenPixels": 2,
+      "assessment": "Pass. Independently fitted map texture and numeric coordinate project to the player arrow within 1 map pixel. Coordinates are quest references, not King spawn claims."
+    }
+  ],
+  "jellyAreaCaveat": {
+    "clientZoneId": 22,
+    "monsterId": "203",
+    "name": "Jelly King",
+    "sourceUrl": "https://marronglace-presso.hatenablog.com/entry/2025/04/18/141821",
+    "sourceDate": "2025-04-18",
+    "registration": {
+      "scaleX": 0.9999908706038944,
+      "scaleY": 1.000005769271328,
+      "offsetX": 133.0015448186333,
+      "offsetY": 47.000470220369756,
+      "photometricGain": 1.0015594861661639,
+      "photometricOffset": 0.000962605019544409,
+      "medianAbsoluteChannelError": 0.0019155251972809428,
+      "samples": 22140,
+      "roi": [
+        220,
+        117,
+        580,
+        363
+      ],
+      "circleMask": null,
+      "method": "Robust affine texture registration; geometry fitted independently of player coordinates."
+    },
+    "points": [
+      {
+        "id": "client-22-203-756e2641cb",
+        "x": 0.509402805,
+        "y": 0.703499858,
+        "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+        "projection": {
+          "pixelX": 293.416015625,
+          "pixelY": 270.1439453125,
+          "x": 0.5094028049045138,
+          "y": 0.7034998575846355,
+          "blockSizeCm": 16000.0,
+          "centimetresPerPixel": 250.0,
+          "globalCm": [
+            553354.00390625,
+            508464.013671875,
+            703.0
+          ]
+        }
+      },
+      {
+        "id": "client-22-203-01b4b3a9c9",
+        "x": 0.509868028,
+        "y": 0.70491689,
+        "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+        "projection": {
+          "pixelX": 293.683984375,
+          "pixelY": 270.6880859375,
+          "x": 0.5098680284288195,
+          "y": 0.7049168904622395,
+          "blockSizeCm": 16000.0,
+          "centimetresPerPixel": 250.0,
+          "globalCm": [
+            553420.99609375,
+            508327.978515625,
+            690.0
+          ]
+        }
+      }
+    ],
+    "assessment": "Area-only reference. Registered screenshot is the same terrain at 1:1 with offset (133,47). Client points lie near the southwest/lower edge of the broad hand-drawn area; no exact coordinate is stated by the author. This reference was not used to tune or validate the pixel formula."
+  },
+  "limitations": [
+    "This QA validates map projection, not live-server spawn configuration or timers.",
+    "Wiki red circles are approximate archival areas and are incomplete compared with current client IFO records.",
+    "Some wiki circles have no individual monster label; no independent name was invented for them.",
+    "The Wasteland screenshot coordinates are not King locations and must not become runtime boss markers.",
+    "Validation of ordinary DDS projection does not apply to derived Halls/Catacombs images without separate camera/crop transformation.",
+    "Raw IFO spawn range is not exported as an ellipse. The reference engine describes independent x/y ranges (square); no unverified radius is recommended."
+  ],
+  "artifacts": [
+    "junon-archive-projection-qa.png",
+    "wasteland-78-projection.png",
+    "wasteland-79-projection.png",
+    "wasteland-projection-qa.png",
+    "screenshot-registration.json",
+    "register_references.py"
+  ]
+}

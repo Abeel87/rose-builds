@@ -1,6 +1,6 @@
 import {readFileSync,writeFileSync,readdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-const files=['index.html','bootstrap.js','style.css','game.css','app.js','navigation.js','core.js','ui.js','visuals.js','help.js','content.js','data/catalog.json','data/visuals.json','data/world.json','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','assets/fonts/manrope-latin.woff2','assets/fonts/manrope-latin-ext.woff2','assets/fonts/cinzel.woff2',...readdirSync('dist/assets/game').sort().map(f=>`assets/game/${f}`),...readdirSync('dist/assets/maps').sort().map(f=>`assets/maps/${f}`),...readdirSync('dist/assets/bosses').sort().map(f=>`assets/bosses/${f}`)];
+const files=['index.html','bootstrap.js','style.css','game.css','app.js','navigation.js','map-markers.js','core.js','ui.js','visuals.js','help.js','content.js','data/catalog.json','data/visuals.json','data/world.json','data/spawns.json','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','assets/fonts/manrope-latin.woff2','assets/fonts/manrope-latin-ext.woff2','assets/fonts/cinzel.woff2',...readdirSync('dist/assets/game').sort().map(f=>`assets/game/${f}`),...readdirSync('dist/assets/maps').sort().map(f=>`assets/maps/${f}`),...readdirSync('dist/assets/bosses').sort().map(f=>`assets/bosses/${f}`)];
 const hash=createHash('sha256');for(const file of files)hash.update(readFileSync(`dist/${file}`));
 const version=hash.digest('hex').slice(0,12);
 const source=`// Generated from the complete static payload. Regenerate after every source change.

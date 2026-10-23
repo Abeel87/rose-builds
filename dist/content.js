@@ -1,4 +1,4 @@
-export const VERSION = '3.2.0';
+export const VERSION = '3.3.0';
 export const CHECKED = '2026-10-23';
 export const CLASSES = {
   Soldier: ['Knight', 'Champion'], Muse: ['Cleric', 'Mage'],
@@ -19,6 +19,7 @@ export const PLANETS = [
 const revision = '613d91e2d37a3c445877e28219c60652cf9774db';
 const forum = 'https://forum.roseonlinegame.com/topic/';
 export const SOURCES = {
+  'client-spawns': {title:'Punkty występowania Kingów w kliencie Global',type:'client',date:CHECKED,url:'https://updates.roseonlinegame.com/manifest.json',note:'427 miejsc dla 81 Kingów i bossów, odczytanych z plików stref oficjalnego klienta ci-38925666467-1. Każda korona odpowiada właściwemu obszarowi lub piętru mapy. Zapisany punkt wskazuje okolicę do sprawdzenia; nie potwierdza obecności bossa w tej chwili, czasu odrodzenia ani aktywnych ustawień serwera. Dla pozostałych 14 wpisów dokładne punkty wymagają potwierdzenia.'},
   "client-npc-current": {"title": "Aktualny oficjalny klient Global — katalog NPC", "type": "official", "date": "2026-10-13", "url": "https://updates.roseonlinegame.com/manifest.json", "note": "LIST_NPC.STB i angielski LIST_NPC_S.STL z oficjalnej aktualizacji ci-38925666467-1, pobranej23.10.2026. Poziom265 i nazwa Kepris są zapisane w bieżącej tabeli klienta; nie jest to odczyt parametrów serwera na żywo."},
   "patch-ocf-temple": {"title": "Orlo Clan Field Temple — Kepris i Black Scarabs", "type": "official", "date": "2024-10-31", "publishedAt": "2024-10-30T18:19:52+0000", "url": "https://forum.roseonlinegame.com/topic/6224-patch-notes-2024-10-31-orlo-clan-field-temple/", "note": "Patch nazywa osobną strefę Orlo Clan Field Temple, nowego bossa Kepris oraz towarzyszące mu Black Scarabs. Nie publikuje pełnej tabeli dropów."},
   "client-npc-2024": {"title": "Oryginalny klient Global — katalog NPC", "type": "official", "date": "2024-11-22", "url": "https://www.roseonlinegame.com/download", "note": "Nazwy, identyfikatory, rangi i poziomy z LIST_NPC.STB oraz angielskiego LIST_NPC_S.STL w oficjalnym instalatorze. Data to znacznik tabeli; nie oznacza potwierdzenia poziomów na serwerze w 2026 r."},

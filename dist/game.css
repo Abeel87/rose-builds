@@ -54,3 +54,36 @@ dialog:has(.appearance-viewer){max-width:850px}
 .map-availability{margin:0 18px 14px;padding:10px 12px;border:1px solid #88784f;border-radius:5px;background:#51473244;color:#e2c997;display:flex;align-items:flex-start;gap:9px;font-size:12px;line-height:1.6}.map-availability .icon{flex:none;width:17px;margin-top:2px}
 
 body:has(dialog[open]){overflow:hidden}dialog:has(.appearance-viewer) .dialog-top{position:sticky;top:0;z-index:2}dialog:has(.appearance-viewer) .dialog-actions{position:sticky;bottom:0;z-index:2}
+.map-king-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 18px 14px;flex-wrap:wrap}
+.map-pin-switch{display:flex;align-items:center;gap:8px;min-height:44px;font-size:12px;font-weight:800;color:#f4d294;cursor:pointer}
+.map-pin-switch input{accent-color:#e8bd74;width:18px;height:18px;min-height:0;margin:0}
+.map-pin-switch .icon{width:19px;height:19px}
+.map-king-filter{min-width:0;max-width:100%;flex:0 1 320px}
+.map-king-filter select{width:100%;min-height:44px;min-width:0;font-size:12px;padding-right:28px}
+.map-stage{position:relative;width:calc(min(100%,calc(var(--map-fit-height)*var(--map-aspect,1)))*var(--map-zoom,1));margin-inline:auto;isolation:isolate}
+.map-viewport .map-stage>img{display:block;width:100%;height:auto;max-width:none;min-width:0;margin:0}
+.map-pins,.mini-map-pins{position:absolute;inset:0;pointer-events:none}
+.king-map-pin{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;min-width:44px;min-height:44px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:transparent;pointer-events:auto;cursor:pointer;color:#15252b;z-index:1;-webkit-tap-highlight-color:transparent}
+.pin-medallion{width:33px;height:33px;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:1px;background:var(--pin-color);border:2px solid #15272d;box-shadow:0 0 0 2px #fff5d9,0 3px 8px #000b;transition:transform .15s}
+.pin-medallion .icon{width:16px;height:16px;stroke-width:2.2}
+.pin-medallion b{font:900 11px Manrope,sans-serif}
+.king-map-pin.selected,.king-map-pin:hover,.king-map-pin:focus-visible{z-index:5}
+.king-map-pin.selected .pin-medallion{box-shadow:0 0 0 3px #fff8dd,0 0 0 7px #15272d99,0 4px 12px #000b;transform:scale(1.12)}
+.king-map-pin:focus-visible{outline:3px solid #fff7d6;outline-offset:4px}
+.pin-name{display:none;position:absolute;bottom:44px;left:50%;transform:translateX(-50%);max-width:190px;width:max-content;padding:7px 10px;border:1px solid var(--pin-color);border-radius:5px;background:#13272df5;box-shadow:0 3px 12px #0009;color:#fff5dc;font-size:11px;font-weight:800;line-height:1.4;text-align:center;pointer-events:none}
+.pin-name.align-left{left:auto;right:7px;transform:none}.pin-name.align-right{left:7px;transform:none}
+.king-map-pin.selected .pin-name,.king-map-pin:hover .pin-name,.king-map-pin:focus-visible .pin-name{display:block}
+.map-king-legend{display:flex;flex-wrap:wrap;gap:8px;padding:4px 18px 14px}
+.map-king-chip{display:flex;align-items:center;gap:9px;min-height:48px;flex:1 1 190px;min-width:0;padding:9px 10px;border:1px solid #697967;border-radius:6px;background:#20333a;color:#ecdfbd;font:inherit;font-size:11px;text-align:left;cursor:pointer}
+.map-king-chip>span:last-child{min-width:0;overflow-wrap:anywhere}.map-king-chip small{display:block;margin-top:3px;color:#b8c6b5;font-size:9px}
+.map-king-chip.active,.map-king-chip:hover{border-color:var(--pin-color);background:#3e493c}
+.legend-number{display:grid;place-items:center;width:25px;height:25px;flex:none;border-radius:50%;background:var(--pin-color);color:#162831;font-weight:900}
+.map-marker-prompt,.map-marker-empty{display:flex;align-items:center;gap:10px;margin:0;padding:0 18px 18px;font-size:12px;line-height:1.6;color:#cbd4bf}
+.map-marker-prompt .icon{flex:none;color:#f0ca82}
+.map-marker-card{margin:0 18px 18px;border:1px solid #a49162;border-radius:7px;background:linear-gradient(120deg,#354439,#1d333b);overflow:hidden}
+.marker-card-main{display:flex;align-items:center;gap:14px;padding:14px}.marker-card-main>div{flex:1;min-width:0}.marker-card-main .monster-portrait{width:76px;height:76px}.marker-card-main h3{font-size:18px;line-height:1.4;margin:5px 0;color:#f5d79e}.marker-card-main p{margin:0;color:#c6d0bc;font-size:11px}.marker-card-main .eyebrow{font-size:9px}.marker-card-main .btn{flex:none;white-space:nowrap}
+.marker-source{padding:10px 14px;border-top:1px solid #7c87674d;font-size:10px;color:#b6c6b6}.marker-source summary{cursor:pointer}.marker-source p{margin:10px 0;line-height:1.65}.marker-source a{color:#e8c48a;text-decoration:underline}.marker-source a .icon{width:12px;height:12px}
+.map-monster-entry{position:relative;border-bottom:1px solid #52685d}.map-monster-entry:last-child{border-bottom:0}.map-monster-entry .monster-row{border-bottom:0}.map-locate-link{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin:0 15px 9px 83px;font-size:11px;color:#efcd8f;font-weight:800}.map-locate-link .icon{width:15px;height:15px}
+.map-thumbnail{--thumbnail-height:180px;display:flex;align-items:center;justify-content:center}.map-thumbnail-stage{position:relative;display:block;flex:none;width:min(100%,calc(var(--thumbnail-height)*var(--map-aspect,1)))}.map-thumbnail-stage>img{width:100%;height:auto;display:block}.mini-map-pin{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:17px;height:17px;border-radius:50%;background:var(--pin-color);color:#13272d;border:1px solid #14292d;box-shadow:0 0 0 1px #fff0d0,0 2px 4px #000b}.mini-map-pin .icon{width:11px;height:11px;stroke-width:2.5}
+@media(max-width:720px){.map-king-toolbar{padding:0 12px 12px;gap:4px}.map-pin-switch{font-size:12px}.map-king-filter{flex-basis:100%}.map-king-legend{padding:4px 12px 12px;gap:6px}.map-king-chip{flex-basis:100%;min-height:46px}.map-marker-prompt,.map-marker-empty{padding:0 12px 15px;font-size:11px}.map-marker-card{margin:0 12px 14px}.marker-card-main{flex-wrap:wrap;gap:10px;padding:12px}.marker-card-main .monster-portrait{width:61px;height:61px}.marker-card-main h3{font-size:15px}.marker-card-main .btn{width:100%;min-height:44px;justify-content:center}.marker-card-main .eyebrow{font-size:8px}.map-locate-link{margin-left:74px}.pin-name{max-width:160px;font-size:10px}}
+@media(max-width:580px){.map-thumbnail{--thumbnail-height:200px}}

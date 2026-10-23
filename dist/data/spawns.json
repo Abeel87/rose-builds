@@ -1,0 +1,4285 @@
+{
+  "version": 1,
+  "sources": {
+    "global-client-ci-38925666467-1": {
+      "label": "Punkty pojawiania się zapisane w kliencie ROSE Global",
+      "type": "client",
+      "date": "2026-10-23",
+      "url": "https://updates.roseonlinegame.com/manifest.json",
+      "note": "Pozycje odczytane z plików stref oficjalnego klienta. Wskazują zapisane punkty; nie potwierdzają aktualnej obecności bossa ani ustawień serwera."
+    }
+  },
+  "records": [
+    {
+      "id": "client-1-1415-d036d143a4",
+      "monsterId": "1415",
+      "clientZoneId": 1,
+      "imageSha256": "a88288e5661b0f46feb870957029ebec874df37fd43a801b0ca9d9f2b0f4d33f",
+      "x": 0.586374919,
+      "y": 0.468218994,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-1-205-f58559c61f",
+      "monsterId": "205",
+      "clientZoneId": 1,
+      "imageSha256": "a88288e5661b0f46feb870957029ebec874df37fd43a801b0ca9d9f2b0f4d33f",
+      "x": 0.534916687,
+      "y": 0.438812256,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-1-205-ddb933c416",
+      "monsterId": "205",
+      "clientZoneId": 1,
+      "imageSha256": "a88288e5661b0f46feb870957029ebec874df37fd43a801b0ca9d9f2b0f4d33f",
+      "x": 0.616291809,
+      "y": 0.549041748,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-1-205-595eae8971",
+      "monsterId": "205",
+      "clientZoneId": 1,
+      "imageSha256": "a88288e5661b0f46feb870957029ebec874df37fd43a801b0ca9d9f2b0f4d33f",
+      "x": 0.672364807,
+      "y": 0.324531047,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-2-1329-06a67db60d",
+      "monsterId": "1329",
+      "clientZoneId": 2,
+      "imageSha256": "e8a16dcfbb6f2e29c54c483edb8b7957e67753f26beaeab66910bcb05197ab26",
+      "x": 0.294007026,
+      "y": 0.22341423,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-2-1329-7e1c1a00f8",
+      "monsterId": "1329",
+      "clientZoneId": 2,
+      "imageSha256": "e8a16dcfbb6f2e29c54c483edb8b7957e67753f26beaeab66910bcb05197ab26",
+      "x": 0.513555569,
+      "y": 0.194062424,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-2-1329-cc09c0fec6",
+      "monsterId": "1329",
+      "clientZoneId": 2,
+      "imageSha256": "e8a16dcfbb6f2e29c54c483edb8b7957e67753f26beaeab66910bcb05197ab26",
+      "x": 0.761256917,
+      "y": 0.196702957,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-2-209-53d088b79a",
+      "monsterId": "209",
+      "clientZoneId": 2,
+      "imageSha256": "e8a16dcfbb6f2e29c54c483edb8b7957e67753f26beaeab66910bcb05197ab26",
+      "x": 0.343465169,
+      "y": 0.228078079,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-21-79-0c0c602c53",
+      "monsterId": "79",
+      "clientZoneId": 21,
+      "imageSha256": "a9c3082ef2ec7cbc432d027a5dec279aa7032d2814a12e4a81304cd64720a635",
+      "x": 0.470052083,
+      "y": 0.31746877,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-21-79-a54cee90ae",
+      "monsterId": "79",
+      "clientZoneId": 21,
+      "imageSha256": "a9c3082ef2ec7cbc432d027a5dec279aa7032d2814a12e4a81304cd64720a635",
+      "x": 0.602489726,
+      "y": 0.318656413,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-21-79-32852b1adc",
+      "monsterId": "79",
+      "clientZoneId": 21,
+      "imageSha256": "a9c3082ef2ec7cbc432d027a5dec279aa7032d2814a12e4a81304cd64720a635",
+      "x": 0.658000183,
+      "y": 0.275166829,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-22-203-756e2641cb",
+      "monsterId": "203",
+      "clientZoneId": 22,
+      "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+      "x": 0.509402805,
+      "y": 0.703499858,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-22-203-01b4b3a9c9",
+      "monsterId": "203",
+      "clientZoneId": 22,
+      "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+      "x": 0.509868028,
+      "y": 0.70491689,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-22-24-6d5ab1790d",
+      "monsterId": "24",
+      "clientZoneId": 22,
+      "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+      "x": 0.231416829,
+      "y": 0.538322957,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-22-24-e241c22390",
+      "monsterId": "24",
+      "clientZoneId": 22,
+      "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+      "x": 0.238979085,
+      "y": 0.549729411,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-22-24-b653064c20",
+      "monsterId": "24",
+      "clientZoneId": 22,
+      "imageSha256": "8e1ee1c829133180a1e0c11a4dcd3c5f0a783fcfc884ae8db0e5f9aa11e07b72",
+      "x": 0.245013767,
+      "y": 0.549020894,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-23-1300-14bcf936ea",
+      "monsterId": "1300",
+      "clientZoneId": 23,
+      "imageSha256": "56ec76c0c44b55611369947b603f7062c1eb1116d865fa726c1ddf5ff5ca3e0f",
+      "x": 0.257791646,
+      "y": 0.708678763,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-23-1300-9e267f09df",
+      "monsterId": "1300",
+      "clientZoneId": 23,
+      "imageSha256": "56ec76c0c44b55611369947b603f7062c1eb1116d865fa726c1ddf5ff5ca3e0f",
+      "x": 0.310927327,
+      "y": 0.406964111,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-23-1300-1ccffce297",
+      "monsterId": "1300",
+      "clientZoneId": 23,
+      "imageSha256": "56ec76c0c44b55611369947b603f7062c1eb1116d865fa726c1ddf5ff5ca3e0f",
+      "x": 0.50345815,
+      "y": 0.424026925,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-207-1bf25d7d60",
+      "monsterId": "207",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.511446272,
+      "y": 0.377857317,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-207-068a8a41a7",
+      "monsterId": "207",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.517312622,
+      "y": 0.388759068,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-68-3bfdd467e2",
+      "monsterId": "68",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.418732125,
+      "y": 0.210285732,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-68-ffdff67549",
+      "monsterId": "68",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.423393032,
+      "y": 0.211348179,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-68-93e27a1aaa",
+      "monsterId": "68",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.679133824,
+      "y": 0.224374826,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-68-d5243328c0",
+      "monsterId": "68",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.73800007,
+      "y": 0.220464216,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-69-a2c15b0b9f",
+      "monsterId": "69",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.294874791,
+      "y": 0.457499913,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-69-e8e48bb99d",
+      "monsterId": "69",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.440740967,
+      "y": 0.274026925,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-24-69-48bc418e86",
+      "monsterId": "69",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "x": 0.72137493,
+      "y": 0.287848336,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-207-b8f26ab0b0",
+      "monsterId": "207",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.476553781,
+      "y": 0.434928676,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-207-719c7c79ca",
+      "monsterId": "207",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.546928624,
+      "y": 0.441669573,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-207-5a940a26d6",
+      "monsterId": "207",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.653196498,
+      "y": 0.588321359,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-209-2a022b04c4",
+      "monsterId": "209",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.271866281,
+      "y": 0.805669713,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-209-4379adc144",
+      "monsterId": "209",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.353821237,
+      "y": 0.798223005,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-209-9fa8b5ff32",
+      "monsterId": "209",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.656446638,
+      "y": 0.786267962,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-209-debede2b67",
+      "monsterId": "209",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.808250209,
+      "y": 0.553142875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-1343-ddeec6b3a1",
+      "monsterId": "1343",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.290410714,
+      "y": 0.802901786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-1343-e37ec7d3de",
+      "monsterId": "1343",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.5166875,
+      "y": 0.679625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-1343-12a986c21d",
+      "monsterId": "1343",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.572053571,
+      "y": 0.753696429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-1343-356e64139c",
+      "monsterId": "1343",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.745232143,
+      "y": 0.653723214,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-1343-3818c75eba",
+      "monsterId": "1343",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.803535714,
+      "y": 0.766946429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-208-dc6d09bec3",
+      "monsterId": "208",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.241964286,
+      "y": 0.459196429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-208-cad0bd9b18",
+      "monsterId": "208",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.270669643,
+      "y": 0.184482143,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-208-0269c3b024",
+      "monsterId": "208",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.296151786,
+      "y": 0.622839286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-208-d312edf18a",
+      "monsterId": "208",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.548330357,
+      "y": 0.507392857,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-26-208-1b8cdf793e",
+      "monsterId": "208",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "x": 0.569357143,
+      "y": 0.396464286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-1362-a61db35e45",
+      "monsterId": "1362",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.707234192,
+      "y": 0.697260539,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-1369-76d1529455",
+      "monsterId": "1369",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.648468781,
+      "y": 0.366614787,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain",
+      "sourceObjectCount": 2
+    },
+    {
+      "id": "client-27-1369-bf87283d3b",
+      "monsterId": "1369",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.7730625,
+      "y": 0.419218953,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-1369-027bc7f99b",
+      "monsterId": "1369",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.805070496,
+      "y": 0.468677266,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-211-9185932a1f",
+      "monsterId": "211",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.172234344,
+      "y": 0.547635396,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-211-746ec06f35",
+      "monsterId": "211",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.224843597,
+      "y": 0.290020752,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-211-0cd392cdfe",
+      "monsterId": "211",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.276257706,
+      "y": 0.519375102,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-211-af3adddf04",
+      "monsterId": "211",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.429406357,
+      "y": 0.384947713,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-212-3d0077d22f",
+      "monsterId": "212",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.224656296,
+      "y": 0.693281047,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-212-d5b8766d70",
+      "monsterId": "212",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.53127327,
+      "y": 0.832979329,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-212-888caf1bdc",
+      "monsterId": "212",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.544960785,
+      "y": 0.630489604,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-27-212-bcb5b48250",
+      "monsterId": "212",
+      "clientZoneId": 27,
+      "imageSha256": "1e4143ff2aa53c30af3a0fdb0a1037378726138b97992a26d5ada63f30a51e2b",
+      "x": 0.593617249,
+      "y": 0.641656494,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1373-42a95a8699",
+      "monsterId": "1373",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.28578125,
+      "y": 0.513164063,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1373-515cc500c4",
+      "monsterId": "1373",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.401648438,
+      "y": 0.648234375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1378-13f2efd526",
+      "monsterId": "1378",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.190796875,
+      "y": 0.367117187,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1378-9518dc9e19",
+      "monsterId": "1378",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.209210937,
+      "y": 0.546570312,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1378-4616c957a3",
+      "monsterId": "1378",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.36621875,
+      "y": 0.248390625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1378-7277b49895",
+      "monsterId": "1378",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.579390625,
+      "y": 0.3308125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1388-7bc6bd96e0",
+      "monsterId": "1388",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.169179688,
+      "y": 0.184164063,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1388-2335ee41a3",
+      "monsterId": "1388",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.331882813,
+      "y": 0.380398438,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1388-e4213b590c",
+      "monsterId": "1388",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.355570313,
+      "y": 0.617015625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1388-d16da20427",
+      "monsterId": "1388",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.598203125,
+      "y": 0.57471875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1388-15b5ca966c",
+      "monsterId": "1388",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.706234375,
+      "y": 0.429398438,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-445-a09394edbf",
+      "monsterId": "445",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.500453125,
+      "y": 0.411302083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-445-9b43b80901",
+      "monsterId": "445",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.501585938,
+      "y": 0.4293125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-445-4ceba51214",
+      "monsterId": "445",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.5125625,
+      "y": 0.43615625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-445-0229a596d8",
+      "monsterId": "445",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.514804688,
+      "y": 0.418427083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-445-5f76335b53",
+      "monsterId": "445",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.591523438,
+      "y": 0.694291667,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-445-d0307f1c0f",
+      "monsterId": "445",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.610351562,
+      "y": 0.653927083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-449-9a37c4f98c",
+      "monsterId": "449",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.508226562,
+      "y": 0.503552083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-449-b507ab0200",
+      "monsterId": "449",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.731039062,
+      "y": 0.548833333,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-449-391ba588e9",
+      "monsterId": "449",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.734085937,
+      "y": 0.73728125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-29-449-14f1e37d70",
+      "monsterId": "449",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "x": 0.75934375,
+      "y": 0.729291667,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-31-1402-69695ade48",
+      "monsterId": "1402",
+      "clientZoneId": 31,
+      "imageSha256": "628aa5e63bc64d8f6b327e5c9eb447efc6126e090446249584efca47a1517c45",
+      "x": 0.28065625,
+      "y": 0.497489583,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-31-1402-ed54f2b091",
+      "monsterId": "1402",
+      "clientZoneId": 31,
+      "imageSha256": "628aa5e63bc64d8f6b327e5c9eb447efc6126e090446249584efca47a1517c45",
+      "x": 0.369052083,
+      "y": 0.7199375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-31-1402-fe30e26389",
+      "monsterId": "1402",
+      "clientZoneId": 31,
+      "imageSha256": "628aa5e63bc64d8f6b327e5c9eb447efc6126e090446249584efca47a1517c45",
+      "x": 0.605239583,
+      "y": 0.628958333,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-32-1409-5d7f6d8503",
+      "monsterId": "1409",
+      "clientZoneId": 32,
+      "imageSha256": "9d99eab1b39d77df7b39a963e947cc78520ae035474b07c86b2b3260ef2acba8",
+      "x": 0.327927083,
+      "y": 0.290572917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-32-1409-53e9fa8e4f",
+      "monsterId": "1409",
+      "clientZoneId": 32,
+      "imageSha256": "9d99eab1b39d77df7b39a963e947cc78520ae035474b07c86b2b3260ef2acba8",
+      "x": 0.33303125,
+      "y": 0.6514375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-32-1409-485283d153",
+      "monsterId": "1409",
+      "clientZoneId": 32,
+      "imageSha256": "9d99eab1b39d77df7b39a963e947cc78520ae035474b07c86b2b3260ef2acba8",
+      "x": 0.33778125,
+      "y": 0.2905,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-32-286-adc0e86cab",
+      "monsterId": "286",
+      "clientZoneId": 32,
+      "imageSha256": "9d99eab1b39d77df7b39a963e947cc78520ae035474b07c86b2b3260ef2acba8",
+      "x": 0.614260417,
+      "y": 0.26896875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-1409-7ca9d9c8f8",
+      "monsterId": "1409",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.3705625,
+      "y": 0.238794643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-1409-f0de04c21e",
+      "monsterId": "1409",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.435169643,
+      "y": 0.682839286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-1409-ccab9a4985",
+      "monsterId": "1409",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.661258929,
+      "y": 0.716571429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-286-91c33d4a94",
+      "monsterId": "286",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.446982143,
+      "y": 0.682214286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-287-0e42ef7c60",
+      "monsterId": "287",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.389866071,
+      "y": 0.234758929,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-287-e629a15a29",
+      "monsterId": "287",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.519375,
+      "y": 0.427973214,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-33-287-03dd90f8f3",
+      "monsterId": "287",
+      "clientZoneId": 33,
+      "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
+      "x": 0.638348214,
+      "y": 0.727875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-947-314d19707a",
+      "monsterId": "947",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.254473214,
+      "y": 0.546947917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-947-ecdad957a0",
+      "monsterId": "947",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.307348214,
+      "y": 0.784875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-947-f277c30d30",
+      "monsterId": "947",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.3478125,
+      "y": 0.551197917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-947-8aef20c12b",
+      "monsterId": "947",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.459642857,
+      "y": 0.276166667,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-947-7a842c352a",
+      "monsterId": "947",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.741107143,
+      "y": 0.3565625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-952-b2c688297a",
+      "monsterId": "952",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.254285714,
+      "y": 0.4428125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-952-fc33863475",
+      "monsterId": "952",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.311678571,
+      "y": 0.791552083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-952-2e64bdd81c",
+      "monsterId": "952",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.359008929,
+      "y": 0.434979167,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-952-c8dabd2460",
+      "monsterId": "952",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.548026786,
+      "y": 0.484302083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-952-b063b62c5c",
+      "monsterId": "952",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.553642857,
+      "y": 0.617947917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-952-1d8643b7e0",
+      "monsterId": "952",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.639151786,
+      "y": 0.27559375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-957-53e03ce16e",
+      "monsterId": "957",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.223035714,
+      "y": 0.2708125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-957-14d94b8213",
+      "monsterId": "957",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.244607143,
+      "y": 0.283385417,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-961-f05714091d",
+      "monsterId": "961",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.65025,
+      "y": 0.5914375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-961-a2385be523",
+      "monsterId": "961",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.652125,
+      "y": 0.609302083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-961-f2a0928623",
+      "monsterId": "961",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.679723214,
+      "y": 0.600135417,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-961-722458733c",
+      "monsterId": "961",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.688196429,
+      "y": 0.606072917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-42-962-85bf30da7f",
+      "monsterId": "962",
+      "clientZoneId": 42,
+      "imageSha256": "63cf960ae25320ed357e7bf8a55a2ee836f5f9db4e18a19fccf7198636946a3b",
+      "x": 0.665303571,
+      "y": 0.609333333,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-957-4a4ef5928c",
+      "monsterId": "957",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.23773057,
+      "y": 0.238186528,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-957-d64c47fd71",
+      "monsterId": "957",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.24892228,
+      "y": 0.249067358,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-957-b83e1eabb1",
+      "monsterId": "957",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.366145078,
+      "y": 0.335440415,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-957-4b22e66bca",
+      "monsterId": "957",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.628435233,
+      "y": 0.238,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-957-7f5df682d7",
+      "monsterId": "957",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.761896373,
+      "y": 0.388248705,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-957-c818e95342",
+      "monsterId": "957",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.772932642,
+      "y": 0.392362694,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-ea7f2c6caa",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.244518135,
+      "y": 0.513481865,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-628201ddcf",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.260435233,
+      "y": 0.556404145,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-ebcaff47be",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.268331606,
+      "y": 0.557005181,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-72d96019dd",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.283564767,
+      "y": 0.516062176,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-b14eb9cf7a",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.353108808,
+      "y": 0.515450777,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-2657321f27",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.361823834,
+      "y": 0.49173057,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-a272f8c48b",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.362051813,
+      "y": 0.476829016,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-cfce056e6b",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.362435233,
+      "y": 0.503036269,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-b2dfee0082",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.368984456,
+      "y": 0.489751295,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-32c741653e",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.374756477,
+      "y": 0.499803109,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-643a16a483",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.377419689,
+      "y": 0.490963731,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-c427ea9d22",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.388207254,
+      "y": 0.498621762,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-cb78bf81b0",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.454373057,
+      "y": 0.725585492,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-b352071325",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.460683938,
+      "y": 0.74053886,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-50c63dd8ce",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.460994819,
+      "y": 0.710279793,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-f2595309a1",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.472186528,
+      "y": 0.72238342,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-b1d9b246d0",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.477854922,
+      "y": 0.72238342,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-c7b828d83d",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.478176166,
+      "y": 0.71011399,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-d6f60ea237",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.480373057,
+      "y": 0.731606218,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-7729afc589",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.484124352,
+      "y": 0.718248705,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-377d118c4e",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.486974093,
+      "y": 0.74053886,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-2f944437bd",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.493326425,
+      "y": 0.722476684,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-375e3fa286",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.536777202,
+      "y": 0.496145078,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-68f3c9bd4c",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.547409326,
+      "y": 0.518020725,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-f01346b3a7",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.570362694,
+      "y": 0.493202073,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-a92876c68c",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.570984456,
+      "y": 0.524694301,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-c50c6ec3c8",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.58107772,
+      "y": 0.49388601,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-fa2e8565cd",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.595222798,
+      "y": 0.49388601,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-1c326081c9",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.62626943,
+      "y": 0.259129534,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-497e712bab",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.633119171,
+      "y": 0.24215544,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-1228c125e4",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.638051813,
+      "y": 0.639367876,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-907c42510d",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.641253886,
+      "y": 0.229378238,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-0b92b4f163",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.641564767,
+      "y": 0.258217617,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-aa2054c608",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.642870466,
+      "y": 0.65373057,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-bcf165fcd1",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.645398964,
+      "y": 0.624435233,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-1def3789a8",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.657544041,
+      "y": 0.653243523,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-3ab0ad963e",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.659948187,
+      "y": 0.618891192,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-b5fcefdfeb",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.671388601,
+      "y": 0.622673575,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-3b340c52cf",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.675222798,
+      "y": 0.631025907,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-962ce3e705",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.676010363,
+      "y": 0.639481865,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-830b75937a",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.676041451,
+      "y": 0.649492228,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-77d1fb5aae",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.752196891,
+      "y": 0.522621762,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-a319e35cdb",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.75961658,
+      "y": 0.495398964,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-786eb85986",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.762300518,
+      "y": 0.49957513,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-92c740807d",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.766466321,
+      "y": 0.510404145,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-b52fcfd1d1",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.768207254,
+      "y": 0.496549223,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-93f7fdf879",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.775005181,
+      "y": 0.50984456,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-735a6e11ef",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.775046632,
+      "y": 0.49853886,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-545302d547",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.781585492,
+      "y": 0.377202073,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-961-66ba829c2b",
+      "monsterId": "961",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.782341969,
+      "y": 0.524331606,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-962-e724d11842",
+      "monsterId": "962",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.658145078,
+      "y": 0.637274611,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-43-963-f15b1474ae",
+      "monsterId": "963",
+      "clientZoneId": 43,
+      "imageSha256": "7dfdea50ab474165eae20871534cb70cff3bf636412bd7c407edf430be6870c0",
+      "x": 0.569782383,
+      "y": 0.507398964,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-8ef16ce537",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.25457732,
+      "y": 0.707195876,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-753939e8af",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.255041237,
+      "y": 0.719402062,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-9ee1ba330b",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.264876289,
+      "y": 0.579463918,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-54c2f75a37",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.270164948,
+      "y": 0.582505155,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-cdb2f20b76",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.276907216,
+      "y": 0.719845361,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-6b92d4aa04",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.281350515,
+      "y": 0.724206186,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-3596110152",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.372402062,
+      "y": 0.582082474,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-dee0c02d53",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.376391753,
+      "y": 0.424587629,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-4152cc9eec",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.396917526,
+      "y": 0.772484536,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-f5103305b2",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.408268041,
+      "y": 0.760979381,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-a21abc89da",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.424525773,
+      "y": 0.770247423,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-925a68b51c",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.436494845,
+      "y": 0.572268041,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-8fd1fcc6a3",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.442793814,
+      "y": 0.750927835,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-d893d63956",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.567948454,
+      "y": 0.404443299,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-58b3bed6a2",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.56842268,
+      "y": 0.235742268,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-86ab35d913",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.571628866,
+      "y": 0.231762887,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-c6b6dfb9de",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.580958763,
+      "y": 0.228907216,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-02db10e3ab",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.590618557,
+      "y": 0.431814433,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-5c770c137f",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.591030928,
+      "y": 0.411463918,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-3bafb172b7",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.592804124,
+      "y": 0.223804124,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-c7f420a955",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.60428866,
+      "y": 0.430185567,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-fedfcd2279",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.723927835,
+      "y": 0.698092784,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-b3f26594eb",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.732350515,
+      "y": 0.668804124,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-23b12bdff9",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.737804124,
+      "y": 0.692206186,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-1ea760a183",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.739484536,
+      "y": 0.721020619,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-dac4ab5691",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.742051546,
+      "y": 0.702938144,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-8e887afc0b",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.761072165,
+      "y": 0.699525773,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-97a88eda97",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.77314433,
+      "y": 0.715257732,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-961-5eed9b7a17",
+      "monsterId": "961",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.774278351,
+      "y": 0.689381443,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-753939e8af",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.255041237,
+      "y": 0.719402062,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-3596110152",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.372402062,
+      "y": 0.582082474,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-4152cc9eec",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.396917526,
+      "y": 0.772484536,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-333c800bed",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.415298969,
+      "y": 0.760865979,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-86ab35d913",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.571628866,
+      "y": 0.231762887,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-72e655c746",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.577092784,
+      "y": 0.414731959,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-02db10e3ab",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.590618557,
+      "y": 0.431814433,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-962-dac4ab5691",
+      "monsterId": "962",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.742051546,
+      "y": 0.702938144,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-44-963-e25eadd141",
+      "monsterId": "963",
+      "clientZoneId": 44,
+      "imageSha256": "3b5e0c3d24b471e0bc95c0a9d8bbee3a8e44f3154122415743905e7b9578ec4b",
+      "x": 0.749804124,
+      "y": 0.705835052,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-51-379-5ec4d8ad1e",
+      "monsterId": "379",
+      "clientZoneId": 51,
+      "imageSha256": "6549588fcfdc41ed7d0f1b614f495f2a24dfbe42043103b11c9bad2a030d005b",
+      "x": 0.243187605,
+      "y": 0.750732003,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-51-379-e367bdea8c",
+      "monsterId": "379",
+      "clientZoneId": 51,
+      "imageSha256": "6549588fcfdc41ed7d0f1b614f495f2a24dfbe42043103b11c9bad2a030d005b",
+      "x": 0.501857213,
+      "y": 0.758839216,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-51-379-5a8f0d55a0",
+      "monsterId": "379",
+      "clientZoneId": 51,
+      "imageSha256": "6549588fcfdc41ed7d0f1b614f495f2a24dfbe42043103b11c9bad2a030d005b",
+      "x": 0.721214076,
+      "y": 0.527223424,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-1465-f193fc7699",
+      "monsterId": "1465",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.191625061,
+      "y": 0.620972358,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-1465-97037ce963",
+      "monsterId": "1465",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.249649963,
+      "y": 0.543284776,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-1465-792e2c0d68",
+      "monsterId": "1465",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.44734375,
+      "y": 0.757847114,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-1468-0d33bd52ab",
+      "monsterId": "1468",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.572168896,
+      "y": 0.404242961,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-1468-1d2c6b4ebf",
+      "monsterId": "1468",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.586824951,
+      "y": 0.446798706,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-1468-d9d1caeef8",
+      "monsterId": "1468",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.629631348,
+      "y": 0.487902832,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-383-fc69411375",
+      "monsterId": "383",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.176181335,
+      "y": 0.39676378,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-52-383-255f454cda",
+      "monsterId": "383",
+      "clientZoneId": 52,
+      "imageSha256": "dcebe25494271f5dbb283e95e382eebf38e735b7b062a14b469926ac224ca194",
+      "x": 0.42308136,
+      "y": 0.528250109,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-350-f09a69875e",
+      "monsterId": "350",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.140772594,
+      "y": 0.5265625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-350-00aea99c0e",
+      "monsterId": "350",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.173619218,
+      "y": 0.540267944,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-350-4ecb27b03a",
+      "monsterId": "350",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.18096036,
+      "y": 0.612571498,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-382-c296a1b6cb",
+      "monsterId": "382",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.200073797,
+      "y": 0.268981934,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-461-a4f0cd9ae8",
+      "monsterId": "461",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.846965998,
+      "y": 0.256973267,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1429-90cb6ac08b",
+      "monsterId": "1429",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.4064375,
+      "y": 0.222015625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1429-b97acb99b8",
+      "monsterId": "1429",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.437429687,
+      "y": 0.224520833,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1434-eb660a23a5",
+      "monsterId": "1434",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.561398438,
+      "y": 0.649864583,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1434-f57fc5d747",
+      "monsterId": "1434",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.62059375,
+      "y": 0.6426875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-62340575bd",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.178882812,
+      "y": 0.303479167,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-fcbeba4ea2",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.19959375,
+      "y": 0.28915625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-9bcd589d0a",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.210179687,
+      "y": 0.650026042,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-f88555f67a",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.239734375,
+      "y": 0.300458333,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-9dcc7e3216",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.25059375,
+      "y": 0.732015625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-05efd06f26",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.257984375,
+      "y": 0.285640625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-d16bbb4235",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.258414062,
+      "y": 0.247994792,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-dcb5d5d10e",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.260882813,
+      "y": 0.67346875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-c834dcad2e",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.262320312,
+      "y": 0.764916667,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-92d41f6011",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.267125,
+      "y": 0.688552083,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-d1db340cd4",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.274804687,
+      "y": 0.332942708,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-4c302263ef",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.277578125,
+      "y": 0.661796875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-c80ea2c2c1",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.28565625,
+      "y": 0.807645833,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-72ebe6d93b",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.29384375,
+      "y": 0.29915625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-727ab271eb",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.30146875,
+      "y": 0.230630208,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-c90a46cb3f",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.327484375,
+      "y": 0.663572917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-a546c2ab6e",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.337484375,
+      "y": 0.772942708,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-deb922c0a9",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.344265625,
+      "y": 0.677307292,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-9a19080184",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.359054688,
+      "y": 0.21409375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-346010b637",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.387335938,
+      "y": 0.785661458,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-56bcd0d70a",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.400757812,
+      "y": 0.734947917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-ae56e3e82a",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.428757813,
+      "y": 0.23340625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-27a9caaf2e",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.440375,
+      "y": 0.70775,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-379-d06a50eaa7",
+      "monsterId": "379",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.446859375,
+      "y": 0.211411458,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-55-379-42fa1cc287",
+      "monsterId": "379",
+      "clientZoneId": 55,
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "x": 0.793976563,
+      "y": 0.426819444,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-55-380-8797335b9c",
+      "monsterId": "380",
+      "clientZoneId": 55,
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "x": 0.41265625,
+      "y": 0.331145833,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-56-653-6d32990a83",
+      "monsterId": "653",
+      "clientZoneId": 56,
+      "imageSha256": "ad8886f5674fc15fcb64a8578da79c406ea285d8179ae75c3de56f9f28d06103",
+      "x": 0.392044643,
+      "y": 0.229392045,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-56-654-5d516b04d6",
+      "monsterId": "654",
+      "clientZoneId": 56,
+      "imageSha256": "ad8886f5674fc15fcb64a8578da79c406ea285d8179ae75c3de56f9f28d06103",
+      "x": 0.692017857,
+      "y": 0.513721591,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-57-655-b228b19150",
+      "monsterId": "655",
+      "clientZoneId": 57,
+      "imageSha256": "a650ebb36943faec988c3e4fae0eb15a5f77052f464bedf1636b85448012030b",
+      "x": 0.261757812,
+      "y": 0.442604167,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-58-1542-391965d52d",
+      "monsterId": "1542",
+      "clientZoneId": 58,
+      "imageSha256": "89bd7e87d10d68d4a846734ee14fd6e36751a6e7654c881cc44684cde26b76df",
+      "x": 0.627227414,
+      "y": 0.227096573,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-58-1543-f4032afd35",
+      "monsterId": "1543",
+      "clientZoneId": 58,
+      "imageSha256": "89bd7e87d10d68d4a846734ee14fd6e36751a6e7654c881cc44684cde26b76df",
+      "x": 0.215856698,
+      "y": 0.492105919,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-2fb9d638d6",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.530934652,
+      "y": 0.25642039,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-104c3fef1c",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.531662496,
+      "y": 0.724123637,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-4ed6d27c97",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.549952698,
+      "y": 0.493008931,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-83b495f505",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.551978048,
+      "y": 0.256128438,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-5a593b39b0",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.553493245,
+      "y": 0.724014791,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-4fc0fc23ca",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.778799438,
+      "y": 0.478792318,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1666-e29318862b",
+      "monsterId": "1666",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.779340617,
+      "y": 0.500683085,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-59-1667-4ed6d27c97",
+      "monsterId": "1667",
+      "clientZoneId": 59,
+      "imageSha256": "231d413b0709c6dc269031a4d34925dca8bea48f7b496d3d4397344884a72319",
+      "x": 0.549952698,
+      "y": 0.493008931,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-ad07c25382",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.170398331,
+      "y": 0.659312609,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-98b6762893",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.181039047,
+      "y": 0.741187554,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-e1dbfb38af",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.185257721,
+      "y": 0.690527669,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-dc0a7446a6",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.225257874,
+      "y": 0.723027886,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-a2cb89efca",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.27727356,
+      "y": 0.629423692,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-37c9140c04",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.295070267,
+      "y": 0.66118061,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-c315bddfd3",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.32102356,
+      "y": 0.484138997,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-d3464c28fd",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.427148437,
+      "y": 0.473013984,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-5a9d58c573",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.467499924,
+      "y": 0.464256795,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-79b2fe3b0f",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.487562561,
+      "y": 0.477805583,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-12639c4611",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.491859436,
+      "y": 0.459999932,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-585651ced2",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.538601685,
+      "y": 0.512479329,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-512-dc563ff9fd",
+      "monsterId": "512",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.600835815,
+      "y": 0.508201443,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-539-04179622cd",
+      "monsterId": "539",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.261249924,
+      "y": 0.33336792,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-539-7fc042da5a",
+      "monsterId": "539",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.423578262,
+      "y": 0.371444363,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-539-533a678331",
+      "monsterId": "539",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.496156311,
+      "y": 0.358159722,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-539-ee7edf6e9f",
+      "monsterId": "539",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.585695251,
+      "y": 0.184215291,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-539-59f0d8084f",
+      "monsterId": "539",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.59014856,
+      "y": 0.193708293,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-541-04179622cd",
+      "monsterId": "541",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.261249924,
+      "y": 0.33336792,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-541-533a678331",
+      "monsterId": "541",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.496156311,
+      "y": 0.358159722,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-541-ee7edf6e9f",
+      "monsterId": "541",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.585695251,
+      "y": 0.184215291,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-62-549-a0fd15d21d",
+      "monsterId": "549",
+      "clientZoneId": 62,
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "x": 0.459120305,
+      "y": 0.538083225,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-62-549-8a90382a16",
+      "monsterId": "549",
+      "clientZoneId": 62,
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "x": 0.600846041,
+      "y": 0.648916612,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-63-1571-a009a2320f",
+      "monsterId": "1571",
+      "clientZoneId": 63,
+      "imageSha256": "08452a319567c319fc3c4dbadbd3b13a09bcbf967772dbe9b5205d9df006c778",
+      "x": 0.567855976,
+      "y": 0.691886497,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-63-1571-c2f8a3b409",
+      "monsterId": "1571",
+      "clientZoneId": 63,
+      "imageSha256": "08452a319567c319fc3c4dbadbd3b13a09bcbf967772dbe9b5205d9df006c778",
+      "x": 0.640901311,
+      "y": 0.528267045,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-63-1572-1150a8536b",
+      "monsterId": "1572",
+      "clientZoneId": 63,
+      "imageSha256": "08452a319567c319fc3c4dbadbd3b13a09bcbf967772dbe9b5205d9df006c778",
+      "x": 0.379048379,
+      "y": 0.627295455,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-64-1591-146c01483b",
+      "monsterId": "1591",
+      "clientZoneId": 64,
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "x": 0.696875,
+      "y": 0.320479167,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-64-1591-2480722887",
+      "monsterId": "1591",
+      "clientZoneId": 64,
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "x": 0.750696429,
+      "y": 0.293697917,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-900040e1eb",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.217919376,
+      "y": 0.612003027,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-5906946ab5",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.227074595,
+      "y": 0.647799922,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-35789681da",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.227161109,
+      "y": 0.670940875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-f46962e341",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.229992922,
+      "y": 0.576723556,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-fd204ef8ee",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.240008914,
+      "y": 0.612000982,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-8a17b34f64",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.246540303,
+      "y": 0.59727176,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-25c5bf3266",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.249744827,
+      "y": 0.679154225,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-7556eb1a42",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.251562063,
+      "y": 0.737766893,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-41aa7032e1",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.253952129,
+      "y": 0.704884858,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-1dc736d451",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.266864164,
+      "y": 0.660604139,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-e8521eb553",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.274883774,
+      "y": 0.755877781,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-52094cace6",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.279545931,
+      "y": 0.59700998,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-7df1e76768",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.284329121,
+      "y": 0.709294728,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-5a989576b2",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.285520659,
+      "y": 0.66759602,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-c7a219709a",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.286295354,
+      "y": 0.62584056,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-180c9c3fc2",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.302589748,
+      "y": 0.580061764,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-10860a33ca",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.304932187,
+      "y": 0.747365838,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-6c3654c8b8",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.305488412,
+      "y": 0.639524194,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-325c26e02f",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.305973853,
+      "y": 0.562029103,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-c68fcc4bfb",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.307391289,
+      "y": 0.713413163,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-37ceb1075f",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.307707634,
+      "y": 0.671551865,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-35ad617d19",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.318567359,
+      "y": 0.620996605,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-1811cecf91",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.330594152,
+      "y": 0.701639705,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-6f54e734cc",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.336103537,
+      "y": 0.675457604,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-d9b8d768db",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.339783015,
+      "y": 0.653237995,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-cc24ac9eae",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.339936818,
+      "y": 0.594807346,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-576d27f36c",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.341349011,
+      "y": 0.771850949,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-c4d61d9007",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.342145554,
+      "y": 0.563735786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-4f2c3d0f14",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.34691782,
+      "y": 0.620512414,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-9966d79183",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.350751538,
+      "y": 0.70619836,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-861ae7de25",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.356831131,
+      "y": 0.738867188,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-010362a26f",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.368576098,
+      "y": 0.636112361,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-8676a2fdd0",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.372695138,
+      "y": 0.569847227,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-73ae7f4b62",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.373523577,
+      "y": 0.730447787,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-233877f8da",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.373812832,
+      "y": 0.655772967,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-9ca8368ba1",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.374317062,
+      "y": 0.681367597,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-a6a7b6368c",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.375757655,
+      "y": 0.610088249,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-f9fb2b5cd1",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.378509508,
+      "y": 0.777885717,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-8d412e06ef",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.39309153,
+      "y": 0.619287365,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-e935c39d91",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.395607435,
+      "y": 0.652230244,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-e476bff963",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.399376049,
+      "y": 0.758518079,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-023d089e0c",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.399395274,
+      "y": 0.70293071,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-e858f15457",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.412764786,
+      "y": 0.680935046,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-61a2a257ad",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.415398228,
+      "y": 0.722688973,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-cae76d7983",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.417502971,
+      "y": 0.747924677,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-2ad036c7da",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.440021148,
+      "y": 0.748535156,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-cc2ae486bb",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.444948528,
+      "y": 0.778052397,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-4a47302615",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.447973469,
+      "y": 0.727044646,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-6e1f8d7e78",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.449056208,
+      "y": 0.621132097,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-70622c4656",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.451666492,
+      "y": 0.681064402,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-e0810017c1",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.659328684,
+      "y": 0.448691099,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1718-7029f2e7bf",
+      "monsterId": "1718",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.805574944,
+      "y": 0.35395789,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1719-6b94821002",
+      "monsterId": "1719",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.226067009,
+      "y": 0.264146351,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1719-3c117eddb1",
+      "monsterId": "1719",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.333350374,
+      "y": 0.261844016,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1719-562f1b0816",
+      "monsterId": "1719",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.360379964,
+      "y": 0.388211203,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-4d94e265e2",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.21516796,
+      "y": 0.258251186,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-80477a3a04",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.230756257,
+      "y": 0.715539103,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-d2478a7c0b",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.237056068,
+      "y": 0.257089026,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-3bbc203a6f",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.280829663,
+      "y": 0.2210779,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-c46e8b2541",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.297776409,
+      "y": 0.2162953,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-b2e58a858c",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.326863552,
+      "y": 0.663968423,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-95b59d98c7",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.329135207,
+      "y": 0.469362013,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-e1510e185c",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.335043956,
+      "y": 0.215222104,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-3159aadfcc",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.384497343,
+      "y": 0.221921527,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-110a522b33",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.520107575,
+      "y": 0.408952675,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-80de6f2253",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.526371557,
+      "y": 0.582764439,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-5a10b57db0",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.533798675,
+      "y": 0.408837635,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1799-13c7264832",
+      "monsterId": "1799",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.696358082,
+      "y": 0.731968361,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-65-1817-549fd996b4",
+      "monsterId": "1817",
+      "clientZoneId": 65,
+      "imageSha256": "7c1814e0c9698e1f844353fbd3995551ca20362fd637e7313a05e3cb8790f208",
+      "x": 0.525395868,
+      "y": 0.42259694,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1799-eb2f081135",
+      "monsterId": "1799",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.565199902,
+      "y": 0.452739461,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1799-d82732a9ae",
+      "monsterId": "1799",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.610087598,
+      "y": 0.453359477,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1799-7c794b4dab",
+      "monsterId": "1799",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.642543652,
+      "y": 0.263041687,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1799-927987d7d7",
+      "monsterId": "1799",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.6972125,
+      "y": 0.579505168,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1799-c924ea756c",
+      "monsterId": "1799",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.727618701,
+      "y": 0.570156331,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1799-218167dce5",
+      "monsterId": "1799",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.781868896,
+      "y": 0.491260539,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1806-f9970cf3a7",
+      "monsterId": "1806",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.256937561,
+      "y": 0.49450531,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1806-6b87d782ff",
+      "monsterId": "1806",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.343531189,
+      "y": 0.317515564,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1806-12ad853622",
+      "monsterId": "1806",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.379787598,
+      "y": 0.547296916,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1806-02f812345c",
+      "monsterId": "1806",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.43238739,
+      "y": 0.551354207,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-852bdbf0be",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.444299927,
+      "y": 0.544682312,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-1926543ba9",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.590006104,
+      "y": 0.222281138,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-e27ecdfa61",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.593806152,
+      "y": 0.20075531,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-daa396bd9c",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.661256104,
+      "y": 0.300005086,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-bec13975df",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.665849902,
+      "y": 0.313375092,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-a16151a9f9",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.673162549,
+      "y": 0.186156209,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-d7389b2724",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.674637451,
+      "y": 0.335515594,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-6efda39ecb",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.682068799,
+      "y": 0.397416687,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-973b3aa536",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.702468848,
+      "y": 0.447546895,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-bc23582923",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.725387598,
+      "y": 0.382499959,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-361c182eda",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.75236875,
+      "y": 0.34009908,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-4870c01f02",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.766206348,
+      "y": 0.312635295,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1810-61cfa23432",
+      "monsterId": "1810",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.767774951,
+      "y": 0.274447886,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1812-fd93af8858",
+      "monsterId": "1812",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.344918823,
+      "y": 0.286265564,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1812-f62a2a3f4a",
+      "monsterId": "1812",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.351981201,
+      "y": 0.232197825,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1814-55bf299572",
+      "monsterId": "1814",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.36136261,
+      "y": 0.446572876,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1814-e28c076374",
+      "monsterId": "1814",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.409849854,
+      "y": 0.461276001,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1817-eb2f081135",
+      "monsterId": "1817",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.565199902,
+      "y": 0.452739461,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-66-1817-927987d7d7",
+      "monsterId": "1817",
+      "clientZoneId": 66,
+      "imageSha256": "b9b279fee5f05adaa675faec06dc9612e09dd307579f6280c4288959caf3bff5",
+      "x": 0.6972125,
+      "y": 0.579505168,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-78-2226-824cb7a38e",
+      "monsterId": "2226",
+      "clientZoneId": 78,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "x": 0.223481968,
+      "y": 0.701112061,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-78-2226-3594683e3c",
+      "monsterId": "2226",
+      "clientZoneId": 78,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "x": 0.242133876,
+      "y": 0.432282715,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-78-2226-487f3ad48c",
+      "monsterId": "2226",
+      "clientZoneId": 78,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "x": 0.652603167,
+      "y": 0.30992981,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-78-2247-097f69c228",
+      "monsterId": "2247",
+      "clientZoneId": 78,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "x": 0.380889021,
+      "y": 0.287803955,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-78-2247-1a7d9e8a00",
+      "monsterId": "2247",
+      "clientZoneId": 78,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "x": 0.696827916,
+      "y": 0.705734863,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-78-2296-560a3f7b02",
+      "monsterId": "2296",
+      "clientZoneId": 78,
+      "imageSha256": "b40df525f943405ac79c2a693a2bc3f7d1e6aad184fb87104f8dba8e50a5534f",
+      "x": 0.22618539,
+      "y": 0.252460937,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-79-2226-5296a7d599",
+      "monsterId": "2226",
+      "clientZoneId": 79,
+      "imageSha256": "002e8fab8521d384da742815fe8d5fe4426d40df88a99c49b4fd004dab73fd54",
+      "x": 0.370420619,
+      "y": 0.629766235,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-79-2226-d0e7aebdd7",
+      "monsterId": "2226",
+      "clientZoneId": 79,
+      "imageSha256": "002e8fab8521d384da742815fe8d5fe4426d40df88a99c49b4fd004dab73fd54",
+      "x": 0.670455497,
+      "y": 0.509162598,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-79-2247-8cae99fdb2",
+      "monsterId": "2247",
+      "clientZoneId": 79,
+      "imageSha256": "002e8fab8521d384da742815fe8d5fe4426d40df88a99c49b4fd004dab73fd54",
+      "x": 0.409985352,
+      "y": 0.296189575,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-79-2247-77e5e07100",
+      "monsterId": "2247",
+      "clientZoneId": 79,
+      "imageSha256": "002e8fab8521d384da742815fe8d5fe4426d40df88a99c49b4fd004dab73fd54",
+      "x": 0.779526646,
+      "y": 0.714575195,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-79-2296-92e8ccde14",
+      "monsterId": "2296",
+      "clientZoneId": 79,
+      "imageSha256": "002e8fab8521d384da742815fe8d5fe4426d40df88a99c49b4fd004dab73fd54",
+      "x": 0.366349139,
+      "y": 0.390725098,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-81-2296-7b3e65ad12",
+      "monsterId": "2296",
+      "clientZoneId": 81,
+      "imageSha256": "3ae91afbda1e78257b3c7fd71296063e2d26fd4dc8f4e66c29dbe763bcff4a17",
+      "x": 0.807523019,
+      "y": 0.607973735,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2207-4650ce300a",
+      "monsterId": "2207",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.292557635,
+      "y": 0.205406189,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2207-c858aee42f",
+      "monsterId": "2207",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.370961652,
+      "y": 0.810700989,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2254-2cb1a6a5ed",
+      "monsterId": "2254",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.45078125,
+      "y": 0.758901978,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2254-4c0c0c1efe",
+      "monsterId": "2254",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.671221052,
+      "y": 0.212275696,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2254-e5716e9e7f",
+      "monsterId": "2254",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.730387207,
+      "y": 0.605241394,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2281-867cc07e77",
+      "monsterId": "2281",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.412995257,
+      "y": 0.464337158,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2281-b4cf4298fd",
+      "monsterId": "2281",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.47945949,
+      "y": 0.606761932,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-83-2281-c36603e33e",
+      "monsterId": "2281",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "x": 0.492464338,
+      "y": 0.321923828,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2221-c86b2961c8",
+      "monsterId": "2221",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.428739711,
+      "y": 0.549686432,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2221-0ffa27ff51",
+      "monsterId": "2221",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.56678336,
+      "y": 0.618634399,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2259-eb76bdb40e",
+      "monsterId": "2259",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.212587629,
+      "y": 0.818033203,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2259-626d40a9ad",
+      "monsterId": "2259",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.256907436,
+      "y": 0.780673981,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2265-3d12e7aed8",
+      "monsterId": "2265",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.614606585,
+      "y": 0.52302475,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2265-bf80b1909a",
+      "monsterId": "2265",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.791761998,
+      "y": 0.493544388,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2265-67b8833427",
+      "monsterId": "2265",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.793497559,
+      "y": 0.779205688,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2276-4742e7de52",
+      "monsterId": "2276",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.518505859,
+      "y": 0.79786911,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-85-2276-35169e01e2",
+      "monsterId": "2276",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "x": 0.718257812,
+      "y": 0.821528992,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2654-0813620f72",
+      "monsterId": "2654",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.192828823,
+      "y": 0.654356602,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2657-a7d4c2072f",
+      "monsterId": "2657",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.515638079,
+      "y": 0.498524693,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2661-6083804410",
+      "monsterId": "2661",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.747556414,
+      "y": 0.441797747,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2664-3640d55e8e",
+      "monsterId": "2664",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.64234314,
+      "y": 0.316720145,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2667-a426e69e40",
+      "monsterId": "2667",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.652527291,
+      "y": 0.667109026,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2671-3afaefe553",
+      "monsterId": "2671",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.321858433,
+      "y": 0.702000645,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-89-2676-49773b15bc",
+      "monsterId": "2676",
+      "clientZoneId": 89,
+      "imageSha256": "6bd2519614f5b4c2ba44c6a4bb36d7c6b638f693f1febf17ddac52bb72c2717f",
+      "x": 0.293712071,
+      "y": 0.332384382,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    }
+  ]
+}

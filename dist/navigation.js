@@ -17,6 +17,8 @@ export function readRoute(hash = '#/home') {
     zoom: bounded(p.get('zoom'), 1, 1, 3),
     mapLayer: p.get('layer') === 'archive' ? 'archive' : 'terrain',
     mapVariant: p.get('variant') || '',
+    mapKing: p.get('king') || '', mapMarker: p.get('point') || '',
+    showMarkers: p.get('pins') !== '0',
     knownLocation: p.get('located') === '1', officialOnly: p.get('official') === '1',
     onlyDrops: p.get('all') !== '1', sharedBuild: p.get('data') || ''
   };
@@ -31,6 +33,9 @@ export function routeHash(s) {
     if (s.zoom > 1) p.set('zoom', s.zoom);
     if (s.mapLayer === 'archive') p.set('layer', 'archive');
     if (s.mapVariant) p.set('variant', s.mapVariant);
+    if (s.mapKing) p.set('king', s.mapKing);
+    if (s.mapMarker) p.set('point', s.mapMarker);
+    if (s.showMarkers === false) p.set('pins', '0');
   } else {
     if (s.q) p.set('q', s.q);
     if (s.planet) p.set('planet', s.planet);
@@ -46,8 +51,8 @@ export function routeHash(s) {
   return `#/${s.view}${s.id ? '/' + s.id : ''}${p.size ? '?' + p : ''}`;
 }
 
-export function mapRoute(zone, {planet = '', mapQ = '', zoom = 1, mapLayer = 'terrain', mapVariant = ''} = {}) {
-  return routeHash({view: 'map', zone, planet, mapQ, zoom, mapLayer, mapVariant});
+export function mapRoute(zone, {planet = '', mapQ = '', zoom = 1, mapLayer = 'terrain', mapVariant = '', mapKing = '', mapMarker = '', showMarkers = true} = {}) {
+  return routeHash({view: 'map', zone, planet, mapQ, zoom, mapLayer, mapVariant, mapKing, mapMarker, showMarkers});
 }
 
 export function selectedZone(zones, {zone = '', planet = ''} = {}) {

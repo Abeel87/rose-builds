@@ -18,7 +18,7 @@ const typeIcon=type=>({weapon:'sword',gem:'diamond',material:'diamond',body:'shi
 export const itemSymbol=item=>`<span class="item-symbol type-${e(item.type)}">${icon(typeIcon(item.type))}</span>`;
 export const isOfficial=key=>SOURCES[key]?.type==='official';
 export const sourceLink=(key,short=true)=>{
-  const s=SOURCES[key];return s?`<a class="source-link ${s.type}" href="#/help/${e(key)}" title="Informacje na tej stronie: ${e(s.title)} · ${s.date}">${icon(s.type==='official'?'check':'book')}${short?(s.type==='official'?'Potwierdzone w patchu':'Dane społeczności'):e(s.title)}${icon('info')}</a>`:'';
+  const s=SOURCES[key];return s?`<a class="source-link ${s.type}" href="#/help/${e(key)}" title="Informacje na tej stronie: ${e(s.title)} · ${s.date}">${icon(s.type==='official'?'check':s.type==='client'?'pin':'book')}${short?(s.type==='official'?'Potwierdzone w patchu':s.type==='client'?'Punkt z klienta gry':'Dane społeczności'):e(s.title)}${icon('info')}</a>`:'';
 };
 export const tag=(text,cls='')=>`<span class="tag ${cls}">${e(text)}</span>`;
 export const empty=(title,description,action='')=>`<div class="empty-state">${icon('search')}<h3>${e(title)}</h3><p>${e(description)}</p>${action}</div>`;
