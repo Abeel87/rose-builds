@@ -2,7 +2,7 @@
 
 Polski niezbędnik gracza **oficjalnego ROSE Online Global (Rednim Games)**. Przebudowa wcześniejszego ROSE Build Plannera: wyszukiwarka przedmiotów i dropów, atlas Kingów, kreator buildów i osobisty plan farmienia.
 
-[Otwórz ROSE Companion](https://rose-companion.gipgibon.chatgpt.site)
+[Otwórz ROSE Companion](https://abeel87.github.io/rose-builds/)
 
 ## Kingi zaznaczone na mapach — wersja 3.3
 
@@ -75,6 +75,8 @@ Nie podajemy niepotwierdzonych procentów dropu, tras spawnów, puli SP ani DPS.
 
 Wszystkie osobiste zapisy pozostają w `localStorage` tej przeglądarki, pod kluczem `rose-companion-v2`. Aplikacja nie wymaga konta i nie synchronizuje danych pomiędzy urządzeniami. Do przeniesienia danych służy kopia JSON.
 
+Pamięć `localStorage` jest oddzielna dla każdej domeny. Nowy adres GitHub Pages nie odczytuje automatycznie zapisów z wcześniejszej publikacji w Sites. Aby je przenieść, wyeksportuj kopię JSON na wcześniejszej stronie i zaimportuj ją na nowej. Eksport i import nie usuwają danych z wcześniejszej domeny.
+
 Pierwsze uruchomienie przenosi `rose-build-planner-saves-v1` transakcyjnie, zachowując stary klucz. Statystyki ze starego planera pozostają oznaczone jako przydzielone punkty; zachowywane są stare identyfikatory umiejętności, rangi, ekwipunek i notatki. Stare linki `?build=...` nadal działają. Uszkodzony zapis zatrzymuje zapis do pamięci i udostępnia kopię ratunkową. Import dodaje wpisy bez kasowania istniejącej kolekcji, szkicu i postępu celów.
 
 Nowy link udostępniania zawiera konfigurację i notatki w fragmencie URL; nie zawiera całej kolekcji ani lokalnego identyfikatora buildu. Odbiorca widzi treść linku, więc nie należy wpisywać do notatek prywatnych danych.
@@ -107,6 +109,10 @@ Mapy i wygląd mają osobne importery: `scripts/import-client-maps.py` przyjmuje
 
 ## Wdrożenie
 
-Serwowany jest katalog `dist`. `.openai/hosting.json` zachowuje tożsamość istniejącej strony. Historia poprzedniego projektu pozostaje w Git. Publikacja nowej wersji nie zmienia dostępu do strony ani nie kasuje zapisów użytkownika.
+Główna publikacja korzysta z **GitHub Pages** i katalogu `dist`. Workflow [pages.yml](.github/workflows/pages.yml) uruchamia się po zmianach aplikacji, testów lub konfiguracji publikacji na `main`; można go też uruchomić ręcznie w GitHub Actions. Ustawienie **Settings → Pages → Source** w repozytorium musi wskazywać **GitHub Actions**.
+
+Zadanie budowania używa Node.js 22, wykonuje `node scripts/check.mjs` oraz `node --test tests/*.test.mjs`, a następnie przesyła sprawdzony katalog `dist` jako artefakt Pages. Nie instaluje zależności ani nie zmienia plików aplikacji. Publikacja następuje dopiero po powodzeniu kontroli i wyłącznie dla gałęzi `main` repozytorium `Abeel87/rose-builds`. Ostateczny adres opublikowanej wersji jest dostępny w środowisku `github-pages` i wyniku zadania publikacji.
+
+Plik `.openai/hosting.json` zachowuje tożsamość wcześniejszej publikacji w Sites; historia projektu i ta publikacja pozostają zachowane. Workflow GitHub Pages nie zmienia ustawień Sites ani nie usuwa danych użytkownika. Zapisy osobiste są oddzielne dla obu domen; eksport i import JSON pozwalają przenieść je na nowy adres.
 
 Prawa do danych, fontów i grafiki opisuje [THIRD_PARTY.md](THIRD_PARTY.md).
