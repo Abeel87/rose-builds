@@ -1,0 +1,26 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
+
+function harness(){
+  const listeners={},stored=new Map(),deleted=[];let offline=false;
+  const scope='https://rose.example/companion/';
+  const self={registration:{scope},location:{origin:'https://rose.example'},addEventListener:(type,fn)=>listeners[type]=fn,skipWaiting:async()=>{},clients:{claim:async()=>{}}};
+  const caches={open:async name=>({addAll:async urls=>urls.forEach(url=>stored.set(url,`cached:${url}`)),match:async url=>stored.get(url)}),keys:async()=>['unrelated-app','rose-global-v1','rose-companion-old'],delete:async key=>{deleted.push(key);return true;}};
+  vm.runInNewContext(readFileSync(new URL('../dist/sw.js',import.meta.url),'utf8'),{self,caches,URL,fetch:async req=>{if(offline)throw new Error('offline');return `network:${req.url}`;}});
+  return {listeners,stored,deleted,scope,setOffline:()=>offline=true,async event(name){let promise;listeners[name]({waitUntil:p=>promise=p});await promise;},async request(url,mode='cors',method='GET'){let promise;listeners.fetch({request:{url,mode,method},respondWith:p=>promise=p});return await promise;}};
+}
+test('offline navigation and complete catalog work in a subdirectory after installation',async()=>{
+  const h=harness();await h.event('install');h.setOffline();
+  assert.equal(await h.request(`${h.scope}#/atlas`,'navigate'),`cached:${h.scope}index.html`);
+  assert.equal(await h.request(`${h.scope}data/catalog.json`),`cached:${h.scope}data/catalog.json`);
+  assert.equal(await h.request(`${h.scope}assets/fonts/manrope-latin-ext.woff2`),`cached:${h.scope}assets/fonts/manrope-latin-ext.woff2`);
+});
+test('service worker leaves unrelated caches, non-GET and external requests alone',async()=>{
+  const h=harness();await h.event('activate');
+  assert.deepEqual(h.deleted,['rose-global-v1','rose-companion-old']);
+  assert.equal(await h.request('https://forum.roseonlinegame.com/topic/1'),undefined);
+  assert.equal(await h.request(`${h.scope}app.js`,'cors','POST'),undefined);
+  assert.equal(await h.request('https://rose.example/unrelated.js'),undefined);
+});
