@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "date": "2026-10-23",
+  "runtimeManifest": "dist/data/spawns.json",
+  "runtimeSha256": "7717e6afe1e851ccb3be727751e8cc0a794e2f708b2874de696a849b6616a41b",
+  "runtimeBytes": 136880,
+  "catalogBossCount": 95,
+  "coveredBossCount": 81,
+  "markerCount": 427,
+  "sourceObjectCount": 428,
+  "mergedSourceObjectCount": 1,
+  "zonesWithMarkers": 38,
+  "currentZonesInspected": 44,
+  "currentIfosParsed": 1339,
+  "parseErrors": 0,
+  "outsideImageMarkers": 0,
+  "currentSnapshot": "releases/ci-38925666467-1",
+  "liveServerVerified": false,
+  "radiusExported": false,
+  "allRuntimeImagesShaChecked": true,
+  "allRuntimeIdsUnique": true,
+  "allRuntimeLocationsUnique": true,
+  "missingCatalogEntries": [
+    {
+      "monsterId": "201",
+      "npcId": 201,
+      "name": "Worm Dragon",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "2305",
+      "npcId": 2305,
+      "name": "Wandering Asper",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "2309",
+      "npcId": 2309,
+      "name": "Wandering Mastyx",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "3583",
+      "npcId": 3583,
+      "name": "Anansi Recluse",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "3587",
+      "npcId": 3587,
+      "name": "Arachne Recluse",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "3588",
+      "npcId": 3588,
+      "name": "Ulverick",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "wandering-devourer",
+      "npcId": 2303,
+      "name": "Wandering Devourer",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "wandering-terrasaurus",
+      "npcId": 2310,
+      "name": "Wandering Terrasaurus",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "wandering-scarab",
+      "npcId": 2306,
+      "name": "Wandering Golden Scarab",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "wandering-snapper",
+      "npcId": 2308,
+      "name": "Wandering Snapper",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "2685",
+      "npcId": 2685,
+      "name": "Kepris",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "super-hornet",
+      "npcId": 3133,
+      "name": "Super Hornet",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "super-ulverick",
+      "npcId": 4645,
+      "name": "Super Ulverick",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    },
+    {
+      "monsterId": "dolphin-balloon",
+      "npcId": 4451,
+      "name": "Dolphin Island Balloon",
+      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
+    }
+  ],
+  "noMonsterSpawnZones": [
+    {
+      "clientZoneId": 3,
+      "name": "(JG06) Dolphin Island",
+      "ifoCount": 30,
+      "npcCount": 2
+    },
+    {
+      "clientZoneId": 90,
+      "name": "(ORLOCFBOSS) Orlo Clan Field Temple",
+      "ifoCount": 3,
+      "npcCount": 0
+    },
+    {
+      "clientZoneId": 138,
+      "name": "(JZC01) Cave of Ulverick",
+      "ifoCount": 9,
+      "npcCount": 0
+    },
+    {
+      "clientZoneId": 143,
+      "name": "(JZPI01) Halls of Oblivion",
+      "ifoCount": 16,
+      "npcCount": 0
+    },
+    {
+      "clientZoneId": 148,
+      "name": "(LSOD01) Sea of Dawn",
+      "ifoCount": 26,
+      "npcCount": 0
+    },
+    {
+      "clientZoneId": 169,
+      "name": "(EZ02) Sikuku Catacombs",
+      "ifoCount": 31,
+      "npcCount": 0
+    }
+  ],
+  "scopeNotes": [
+    "Only current updater bytes contribute runtime markers. The old installer was used to choose candidate zones.",
+    "38 zones with catalog boss references plus six event/dungeon zones were inspected in the current client; this is not an exhaustive claim about every client file.",
+    "Repeated basic/tactic entries in one IFO object create one source record per monster. Different IFO objects remain in evidence. Exact monster/zone/image/x/y/source/layer overlaps are represented by one runtime location with sourceObjectCount; runtimeMarkerId links every source record to it.",
+    "Client definitions do not confirm active live-server spawns, encounter state, timing or availability.",
+    "Coordinates include the complete original minimap and its 64-pixel outline. Exact clientZoneId/imageSha256/layer pairing is mandatory.",
+    "Radius omitted: reference-engine range describes independent x/y offsets, not a proven circular roaming radius."
+  ],
+  "independentProjectionQA": {
+    "file": "projection-qa-report.json",
+    "sha256": "1b53de9895551496e711d9f7c592b003dd818c249efa4adf447c8bbd4f8560b2"
+  }
+}

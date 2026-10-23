@@ -1,3 +1,5 @@
+> Historical extraction report for version3.3. Current3.4 coverage:590 client points for114 catalog entries plus29 areas for24 entries; all138 catalog entries are marked. See [3.4 validation](3.4-validation.md) and [current coverage](../scripts/spawn-coverage.json).
+
 # King and boss map points — extraction report
 
 ## Result

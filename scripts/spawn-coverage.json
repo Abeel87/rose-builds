@@ -1,17 +1,17 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-10-23",
   "runtimeManifest": "dist/data/spawns.json",
-  "runtimeSha256": "7717e6afe1e851ccb3be727751e8cc0a794e2f708b2874de696a849b6616a41b",
-  "runtimeBytes": 136880,
-  "catalogBossCount": 95,
-  "coveredBossCount": 81,
-  "markerCount": 427,
-  "sourceObjectCount": 428,
+  "runtimeSha256": "015713ecbbea5d9c2bc80450cff0efd9f74ac53561675176cf8ae47aaa93d8a2",
+  "runtimeBytes": 206416,
+  "catalogBossCount": 138,
+  "coveredBossCount": 114,
+  "markerCount": 590,
+  "sourceObjectCount": 591,
   "mergedSourceObjectCount": 1,
-  "zonesWithMarkers": 38,
-  "currentZonesInspected": 44,
-  "currentIfosParsed": 1339,
+  "zonesWithMarkers": 43,
+  "currentZonesInspected": 49,
+  "currentIfosParsed": 1544,
   "parseErrors": 0,
   "outsideImageMarkers": 0,
   "currentSnapshot": "releases/ci-38925666467-1",
@@ -20,92 +20,7 @@
   "allRuntimeImagesShaChecked": true,
   "allRuntimeIdsUnique": true,
   "allRuntimeLocationsUnique": true,
-  "missingCatalogEntries": [
-    {
-      "monsterId": "201",
-      "npcId": 201,
-      "name": "Worm Dragon",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "2305",
-      "npcId": 2305,
-      "name": "Wandering Asper",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "2309",
-      "npcId": 2309,
-      "name": "Wandering Mastyx",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "3583",
-      "npcId": 3583,
-      "name": "Anansi Recluse",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "3587",
-      "npcId": 3587,
-      "name": "Arachne Recluse",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "3588",
-      "npcId": 3588,
-      "name": "Ulverick",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "wandering-devourer",
-      "npcId": 2303,
-      "name": "Wandering Devourer",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "wandering-terrasaurus",
-      "npcId": 2310,
-      "name": "Wandering Terrasaurus",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "wandering-scarab",
-      "npcId": 2306,
-      "name": "Wandering Golden Scarab",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "wandering-snapper",
-      "npcId": 2308,
-      "name": "Wandering Snapper",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "2685",
-      "npcId": 2685,
-      "name": "Kepris",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "super-hornet",
-      "npcId": 3133,
-      "name": "Super Hornet",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "super-ulverick",
-      "npcId": 4645,
-      "name": "Super Ulverick",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    },
-    {
-      "monsterId": "dolphin-balloon",
-      "npcId": 4451,
-      "name": "Dolphin Island Balloon",
-      "status": "No usable exact marker found in the inspected current IFO MonsterSpawn/NPC blocks; do not infer coordinates."
-    }
-  ],
+  "missingCatalogEntries": [],
   "noMonsterSpawnZones": [
     {
       "clientZoneId": 3,
@@ -145,15 +60,201 @@
     }
   ],
   "scopeNotes": [
-    "Only current updater bytes contribute runtime markers. The old installer was used to choose candidate zones.",
-    "38 zones with catalog boss references plus six event/dungeon zones were inspected in the current client; this is not an exhaustive claim about every client file.",
-    "Repeated basic/tactic entries in one IFO object create one source record per monster. Different IFO objects remain in evidence. Exact monster/zone/image/x/y/source/layer overlaps are represented by one runtime location with sourceObjectCount; runtimeMarkerId links every source record to it.",
-    "Client definitions do not confirm active live-server spawns, encounter state, timing or availability.",
-    "Coordinates include the complete original minimap and its 64-pixel outline. Exact clientZoneId/imageSha256/layer pairing is mandatory.",
-    "Radius omitted: reference-engine range describes independent x/y offsets, not a proven circular roaming radius."
+    "All138 catalog entries have either a current-client point or a separately labelled area; this does not certify all active server NPCs.",
+    "590 points from591 objects across49 inspected zones and1544 parsed IFO files. Current snapshot only; historical positions were not copied into runtime.",
+    "Areas preserve source precision. Wandering species-to-zone assignments come from older player reports; the2026-08-25 official random-position change supersedes their fixed spawn points.",
+    "Worm Dragon201 has only a tentative species-level zone assignment, disclosed on its card and map.",
+    "Five high-level Birth Island variants have current client placements but unconfirmed live availability.",
+    "Client definitions do not establish active live-server spawns, timing, encounter state or availability."
   ],
   "independentProjectionQA": {
     "file": "projection-qa-report.json",
     "sha256": "1b53de9895551496e711d9f7c592b003dd818c249efa4adf447c8bbd4f8560b2"
-  }
+  },
+  "markedBossCount": 138,
+  "approximateAreaBossCount": 24,
+  "approximateAreaCount": 29,
+  "withoutExactPoints": [
+    {
+      "monsterId": "201",
+      "name": "Worm Dragon",
+      "areaIds": [
+        "area-28-201"
+      ]
+    },
+    {
+      "monsterId": "2305",
+      "name": "Wandering Asper",
+      "areaIds": [
+        "area-83-2305"
+      ]
+    },
+    {
+      "monsterId": "2309",
+      "name": "Wandering Mastyx",
+      "areaIds": [
+        "area-85-2309"
+      ]
+    },
+    {
+      "monsterId": "3583",
+      "name": "Anansi Recluse",
+      "areaIds": [
+        "area-138-3583"
+      ]
+    },
+    {
+      "monsterId": "3587",
+      "name": "Arachne Recluse",
+      "areaIds": [
+        "area-138-3587"
+      ]
+    },
+    {
+      "monsterId": "3588",
+      "name": "Ulverick",
+      "areaIds": [
+        "area-138-3588"
+      ]
+    },
+    {
+      "monsterId": "super-ulverick",
+      "name": "Super Ulverick",
+      "areaIds": [
+        "area-29-super-ulverick"
+      ]
+    },
+    {
+      "monsterId": "dolphin-balloon",
+      "name": "Dolphin Island Balloon",
+      "areaIds": [
+        "area-3-dolphin-balloon"
+      ]
+    },
+    {
+      "monsterId": "super-hornet",
+      "name": "Super Hornet",
+      "areaIds": [
+        "area-21-super-hornet",
+        "area-23-super-hornet",
+        "area-24-super-hornet",
+        "area-26-super-hornet",
+        "area-28-super-hornet",
+        "area-37-super-hornet"
+      ]
+    },
+    {
+      "monsterId": "wandering-devourer",
+      "name": "Wandering Devourer",
+      "areaIds": [
+        "area-81-wandering-devourer"
+      ]
+    },
+    {
+      "monsterId": "wandering-terrasaurus",
+      "name": "Wandering Terrasaurus",
+      "areaIds": [
+        "area-85-wandering-terrasaurus"
+      ]
+    },
+    {
+      "monsterId": "wandering-scarab",
+      "name": "Wandering Golden Scarab",
+      "areaIds": [
+        "area-83-wandering-scarab"
+      ]
+    },
+    {
+      "monsterId": "wandering-snapper",
+      "name": "Wandering Snapper",
+      "areaIds": [
+        "area-85-wandering-snapper"
+      ]
+    },
+    {
+      "monsterId": "2685",
+      "name": "Kepris",
+      "areaIds": [
+        "area-90-2685"
+      ]
+    },
+    {
+      "monsterId": "3834",
+      "name": "Gloopy",
+      "areaIds": [
+        "area-169-3834"
+      ]
+    },
+    {
+      "monsterId": "3836",
+      "name": "Dark Shaman Ranka",
+      "areaIds": [
+        "area-169-3836"
+      ]
+    },
+    {
+      "monsterId": "3843",
+      "name": "Executor Ul'gath",
+      "areaIds": [
+        "area-169-3843"
+      ]
+    },
+    {
+      "monsterId": "3735",
+      "name": "Fallen Judge Talratha",
+      "areaIds": [
+        "area-148-3735"
+      ]
+    },
+    {
+      "monsterId": "3644",
+      "name": "Royal Mummy King",
+      "areaIds": [
+        "area-143-3644"
+      ]
+    },
+    {
+      "monsterId": "3650",
+      "name": "Royal Mammy Queen",
+      "areaIds": [
+        "area-143-3650"
+      ]
+    },
+    {
+      "monsterId": "3632",
+      "name": "Arcane Rift Guardian",
+      "areaIds": [
+        "area-143-3632"
+      ]
+    },
+    {
+      "monsterId": "3638",
+      "name": "Arcane Rift Keeper",
+      "areaIds": [
+        "area-143-3638"
+      ]
+    },
+    {
+      "monsterId": "3734",
+      "name": "Wrealith Wyvern",
+      "areaIds": [
+        "area-148-3734"
+      ]
+    },
+    {
+      "monsterId": "3875",
+      "name": "Wandering Ephlysia",
+      "areaIds": [
+        "area-169-3875"
+      ]
+    }
+  ],
+  "additionalPointEvidence": [
+    "additional-king-spawns.json",
+    "additional-clan-spawns.json"
+  ],
+  "areaEvidence": [
+    "import-king-areas.mjs",
+    "king-area-source-research.json"
+  ]
 }

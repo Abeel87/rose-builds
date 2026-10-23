@@ -1,0 +1,1669 @@
+{
+  "summary": {
+    "newMonsters": 12,
+    "newMarkers": 24,
+    "rankedClientRecords": 260,
+    "catalogInitially95": 95,
+    "liveServerVerified": false
+  },
+  "sources": {
+    "global-client-ci-38925666467-1": {
+      "label": "Punkty pojawiania się zapisane w kliencie ROSE Global",
+      "type": "client",
+      "date": "2026-10-23",
+      "url": "https://updates.roseonlinegame.com/manifest.json",
+      "note": "Pozycje odczytane z plików stref oficjalnego klienta. Wskazują zapisane punkty; nie potwierdzają aktualnej obecności bossa ani ustawień serwera."
+    }
+  },
+  "monsters": [
+    {
+      "id": "213",
+      "name": "Aqua Giant",
+      "rank": "King-Fighter",
+      "level": 48,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Anima Lake",
+          "planet": "Junon",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "1327",
+      "name": "Giant Grunter",
+      "rank": "King-Fighter",
+      "level": 49,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Anima Lake",
+          "planet": "Junon",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "1385",
+      "name": "Giant Stone Golem",
+      "rank": "King-Fighter",
+      "level": 99,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Gorge of Silence",
+          "planet": "Junon",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "356",
+      "name": "Tyrant King",
+      "rank": "King-Magician",
+      "level": 117,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Arumic Valley",
+          "planet": "Luna",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "1431",
+      "name": "Vulcan King",
+      "rank": "King-Magician",
+      "level": 88,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Crystal Snowfields",
+          "planet": "Luna",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "374",
+      "name": "Dreadnaught King",
+      "rank": "King-Fighter",
+      "level": 91,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Crystal Snowfields",
+          "planet": "Luna",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "381",
+      "name": "Behemoth",
+      "rank": "King-Warrior",
+      "level": 115,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Crystal Snowfields",
+          "planet": "Luna",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "1428",
+      "name": "Wolf King",
+      "rank": "King-Fighter",
+      "level": 85,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Freezing Plateau",
+          "planet": "Luna",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "656",
+      "name": "Moon Pastor Laguz",
+      "rank": "King-Fighter",
+      "level": 152,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Forgotten Temple",
+          "planet": "Luna",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "540",
+      "name": "Sikuku Elite Fighter",
+      "rank": "King-Warrior",
+      "level": 170,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Xita Refuge",
+          "planet": "Eldeon",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "1707",
+      "name": "Turak King",
+      "rank": "King-Warrior",
+      "level": 205,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Shady Jungle",
+          "planet": "Eldeon",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    },
+    {
+      "id": "1582",
+      "name": "Ikaness Heavygear",
+      "rank": "King-Guard",
+      "level": 196,
+      "kind": "king",
+      "locations": [
+        {
+          "zone": "Marsh of Ghosts",
+          "planet": "Eldeon",
+          "source": "client-spawns"
+        }
+      ],
+      "drops": [],
+      "source": "client-npc-current",
+      "levelSource": "client-npc-current",
+      "officialDrops": {},
+      "note": "Postać i pozycje występują w danych oficjalnego klienta. Nie mamy potwierdzonej tabeli dropów tego wariantu."
+    }
+  ],
+  "records": [
+    {
+      "id": "client-25-1327-fcf877437a",
+      "monsterId": "1327",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.768124826,
+      "y": 0.787392753,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-1327-e9f44aa9df",
+      "monsterId": "1327",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.785133998,
+      "y": 0.794116211,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-213-219412f52a",
+      "monsterId": "213",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.476455253,
+      "y": 0.428687395,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1385-5a879f04b4",
+      "monsterId": "1385",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.206359375,
+      "y": 0.211734375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-356-bc6da15091",
+      "monsterId": "356",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.251392156,
+      "y": 0.586937605,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-356-2e6654bebe",
+      "monsterId": "356",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.252772661,
+      "y": 0.751205427,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-f8802a66af",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.499796875,
+      "y": 0.59878125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-b5dc14b5c5",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.52425,
+      "y": 0.577510417,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-f07fabc5b2",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.5445625,
+      "y": 0.541953125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-2afd20b010",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.566820312,
+      "y": 0.53459375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-2f8d96e8e7",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.594734375,
+      "y": 0.507661458,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-59c8bf3504",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.65071875,
+      "y": 0.508130208,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-374-9cb9d4452c",
+      "monsterId": "374",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.563578125,
+      "y": 0.768703125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-374-46a09bd289",
+      "monsterId": "374",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.5931875,
+      "y": 0.783578125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-381-abce65bf6b",
+      "monsterId": "381",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.673640625,
+      "y": 0.759791667,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-55-1428-9ba6bbfe5e",
+      "monsterId": "1428",
+      "clientZoneId": 55,
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "x": 0.445828125,
+      "y": 0.733756944,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-55-1428-9f0b8faf01",
+      "monsterId": "1428",
+      "clientZoneId": 55,
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "x": 0.7230625,
+      "y": 0.749513889,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-57-656-ad8d0e2efc",
+      "monsterId": "656",
+      "clientZoneId": 57,
+      "imageSha256": "a650ebb36943faec988c3e4fae0eb15a5f77052f464bedf1636b85448012030b",
+      "x": 0.755203125,
+      "y": 0.630114583,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-540-ea0fe2fb7e",
+      "monsterId": "540",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.423992157,
+      "y": 0.256041802,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-540-ee3f52e6f0",
+      "monsterId": "540",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.457148361,
+      "y": 0.357708401,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-62-1707-df54a8325a",
+      "monsterId": "1707",
+      "clientZoneId": 62,
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "x": 0.278307636,
+      "y": 0.318875122,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-62-1707-ae0746642c",
+      "monsterId": "1707",
+      "clientZoneId": 62,
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "x": 0.785620117,
+      "y": 0.815444607,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-64-1582-08295363f4",
+      "monsterId": "1582",
+      "clientZoneId": 64,
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "x": 0.233910714,
+      "y": 0.70171875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-64-1582-408056ef7f",
+      "monsterId": "1582",
+      "clientZoneId": 64,
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "x": 0.395669643,
+      "y": 0.465260417,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    }
+  ],
+  "provenance": [
+    {
+      "markerId": "client-25-213-219412f52a",
+      "npcId": 213,
+      "internalName": "(48) Aqua Giant (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/expanded-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 25,
+      "zonePath": "3ddata/maps/junon/jg03/jg03.zon",
+      "zonSha256": "69e0ba7c5a903c630b1cfb352e22049237ae8e7edc0f8f77179c72ed708d0ccf",
+      "ifoPath": "3ddata/maps/junon/jg03/33_31.ifo",
+      "ifoSha256": "494f6d859e8b53048dc7bb321121258f7554129e47d47f94ebb4632cfb486b9a",
+      "byteOffset": 20954,
+      "position": [
+        13362.98828125,
+        7987.01171875,
+        3589.0
+      ],
+      "image": "assets/maps/zone-025-anima-lake.webp",
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "width": 448,
+      "height": 448,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 0,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-25-1327-e9f44aa9df",
+      "npcId": 1327,
+      "internalName": "(49) Giant Grunter (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/expanded-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 25,
+      "zonePath": "3ddata/maps/junon/jg03/jg03.zon",
+      "zonSha256": "69e0ba7c5a903c630b1cfb352e22049237ae8e7edc0f8f77179c72ed708d0ccf",
+      "ifoPath": "3ddata/maps/junon/jg03/35_34.ifo",
+      "ifoSha256": "d3b31200281eaba38b7ab90d37957c158de0f3cb70a7af519d415e9701447dc8",
+      "byteOffset": 6996,
+      "position": [
+        47935.0078125,
+        -32941.015625,
+        6309.3447265625
+      ],
+      "image": "assets/maps/zone-025-anima-lake.webp",
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "width": 448,
+      "height": 448,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 0,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-25-1327-fcf877437a",
+      "npcId": 1327,
+      "internalName": "(49) Giant Grunter (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/expanded-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 25,
+      "zonePath": "3ddata/maps/junon/jg03/jg03.zon",
+      "zonSha256": "69e0ba7c5a903c630b1cfb352e22049237ae8e7edc0f8f77179c72ed708d0ccf",
+      "ifoPath": "3ddata/maps/junon/jg03/35_34.ifo",
+      "ifoSha256": "d3b31200281eaba38b7ab90d37957c158de0f3cb70a7af519d415e9701447dc8",
+      "byteOffset": 9605,
+      "position": [
+        46029.98046875,
+        -32187.98828125,
+        6220.861328125
+      ],
+      "image": "assets/maps/zone-025-anima-lake.webp",
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "width": 448,
+      "height": 448,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 0,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-28-1385-5a879f04b4",
+      "npcId": 1385,
+      "internalName": "(99) Giant Stone Golem (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 28,
+      "zonePath": "3ddata/maps/junon/jd03/jd03.zon",
+      "zonSha256": "d6b8d1ff5c21e8be313e0030a40adf784e6ecd2c5ac826394ad7f4e5128e4af9",
+      "ifoPath": "3ddata/maps/junon/jd03/31_30.ifo",
+      "ifoSha256": "95c7fb81a68e3b5b138cc80e9ceb74009b06b5d0f7d321d8b36ff4e760e008bf",
+      "byteOffset": 6819,
+      "position": [
+        -13586.0,
+        28898.0,
+        4614.0
+      ],
+      "image": "assets/maps/zone-028-gorge-of-silence.webp",
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "width": 512,
+      "height": 512,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 5,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-53-356-bc6da15091",
+      "npcId": 356,
+      "internalName": "(117) Tyrant King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 53,
+      "zonePath": "3ddata/maps/lunar/lp02/lp02.zon",
+      "zonSha256": "1055fbc45f9ceb51e3418747f0ac8c0a0eaa90b1a32dfe22d26fb460833fb151",
+      "ifoPath": "3ddata/maps/lunar/lp02/32_34.ifo",
+      "ifoSha256": "7c99bd85c8bbf4ffcd83f92efa9c245e5c95373ad3bab981438fa4699dd901c4",
+      "byteOffset": 11090,
+      "position": [
+        4245.01953125,
+        -25737.01171875,
+        2067.509765625
+      ],
+      "image": "assets/maps/zone-053-arumic-valley.webp",
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "width": 704,
+      "height": 448,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-53-356-2e6654bebe",
+      "npcId": 356,
+      "internalName": "(117) Tyrant King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 53,
+      "zonePath": "3ddata/maps/lunar/lp02/lp02.zon",
+      "zonSha256": "1055fbc45f9ceb51e3418747f0ac8c0a0eaa90b1a32dfe22d26fb460833fb151",
+      "ifoPath": "3ddata/maps/lunar/lp02/32_35.ifo",
+      "ifoSha256": "11a1c85cafb2bf26bd86fc8f0fc1f65e558789805542f56fcb237a50ff7f96c3",
+      "byteOffset": 5247,
+      "position": [
+        4487.98828125,
+        -44135.0078125,
+        2031.0
+      ],
+      "image": "assets/maps/zone-053-arumic-valley.webp",
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "width": 704,
+      "height": 448,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-1431-2afd20b010",
+      "npcId": 1431,
+      "internalName": "(88) Vulcan King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/34_35.ifo",
+      "ifoSha256": "2c24931c4f54eb67dca71094d09c7bed33cf4fbce8d305c1927d88259f05dfda",
+      "byteOffset": 5651,
+      "position": [
+        32553.0,
+        -46642.0,
+        2869.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-1431-b5dc14b5c5",
+      "npcId": 1431,
+      "internalName": "(88) Vulcan King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/34_35.ifo",
+      "ifoSha256": "2c24931c4f54eb67dca71094d09c7bed33cf4fbce8d305c1927d88259f05dfda",
+      "byteOffset": 7506,
+      "position": [
+        27104.0,
+        -54882.0,
+        2026.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-1431-f07fabc5b2",
+      "npcId": 1431,
+      "internalName": "(88) Vulcan King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/34_35.ifo",
+      "ifoSha256": "2c24931c4f54eb67dca71094d09c7bed33cf4fbce8d305c1927d88259f05dfda",
+      "byteOffset": 7831,
+      "position": [
+        29704.0,
+        -48055.0,
+        2865.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-1431-2f8d96e8e7",
+      "npcId": 1431,
+      "internalName": "(88) Vulcan King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/34_35.ifo",
+      "ifoSha256": "2c24931c4f54eb67dca71094d09c7bed33cf4fbce8d305c1927d88259f05dfda",
+      "byteOffset": 8156,
+      "position": [
+        36126.0,
+        -41471.0,
+        2817.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-1431-59c8bf3504",
+      "npcId": 1431,
+      "internalName": "(88) Vulcan King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/35_35.ifo",
+      "ifoSha256": "50128dc00b842b5732c1a8f19066db9961e1b3aca6f96fbfc996d1bba38cbf65",
+      "byteOffset": 4887,
+      "position": [
+        43292.0,
+        -41561.0,
+        3443.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-1431-f8802a66af",
+      "npcId": 1431,
+      "internalName": "(88) Vulcan King (King-Magician)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/33_36.ifo",
+      "ifoSha256": "f5516752cc2a8dfd32afb4c7cfe5ec54749edd2889b2b89a1f55ba601a550688",
+      "byteOffset": 6284,
+      "position": [
+        23974.0,
+        -58966.0,
+        1489.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-374-9cb9d4452c",
+      "npcId": 374,
+      "internalName": "(91) Dreadnaught King (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/34_38.ifo",
+      "ifoSha256": "dc149a86e98ba5e47236a9df2780464968489b0f375fc062564cecb15d20c24d",
+      "byteOffset": 5449,
+      "position": [
+        32138.0,
+        -91591.0,
+        894.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-374-46a09bd289",
+      "npcId": 374,
+      "internalName": "(91) Dreadnaught King (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/34_38.ifo",
+      "ifoSha256": "dc149a86e98ba5e47236a9df2780464968489b0f375fc062564cecb15d20c24d",
+      "byteOffset": 8010,
+      "position": [
+        35928.0,
+        -94447.0,
+        1332.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-54-381-abce65bf6b",
+      "npcId": 381,
+      "internalName": "(115) Behemoth (King-Warrior)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 54,
+      "zonePath": "3ddata/maps/lunar/lp03/lp03.zon",
+      "zonSha256": "3a6bab29d7f0708ca162387dc4e95baa907c9afdbf6bc8006bfb6e98b50fce16",
+      "ifoPath": "3ddata/maps/lunar/lp03/35_38.ifo",
+      "ifoSha256": "3dee5f6b06bd46a7b37ab365b2453aa5e2062273a1c193b545a3a017b1366f95",
+      "byteOffset": 5747,
+      "position": [
+        46226.0,
+        -89880.0,
+        1413.0
+      ],
+      "image": "assets/maps/zone-054-crystal-snowfields.webp",
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "width": 512,
+      "height": 768,
+      "minimapOrigin": [
+        "31",
+        "30"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-55-1428-9ba6bbfe5e",
+      "npcId": 1428,
+      "internalName": "(85) Wolf King (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 55,
+      "zonePath": "3ddata/maps/lunar/lp04/lp04.zon",
+      "zonSha256": "7808a02046746c664e19a78f9af3d7604e3260f8194f30892b447f47277ff3e3",
+      "ifoPath": "3ddata/maps/lunar/lp04/33_36.ifo",
+      "ifoSha256": "c33091c82e7fd3c08e3d80340b91cb0081ec272129d32f696d0d1c5fdd5008f3",
+      "byteOffset": 7609,
+      "position": [
+        17066.0,
+        -65661.0,
+        1503.79345703125
+      ],
+      "image": "assets/maps/zone-055-freezing-plateau.webp",
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "width": 512,
+      "height": 576,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-55-1428-9f0b8faf01",
+      "npcId": 1428,
+      "internalName": "(85) Wolf King (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 55,
+      "zonePath": "3ddata/maps/lunar/lp04/lp04.zon",
+      "zonSha256": "7808a02046746c664e19a78f9af3d7604e3260f8194f30892b447f47277ff3e3",
+      "ifoPath": "3ddata/maps/lunar/lp04/35_36.ifo",
+      "ifoSha256": "8a2bc90165c4d75fbf2de8e07f5074a7d229b577796e013d080e85cd1bedc40a",
+      "byteOffset": 12054,
+      "position": [
+        52552.0,
+        -67930.0,
+        239.0
+      ],
+      "image": "assets/maps/zone-055-freezing-plateau.webp",
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "width": 512,
+      "height": 576,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 8,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-57-656-ad8d0e2efc",
+      "npcId": 656,
+      "internalName": "(152) Moon Pastor Laguz (King-Fighter)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 57,
+      "zonePath": "3ddata/maps/lunar/lz02/lz02.zon",
+      "zonSha256": "336e84ef3d532aac8a1e6f97684831e07ba3c269ce0b5b6098b3ecfbd9ca6628",
+      "ifoPath": "3ddata/maps/lunar/lz02/36_33.ifo",
+      "ifoSha256": "5ff7e94f97f776069ed1c4eb8ff9013301123a217a0774178fa4e070253d9c60",
+      "byteOffset": 4826,
+      "position": [
+        56666.0,
+        -20491.0,
+        199.0
+      ],
+      "image": "assets/maps/zone-057-forgotten-temple-b2.webp",
+      "imageSha256": "a650ebb36943faec988c3e4fae0eb15a5f77052f464bedf1636b85448012030b",
+      "width": 512,
+      "height": 384,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 11,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-61-540-ea0fe2fb7e",
+      "npcId": 540,
+      "internalName": "(170) Sikuku Elite Fighter (King-Warrior)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 61,
+      "zonePath": "3ddata/maps/eldeon/ejt01/ejt01.zon",
+      "zonSha256": "e7df34642ddba52e2abe6351e2d4222afacbecac98ea8cc40b7aa96f06227cbc",
+      "ifoPath": "3ddata/maps/eldeon/ejt01/33_32.ifo",
+      "ifoSha256": "ee2465147bc7b8c8ca4caef86412bfc88632326f33c39cb717e2711bd4ce7e0d",
+      "byteOffset": 5863,
+      "position": [
+        14270.99609375,
+        3129.98046875,
+        70.52662658691406
+      ],
+      "image": "assets/maps/zone-061-xita-refuge.webp",
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "width": 512,
+      "height": 576,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 12,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-61-540-ee3f52e6f0",
+      "npcId": 540,
+      "internalName": "(170) Sikuku Elite Fighter (King-Warrior)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 61,
+      "zonePath": "3ddata/maps/eldeon/ejt01/ejt01.zon",
+      "zonSha256": "e7df34642ddba52e2abe6351e2d4222afacbecac98ea8cc40b7aa96f06227cbc",
+      "ifoPath": "3ddata/maps/eldeon/ejt01/33_33.ifo",
+      "ifoSha256": "ac5983155c7850daad8832c4cac05b365b5bd01d09ec12eca0a04ef2f8eb6561",
+      "byteOffset": 7968,
+      "position": [
+        18514.990234375,
+        -11510.009765625,
+        3402.0
+      ],
+      "image": "assets/maps/zone-061-xita-refuge.webp",
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "width": 512,
+      "height": 576,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 12,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-62-1707-df54a8325a",
+      "npcId": 1707,
+      "internalName": "(205) King Turak (King-Warrior)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 62,
+      "zonePath": "3ddata/maps/eldeon/ej01/ej01.zon",
+      "zonSha256": "4fb5661a1ee7b0700c28d78a4cb44c850ed653928aa59ef1a6df8fb4fb9b8976",
+      "ifoPath": "3ddata/maps/eldeon/ej01/33_32.ifo",
+      "ifoSha256": "0d9f172d6486c9a129c3c156cc84367df834a5eba3b6b63c480e7d7b664f0309",
+      "byteOffset": 9336,
+      "position": [
+        17887.98828125,
+        -5918.017578125,
+        2000.0
+      ],
+      "image": "assets/maps/zone-062-shady-jungle.webp",
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "width": 832,
+      "height": 576,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 12,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-62-1707-ae0746642c",
+      "npcId": 1707,
+      "internalName": "(205) King Turak (King-Warrior)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 62,
+      "zonePath": "3ddata/maps/eldeon/ej01/ej01.zon",
+      "zonSha256": "4fb5661a1ee7b0700c28d78a4cb44c850ed653928aa59ef1a6df8fb4fb9b8976",
+      "ifoPath": "3ddata/maps/eldeon/ej01/40_37.ifo",
+      "ifoSha256": "915450964aad7a36ded453b7cbf376a74e6b440e9f2a7f26498b74f406e34917",
+      "byteOffset": 4887,
+      "position": [
+        123408.984375,
+        -77424.0234375,
+        4499.0
+      ],
+      "image": "assets/maps/zone-062-shady-jungle.webp",
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "width": 832,
+      "height": 576,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 12,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-64-1582-408056ef7f",
+      "npcId": 1582,
+      "internalName": "(205) Ikaness Heavygear (King-Guard)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 64,
+      "zonePath": "3ddata/maps/eldeon/ej03/ej03.zon",
+      "zonSha256": "2eecab9b4794fe9366168a57c89418360abaf34e82946e0f597112ec89160172",
+      "ifoPath": "3ddata/maps/eldeon/ej03/32_32.ifo",
+      "ifoSha256": "fc52bf3c56c4b518aa13ab4c8adb8a0510e9f59dd8c58a0267f2fb3b8fbcc2d2",
+      "byteOffset": 12500,
+      "position": [
+        4315.0,
+        -4665.0,
+        100.0
+      ],
+      "image": "assets/maps/zone-064-marsh-of-ghosts.webp",
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "width": 448,
+      "height": 384,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 12,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    },
+    {
+      "markerId": "client-64-1582-08295363f4",
+      "npcId": 1582,
+      "internalName": "(205) Ikaness Heavygear (King-Guard)",
+      "sourceInput": "/workspace/scratch/520b87b7114a/king-spawn-analysis/remaining-spawns-current.json",
+      "sourceRelease": {
+        "manifestUrl": "https://updates.roseonlinegame.com/manifest.json",
+        "manifestSha256": "df8fcb75cd9de66148300fa3edb6a3a6cb005552f1044083f4aff8375d744bb6",
+        "release": "releases/ci-38925666467-1",
+        "indexUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/data.idx.cba",
+        "indexBlake2b": "687a8e3e6fc949870e7de2ad3596140ec9c605a6c7069325d23d59afdcc89ce496602a0ab9aff95c53787800f97fe608fa6da74f240ec937a19cdfbb4263eb76",
+        "vfsUrl": "https://updates.roseonlinegame.com/releases/ci-38925666467-1/data/rose.vfs.cba",
+        "vfsSourceSize": 5302641252,
+        "vfsBlake2b": "0e4360848f404baf5e108f97dad2c20d60d5eca9a8046048c1ecd4ac3907ceb8992eb5b43e4cdb9ad68e7d7f4d59e11273c38f102d4715f0526f8be32e8413f3",
+        "archiveHeaderSha256": "fad363fb06cdcda90cc19f1a9cad0b7db128db99562cd776a5a87e53e6c3d1bb",
+        "retrievedAt": "2026-10-23",
+        "retrievalMethod": "HTTP byte ranges; each CBA header and downloaded chunk verified by BLAKE2b",
+        "gameVersion": null
+      },
+      "zoneId": 64,
+      "zonePath": "3ddata/maps/eldeon/ej03/ej03.zon",
+      "zonSha256": "2eecab9b4794fe9366168a57c89418360abaf34e82946e0f597112ec89160172",
+      "ifoPath": "3ddata/maps/eldeon/ej03/31_34.ifo",
+      "ifoSha256": "74f3550286ee728ab22c726431dd9f56068466e929c03498a9389e915d7777bc",
+      "byteOffset": 7795,
+      "position": [
+        -13802.0,
+        -27365.0,
+        328.0
+      ],
+      "image": "assets/maps/zone-064-marsh-of-ghosts.webp",
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "width": 448,
+      "height": 384,
+      "minimapOrigin": [
+        "31",
+        "31"
+      ],
+      "zoneInfo": {
+        "type": 12,
+        "width": 64,
+        "height": 64,
+        "gridPerPatch": 4,
+        "gridSize": 250.0,
+        "startX": 32,
+        "startY": 32
+      },
+      "liveServerVerified": false
+    }
+  ],
+  "scope": "12 omitted King NPC IDs found in the 44 already inspected current-client zones. No claim that this covers every active server King or every current zone."
+}

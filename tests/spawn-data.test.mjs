@@ -26,15 +26,15 @@ test('current client locations reach previously unlocated boss cards without cha
   assert.deepEqual(withClientSpawnLocations(enriched,world.maps,spawns),enriched,'repeated enrichment does not duplicate map links');
 });
 
-test('spawn snapshot contains 427 locations from 428 source objects for 81 catalog bosses', () => {
+test('spawn snapshot contains 590 locations from 591 source objects for 114 catalog bosses', () => {
   assert.equal(spawns.version, 1);
-  assert.equal(spawns.records.length, 427);
-  assert.equal(new Set(spawns.records.map(marker => marker.monsterId)).size, 81);
-  assert.equal(new Set(spawns.records.map(marker => marker.clientZoneId)).size, 38);
-  assert.equal(spawns.records.reduce((count, marker) => count + (marker.sourceObjectCount ?? 1), 0), 428);
+  assert.equal(spawns.records.length, 590);
+  assert.equal(new Set(spawns.records.map(marker => marker.monsterId)).size, 114);
+  assert.equal(new Set(spawns.records.map(marker => marker.clientZoneId)).size, 43);
+  assert.equal(spawns.records.reduce((count, marker) => count + (marker.sourceObjectCount ?? 1), 0), 591);
   for (const [id, source] of Object.entries(spawns.sources)) {
     assert.ok(id.length > 0);
-    assert.ok(['client', 'community'].includes(source.type), id);
+    assert.ok(['client', 'community', 'official'].includes(source.type), id);
     assert.ok(source.label && source.note && source.date, id);
     assert.equal(new URL(source.url).protocol, 'https:', id);
   }

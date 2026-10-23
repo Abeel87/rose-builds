@@ -7,6 +7,69 @@
       "date": "2026-10-23",
       "url": "https://updates.roseonlinegame.com/manifest.json",
       "note": "Pozycje odczytane z plików stref oficjalnego klienta. Wskazują zapisane punkty; nie potwierdzają aktualnej obecności bossa ani ustawień serwera."
+    },
+    "area-worm-dragon-location": {
+      "label": "Worm Dragon — Gorge of Silence",
+      "type": "official",
+      "date": "2023-01-29",
+      "url": "https://forum.roseonlinegame.com/topic/4018-mini-worm-dragon-wings/",
+      "note": "GM HoneyBuns wskazuje Gorge of Silence jako miejsce Worm Dragon. Informacja ustala mapę, bez współrzędnych ani potwierdzenia każdego wariantu NPC."
+    },
+    "area-wandering-zones": {
+      "label": "Strefy Wanderingów i losowe miejsca pojawiania",
+      "type": "community",
+      "date": "2026-08-25",
+      "url": "https://forum.roseonlinegame.com/topic/7762-patch-notes-2026-08-25-premium/",
+      "urls": [
+        "https://forum.roseonlinegame.com/topic/4095-orlo-kingsboss/"
+      ],
+      "note": "Znane strefy: mapki graczy Kaizy i Aadah z 2023–2025. Patch 25.08.2026 wprowadził losowe pozycje Wanderingów. Zaznaczamy całą opisaną strefę; dawne punkty nie są aktualnymi stałymi spawnami. Przydział gatunków do stref nie został ponownie potwierdzony na serwerze po tej zmianie."
+    },
+    "area-patch-ocf-temple": {
+      "label": "Orlo Clan Field Temple — Kepris i Black Scarabs",
+      "type": "official",
+      "date": "2024-10-31",
+      "url": "https://forum.roseonlinegame.com/topic/6224-patch-notes-2024-10-31-orlo-clan-field-temple/",
+      "note": "Patch nazywa osobną strefę Orlo Clan Field Temple, nowego bossa Kepris oraz towarzyszące mu Black Scarabs. Nie publikuje pełnej tabeli dropów."
+    },
+    "area-daily-dungeons": {
+      "label": "Daily Dungeon Quests — HoneyBuns",
+      "type": "official",
+      "date": "2025-06-22",
+      "url": "https://forum.roseonlinegame.com/topic/7143-guide-daily-dungeon-quests/",
+      "note": "Bossy i cele questów czterech dungeonów: Cave of Ulverick, Halls of Oblivion, Sea of Dawn i Sikuku Catacombs. Dawne wymagania poziomowe nie opisują wszystkich obecnych wariantów dungeonów."
+    },
+    "area-patch-october": {
+      "label": "Dolphin Island, Orlo i Super Ulverick",
+      "type": "official",
+      "date": "2026-10-16",
+      "url": "https://forum.roseonlinegame.com/topic/7789-patch-notes-2026-10-16-dolphin-island-rmlui-desert-of-the-dead/",
+      "note": "Kingowie Orlo: poziom 250. Wandering: przedział odrodzenia 5–90 min. Wydarzenia i nowe nagrody nie oznaczają automatycznie potwierdzonego dropu z każdego bossa."
+    },
+    "area-super-hornet-areas": {
+      "label": "Super Hornet — lokalizacje po zmianach 2026",
+      "type": "official",
+      "date": "2026-06-15",
+      "url": "https://forum.roseonlinegame.com/topic/7702-patch-notes-2026-06-15-clan-costume-buff-changes-and-more/",
+      "urls": [
+        "https://forum.roseonlinegame.com/topic/7566-patch-notes-2026-01-30-gem-balance-update/",
+        "https://forum.roseonlinegame.com/topic/7145-patch-notes-2025-06-26-unique-rework-proximity-system-choice-boxes-super-boss/"
+      ],
+      "note": "Lista łączy bazowe strefy z czerwca 2025 i zmiany ze stycznia 2026: dodano Forest of Wisdom, Gorge of Silence i Sunshine Coast; usunięto Anima Lake. Czerwiec 2026 przywrócił Super Horneta i naprawił jego pojawianie w eventowej wersji Sunshine Coast. Oznaczenia są strefami wydarzenia, nie harmonogramem ani potwierdzeniem obecności bossa."
+    },
+    "area-patch-dungeon-follow-up": {
+      "label": "Bossy Sikuku Catacombs",
+      "type": "official",
+      "date": "2024-11-08",
+      "url": "https://forum.roseonlinegame.com/topic/6239-patch-notes-2024-11-08-ocf-templedungeons-follow-up/",
+      "note": "Patch wymienia Dark Shaman Ranka, Gloopy i Executor Ul’gath w Sikuku Catacombs. Oznaczenie obejmuje instancję, bez wymyślonego punktu odrodzenia."
+    },
+    "area-patch-luna-clan-field": {
+      "label": "Fallen Judge Talratha — Sea of Dawn",
+      "type": "official",
+      "date": "2023-05-10",
+      "url": "https://forum.roseonlinegame.com/topic/5269-patch-notes-2023-05-10-luna-clan-field-update/",
+      "note": "Patch identyfikuje Fallen Judge Talratha jako bossa Sea of Dawn. Nie podaje współrzędnych jego sali."
     }
   },
   "records": [
@@ -87,6 +150,1386 @@
       "imageSha256": "e8a16dcfbb6f2e29c54c483edb8b7957e67753f26beaeab66910bcb05197ab26",
       "x": 0.343465169,
       "y": 0.228078079,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-28d04db0a9",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.20546439,
+      "y": 0.450517927,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-49c70ba223",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.229115949,
+      "y": 0.435053362,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-b34db2865b",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.240080479,
+      "y": 0.391776821,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-d8470ac063",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.24022304,
+      "y": 0.423339408,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-04ccc0fd50",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.250285557,
+      "y": 0.455839321,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-fda5a6bd1f",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.256368583,
+      "y": 0.53646153,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-2601f11785",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.272214181,
+      "y": 0.398008946,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1865-72e455ead3",
+      "monsterId": "1865",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.291910662,
+      "y": 0.473464094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-28d04db0a9",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.20546439,
+      "y": 0.450517927,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-49c70ba223",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.229115949,
+      "y": 0.435053362,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-d8470ac063",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.24022304,
+      "y": 0.423339408,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-04ccc0fd50",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.250285557,
+      "y": 0.455839321,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-fda5a6bd1f",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.256368583,
+      "y": 0.53646153,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-72e455ead3",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.291910662,
+      "y": 0.473464094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-a37ebb237c",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.309180559,
+      "y": 0.506525094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-a2b55d9158",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.317684937,
+      "y": 0.451092093,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-c4512b2ed3",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.333074079,
+      "y": 0.427202497,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-bd973fd204",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.333251081,
+      "y": 0.532662964,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-a09cd004f2",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.334991019,
+      "y": 0.501375035,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-f6bb0bfc5c",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.357045201,
+      "y": 0.484142194,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-f5e09a54d4",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.364321463,
+      "y": 0.518803624,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-b6644d8b83",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.386099243,
+      "y": 0.532671683,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-b1c2e1311f",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.388571603,
+      "y": 0.463169643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1866-1327e1d399",
+      "monsterId": "1866",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.389124843,
+      "y": 0.499678693,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-72e455ead3",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.291910662,
+      "y": 0.473464094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-a37ebb237c",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.309180559,
+      "y": 0.506525094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-a2b55d9158",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.317684937,
+      "y": 0.451092093,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-c4512b2ed3",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.333074079,
+      "y": 0.427202497,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-bd973fd204",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.333251081,
+      "y": 0.532662964,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-a09cd004f2",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.334991019,
+      "y": 0.501375035,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-f6bb0bfc5c",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.357045201,
+      "y": 0.484142194,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-f5e09a54d4",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.364321463,
+      "y": 0.518803624,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-b6644d8b83",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.386099243,
+      "y": 0.532671683,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-b1c2e1311f",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.388571603,
+      "y": 0.463169643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1867-1327e1d399",
+      "monsterId": "1867",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.389124843,
+      "y": 0.499678693,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-28d04db0a9",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.20546439,
+      "y": 0.450517927,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-49c70ba223",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.229115949,
+      "y": 0.435053362,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-b34db2865b",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.240080479,
+      "y": 0.391776821,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-d8470ac063",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.24022304,
+      "y": 0.423339408,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-04ccc0fd50",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.250285557,
+      "y": 0.455839321,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-fda5a6bd1f",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.256368583,
+      "y": 0.53646153,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-a37ebb237c",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.309180559,
+      "y": 0.506525094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-a2b55d9158",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.317684937,
+      "y": 0.451092093,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-a09cd004f2",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.334991019,
+      "y": 0.501375035,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-b6644d8b83",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.386099243,
+      "y": 0.532671683,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-b1c2e1311f",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.388571603,
+      "y": 0.463169643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-1327e1d399",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.389124843,
+      "y": 0.499678693,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1868-0399e9090d",
+      "monsterId": "1868",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.432196481,
+      "y": 0.494750105,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-72e455ead3",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.291910662,
+      "y": 0.473464094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-a37ebb237c",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.309180559,
+      "y": 0.506525094,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-a2b55d9158",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.317684937,
+      "y": 0.451092093,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-c4512b2ed3",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.333074079,
+      "y": 0.427202497,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-bd973fd204",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.333251081,
+      "y": 0.532662964,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-a09cd004f2",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.334991019,
+      "y": 0.501375035,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-f6bb0bfc5c",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.357045201,
+      "y": 0.484142194,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-f5e09a54d4",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.364321463,
+      "y": 0.518803624,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-b6644d8b83",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.386099243,
+      "y": 0.532671683,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-b1c2e1311f",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.388571603,
+      "y": 0.463169643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-9-1869-1327e1d399",
+      "monsterId": "1869",
+      "clientZoneId": 9,
+      "imageSha256": "75ff53db3b66d799a744d2a0c8327ea545d2bb7650c4e32ed4ca495279d34686",
+      "x": 0.389124843,
+      "y": 0.499678693,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4617-2f161cd7b0",
+      "monsterId": "4617",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.569383929,
+      "y": 0.3173125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4617-d7dcab7e95",
+      "monsterId": "4617",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.651053571,
+      "y": 0.382794643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4617-283e4750cc",
+      "monsterId": "4617",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.6668125,
+      "y": 0.471276786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4623-29ad0a5f0b",
+      "monsterId": "4623",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.561785714,
+      "y": 0.631535714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4623-974381ff5a",
+      "monsterId": "4623",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.589446429,
+      "y": 0.630383929,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4623-b455a9b315",
+      "monsterId": "4623",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.656151786,
+      "y": 0.7384375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4623-873d10233d",
+      "monsterId": "4623",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.691508929,
+      "y": 0.622071429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4623-a16f33b095",
+      "monsterId": "4623",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.694946429,
+      "y": 0.525589286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4623-3209d9ae7d",
+      "monsterId": "4623",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.716892857,
+      "y": 0.508892857,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4629-8bcfe2e247",
+      "monsterId": "4629",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.3128125,
+      "y": 0.567839286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4629-1c0f233656",
+      "monsterId": "4629",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.384044643,
+      "y": 0.638008929,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4629-650702322f",
+      "monsterId": "4629",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.480964286,
+      "y": 0.636696429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4629-429bd62c9c",
+      "monsterId": "4629",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.502241071,
+      "y": 0.6205,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4634-e2f9cbe2e0",
+      "monsterId": "4634",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.253446429,
+      "y": 0.470794643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4634-57f0659486",
+      "monsterId": "4634",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.279544643,
+      "y": 0.369919643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4634-bb40b0fc17",
+      "monsterId": "4634",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.397142857,
+      "y": 0.337776786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4634-d0af8ddaa2",
+      "monsterId": "4634",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.505544643,
+      "y": 0.347732143,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4636-2168c471f7",
+      "monsterId": "4636",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.307133929,
+      "y": 0.459339286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-11-4640-bdbfea30c6",
+      "monsterId": "4640",
+      "clientZoneId": 11,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.485116071,
+      "y": 0.478901786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1650-61cd0f345b",
+      "monsterId": "1650",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.688946429,
+      "y": 0.435348214,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-8dac2cde3f",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.4609375,
+      "y": 0.296910714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-85f3b38fba",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.478383929,
+      "y": 0.329821429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-71ee6cea75",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.487839286,
+      "y": 0.478464286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-d4d39c2d1d",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.496392857,
+      "y": 0.489919643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-52bb480db5",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.496482143,
+      "y": 0.504330357,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-c2923d4687",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.513625,
+      "y": 0.486607143,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-5d32e5e753",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.522848214,
+      "y": 0.355,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-60cc3b57de",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.582821429,
+      "y": 0.429910714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1653-ef4ccac2a6",
+      "monsterId": "1653",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.584098214,
+      "y": 0.4288125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-8dac2cde3f",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.4609375,
+      "y": 0.296910714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-d122ade636",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.466205357,
+      "y": 0.6708125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-85f3b38fba",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.478383929,
+      "y": 0.329821429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-71ee6cea75",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.487839286,
+      "y": 0.478464286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-d4d39c2d1d",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.496392857,
+      "y": 0.489919643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-52bb480db5",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.496482143,
+      "y": 0.504330357,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-a8f1d16f12",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.498625,
+      "y": 0.6446875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-6a1d7020b6",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.498875,
+      "y": 0.468196429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-c2923d4687",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.513625,
+      "y": 0.486607143,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-5d32e5e753",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.522848214,
+      "y": 0.355,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-fe0d06d8e1",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.540633929,
+      "y": 0.6145625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-a02a5d26e4",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.645080357,
+      "y": 0.478526786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-fb0d8c46d0",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.682294643,
+      "y": 0.5095,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-9a1ca5de3d",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.691035714,
+      "y": 0.435098214,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1654-07238e7ed9",
+      "monsterId": "1654",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.703866071,
+      "y": 0.455660714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1655-71ee6cea75",
+      "monsterId": "1655",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.487839286,
+      "y": 0.478464286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1655-d4d39c2d1d",
+      "monsterId": "1655",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.496392857,
+      "y": 0.489919643,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1655-52bb480db5",
+      "monsterId": "1655",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.496482143,
+      "y": 0.504330357,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1655-dc5773ee2a",
+      "monsterId": "1655",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.497464286,
+      "y": 0.486035714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1655-c2923d4687",
+      "monsterId": "1655",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.513625,
+      "y": 0.486607143,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-12-1662-dc5773ee2a",
+      "monsterId": "1662",
+      "clientZoneId": 12,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.497464286,
+      "y": 0.486035714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1657-527c57c302",
+      "monsterId": "1657",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.487892857,
+      "y": 0.478,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1657-72f36c4fc8",
+      "monsterId": "1657",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.495375,
+      "y": 0.502625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1657-abc7a8ab2a",
+      "monsterId": "1657",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.497,
+      "y": 0.611321429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1657-b15d265776",
+      "monsterId": "1657",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.513625,
+      "y": 0.4855625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1657-44127f5d91",
+      "monsterId": "1657",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.523026786,
+      "y": 0.637125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-527c57c302",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.487892857,
+      "y": 0.478,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-72f36c4fc8",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.495375,
+      "y": 0.502625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-abc7a8ab2a",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.497,
+      "y": 0.611321429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-20c537e5a5",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.498696429,
+      "y": 0.489839286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-b15d265776",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.513625,
+      "y": 0.4855625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-44127f5d91",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.523026786,
+      "y": 0.637125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-22bf909c81",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.572598214,
+      "y": 0.639553571,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-f1418fed17",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.575991071,
+      "y": 0.586571429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-98f74b127b",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.627526786,
+      "y": 0.475973214,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-3618fe65b7",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.678544643,
+      "y": 0.491875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-ce321a0827",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.695625,
+      "y": 0.630660714,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1658-cf1be32de4",
+      "monsterId": "1658",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.698901786,
+      "y": 0.532589286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-527c57c302",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.487892857,
+      "y": 0.478,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-72f36c4fc8",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.495375,
+      "y": 0.502625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-abc7a8ab2a",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.497,
+      "y": 0.611321429,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-20c537e5a5",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.498696429,
+      "y": 0.489839286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-b15d265776",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.513625,
+      "y": 0.4855625,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-22bf909c81",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.572598214,
+      "y": 0.639553571,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-8032dd9579",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.616910714,
+      "y": 0.760401786,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-98f74b127b",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.627526786,
+      "y": 0.475973214,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-ed7cf6014f",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.630839286,
+      "y": 0.671758929,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-3618fe65b7",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.678544643,
+      "y": 0.491875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1659-cf1be32de4",
+      "monsterId": "1659",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.698901786,
+      "y": 0.532589286,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-13-1663-866c27a47e",
+      "monsterId": "1663",
+      "clientZoneId": 13,
+      "imageSha256": "eb6c954497083e27210ac93eb440ce8b30e095c98a074c9b256c58298768d2e2",
+      "x": 0.500616071,
+      "y": 0.481089286,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -291,6 +1734,26 @@
       "layer": "terrain"
     },
     {
+      "id": "client-25-1327-fcf877437a",
+      "monsterId": "1327",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.768124826,
+      "y": 0.787392753,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-1327-e9f44aa9df",
+      "monsterId": "1327",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.785133998,
+      "y": 0.794116211,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
       "id": "client-25-207-b8f26ab0b0",
       "monsterId": "207",
       "clientZoneId": 25,
@@ -357,6 +1820,16 @@
       "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
       "x": 0.808250209,
       "y": 0.553142875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-25-213-219412f52a",
+      "monsterId": "213",
+      "clientZoneId": 25,
+      "imageSha256": "485c4d2ae3b94af7ebc34fbe284b5d65d2d496567e73e678ccaf785e2e5a3a38",
+      "x": 0.476455253,
+      "y": 0.428687395,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -638,6 +2111,16 @@
       "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
       "x": 0.579390625,
       "y": 0.3308125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-28-1385-5a879f04b4",
+      "monsterId": "1385",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "x": 0.206359375,
+      "y": 0.211734375,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -928,6 +2411,16 @@
       "imageSha256": "75a095709216f3cb3f457e505ce5670b89de38c5f377e1363538a16a435cccb9",
       "x": 0.638348214,
       "y": 0.727875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-37-3032-516e96db10",
+      "monsterId": "3032",
+      "clientZoneId": 37,
+      "imageSha256": "86ce07956e04e82d2ba38913a982c315cd704cce989fa276cafcf757fb265922",
+      "x": 0.5921625,
+      "y": 0.5945375,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -2212,6 +3705,26 @@
       "layer": "terrain"
     },
     {
+      "id": "client-53-356-bc6da15091",
+      "monsterId": "356",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.251392156,
+      "y": 0.586937605,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-53-356-2e6654bebe",
+      "monsterId": "356",
+      "clientZoneId": 53,
+      "imageSha256": "3b0fdd81eda8a4e07430dc1e81f0e24fc6c7757e54fcc281ba51f1db949eaaff",
+      "x": 0.252772661,
+      "y": 0.751205427,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
       "id": "client-53-382-c296a1b6cb",
       "monsterId": "382",
       "clientZoneId": 53,
@@ -2252,6 +3765,66 @@
       "layer": "terrain"
     },
     {
+      "id": "client-54-1431-f8802a66af",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.499796875,
+      "y": 0.59878125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-b5dc14b5c5",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.52425,
+      "y": 0.577510417,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-f07fabc5b2",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.5445625,
+      "y": 0.541953125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-2afd20b010",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.566820312,
+      "y": 0.53459375,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-2f8d96e8e7",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.594734375,
+      "y": 0.507661458,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-1431-59c8bf3504",
+      "monsterId": "1431",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.65071875,
+      "y": 0.508130208,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
       "id": "client-54-1434-eb660a23a5",
       "monsterId": "1434",
       "clientZoneId": 54,
@@ -2268,6 +3841,26 @@
       "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
       "x": 0.62059375,
       "y": 0.6426875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-374-9cb9d4452c",
+      "monsterId": "374",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.563578125,
+      "y": 0.768703125,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-54-374-46a09bd289",
+      "monsterId": "374",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.5931875,
+      "y": 0.783578125,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -2512,6 +4105,36 @@
       "layer": "terrain"
     },
     {
+      "id": "client-54-381-abce65bf6b",
+      "monsterId": "381",
+      "clientZoneId": 54,
+      "imageSha256": "ca7833ec46704eb9198933aca033e467f26815ff6452607f494df263b41c986e",
+      "x": 0.673640625,
+      "y": 0.759791667,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-55-1428-9ba6bbfe5e",
+      "monsterId": "1428",
+      "clientZoneId": 55,
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "x": 0.445828125,
+      "y": 0.733756944,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-55-1428-9f0b8faf01",
+      "monsterId": "1428",
+      "clientZoneId": 55,
+      "imageSha256": "30dca92ee9ea72e87a3d0ff73821f552a5220f2aa7e65cb833c357dcb3537eeb",
+      "x": 0.7230625,
+      "y": 0.749513889,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
       "id": "client-55-379-42fa1cc287",
       "monsterId": "379",
       "clientZoneId": 55,
@@ -2558,6 +4181,16 @@
       "imageSha256": "a650ebb36943faec988c3e4fae0eb15a5f77052f464bedf1636b85448012030b",
       "x": 0.261757812,
       "y": 0.442604167,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-57-656-ad8d0e2efc",
+      "monsterId": "656",
+      "clientZoneId": 57,
+      "imageSha256": "a650ebb36943faec988c3e4fae0eb15a5f77052f464bedf1636b85448012030b",
+      "x": 0.755203125,
+      "y": 0.630114583,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -2842,6 +4475,26 @@
       "layer": "terrain"
     },
     {
+      "id": "client-61-540-ea0fe2fb7e",
+      "monsterId": "540",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.423992157,
+      "y": 0.256041802,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-61-540-ee3f52e6f0",
+      "monsterId": "540",
+      "clientZoneId": 61,
+      "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
+      "x": 0.457148361,
+      "y": 0.357708401,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
       "id": "client-61-541-04179622cd",
       "monsterId": "541",
       "clientZoneId": 61,
@@ -2868,6 +4521,26 @@
       "imageSha256": "3dffb8056adbdd32f321e23e4c3cf131bcf590cf39f26c986a4cfe2e374a9b40",
       "x": 0.585695251,
       "y": 0.184215291,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-62-1707-df54a8325a",
+      "monsterId": "1707",
+      "clientZoneId": 62,
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "x": 0.278307636,
+      "y": 0.318875122,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-62-1707-ae0746642c",
+      "monsterId": "1707",
+      "clientZoneId": 62,
+      "imageSha256": "52fad7a900d202cebccd30c44b761f128c3fb3dcb02d7efe235386dbc0d7708a",
+      "x": 0.785620117,
+      "y": 0.815444607,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -2918,6 +4591,26 @@
       "imageSha256": "08452a319567c319fc3c4dbadbd3b13a09bcbf967772dbe9b5205d9df006c778",
       "x": 0.379048379,
       "y": 0.627295455,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-64-1582-08295363f4",
+      "monsterId": "1582",
+      "clientZoneId": 64,
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "x": 0.233910714,
+      "y": 0.70171875,
+      "sourceId": "global-client-ci-38925666467-1",
+      "layer": "terrain"
+    },
+    {
+      "id": "client-64-1582-408056ef7f",
+      "monsterId": "1582",
+      "clientZoneId": 64,
+      "imageSha256": "edd647457fea6d4ce3c1f670f8a21626200d09e368318343691b9134573c6204",
+      "x": 0.395669643,
+      "y": 0.465260417,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
     },
@@ -4280,6 +5973,327 @@
       "y": 0.332384382,
       "sourceId": "global-client-ci-38925666467-1",
       "layer": "terrain"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-3-dolphin-balloon",
+      "monsterId": "dolphin-balloon",
+      "clientZoneId": 3,
+      "imageSha256": "c4f15b431234f980459897c9b28ca5437f05ccee0f34872002a7d2b57c6702c9",
+      "layer": "terrain",
+      "sourceId": "area-patch-october",
+      "precision": "zone",
+      "label": "Dolphin Island",
+      "note": "Szukaj balonów na całej wyspie. Po zniszczeniu mogą pojawiać się w innym miejscu."
+    },
+    {
+      "id": "area-21-super-hornet",
+      "monsterId": "super-hornet",
+      "clientZoneId": 21,
+      "imageSha256": "a9c3082ef2ec7cbc432d027a5dec279aa7032d2814a12e4a81304cd64720a635",
+      "layer": "terrain",
+      "sourceId": "area-super-hornet-areas",
+      "precision": "zone",
+      "label": "Valley of Luxem Tower",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-23-super-hornet",
+      "monsterId": "super-hornet",
+      "clientZoneId": 23,
+      "imageSha256": "56ec76c0c44b55611369947b603f7062c1eb1116d865fa726c1ddf5ff5ca3e0f",
+      "layer": "terrain",
+      "sourceId": "area-super-hornet-areas",
+      "precision": "zone",
+      "label": "Breezy Hills",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-24-super-hornet",
+      "monsterId": "super-hornet",
+      "clientZoneId": 24,
+      "imageSha256": "8f56ecff987b94f21fb52a375bfbc903ea0f6c08fc6e728ffe4d1984ecdf1c6c",
+      "layer": "terrain",
+      "sourceId": "area-super-hornet-areas",
+      "precision": "zone",
+      "label": "El Verloon Desert",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-26-super-hornet",
+      "monsterId": "super-hornet",
+      "clientZoneId": 26,
+      "imageSha256": "4309ad13febd16978d1af0078bda921f58ae9c7f4de0d7d4a3f0a3bb2b74fcdf",
+      "layer": "terrain",
+      "sourceId": "area-super-hornet-areas",
+      "precision": "zone",
+      "label": "Forest of Wisdom",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-28-201",
+      "monsterId": "201",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "layer": "terrain",
+      "sourceId": "area-worm-dragon-location",
+      "precision": "zone",
+      "label": "Gorge of Silence",
+      "note": "Orientacyjnie: Gorge of Silence. Źródło opisuje Worm Dragons w tej strefie, ale nie potwierdza osobno wariantu NPC 201. Oznaczenie obejmuje całą mapę."
+    },
+    {
+      "id": "area-28-super-hornet",
+      "monsterId": "super-hornet",
+      "clientZoneId": 28,
+      "imageSha256": "4be1ff4e281c78c067a3c8a93bc4caadc972505133dc35e6d84f434fe0521e26",
+      "layer": "terrain",
+      "sourceId": "area-super-hornet-areas",
+      "precision": "zone",
+      "label": "Gorge of Silence",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-29-super-ulverick",
+      "monsterId": "super-ulverick",
+      "clientZoneId": 29,
+      "imageSha256": "1d8c86eadb3ba574f10b4828cc52713074ea296cfbbf3c0c444b99ab015e2032",
+      "layer": "terrain",
+      "sourceId": "area-patch-october",
+      "precision": "zone",
+      "label": "Desert of the Dead",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-37-super-hornet",
+      "monsterId": "super-hornet",
+      "clientZoneId": 37,
+      "imageSha256": "86ce07956e04e82d2ba38913a982c315cd704cce989fa276cafcf757fb265922",
+      "layer": "terrain",
+      "sourceId": "area-super-hornet-areas",
+      "precision": "zone",
+      "label": "Sunshine Coast (Event)",
+      "note": "Obszar wydarzenia. Szukaj w tej strefie po uruchomieniu wydarzenia; nie jest to stały punkt ani podgląd obecności bossa."
+    },
+    {
+      "id": "area-81-wandering-devourer",
+      "monsterId": "wandering-devourer",
+      "clientZoneId": 81,
+      "imageSha256": "3ae91afbda1e78257b3c7fd71296063e2d26fd4dc8f4e66c29dbe763bcff4a17",
+      "layer": "terrain",
+      "sourceId": "area-wandering-zones",
+      "precision": "zone",
+      "label": "Wasteland Ruins Path",
+      "note": "Pojawia się w losowych miejscach. Przeszukaj całą tę mapę; przydział strefy pochodzi ze starszych relacji graczy i wymaga potwierdzenia po zmianie z sierpnia 2026."
+    },
+    {
+      "id": "area-83-2305",
+      "monsterId": "2305",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "layer": "terrain",
+      "sourceId": "area-wandering-zones",
+      "precision": "zone",
+      "label": "Golden Ring",
+      "note": "Pojawia się w losowych miejscach. Przeszukaj całą tę mapę; przydział strefy pochodzi ze starszych relacji graczy i wymaga potwierdzenia po zmianie z sierpnia 2026."
+    },
+    {
+      "id": "area-83-wandering-scarab",
+      "monsterId": "wandering-scarab",
+      "clientZoneId": 83,
+      "imageSha256": "53ac1ae4dc266b1df7c72a9675e3c5726f60d9fce3f59eebef530727f08b7d3b",
+      "layer": "terrain",
+      "sourceId": "area-wandering-zones",
+      "precision": "zone",
+      "label": "Golden Ring",
+      "note": "Pojawia się w losowych miejscach. Przeszukaj całą tę mapę; przydział strefy pochodzi ze starszych relacji graczy i wymaga potwierdzenia po zmianie z sierpnia 2026."
+    },
+    {
+      "id": "area-85-2309",
+      "monsterId": "2309",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "layer": "terrain",
+      "sourceId": "area-wandering-zones",
+      "precision": "zone",
+      "label": "Fossil Sanctuary",
+      "note": "Pojawia się w losowych miejscach. Przeszukaj całą tę mapę; przydział strefy pochodzi ze starszych relacji graczy i wymaga potwierdzenia po zmianie z sierpnia 2026."
+    },
+    {
+      "id": "area-85-wandering-snapper",
+      "monsterId": "wandering-snapper",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "layer": "terrain",
+      "sourceId": "area-wandering-zones",
+      "precision": "zone",
+      "label": "Fossil Sanctuary",
+      "note": "Pojawia się w losowych miejscach. Przeszukaj całą tę mapę; przydział strefy pochodzi ze starszych relacji graczy i wymaga potwierdzenia po zmianie z sierpnia 2026."
+    },
+    {
+      "id": "area-85-wandering-terrasaurus",
+      "monsterId": "wandering-terrasaurus",
+      "clientZoneId": 85,
+      "imageSha256": "5c407cdcbbb41ccbee245e739392440ce36c435a47d10f82a5a3a1ce16d99419",
+      "layer": "terrain",
+      "sourceId": "area-wandering-zones",
+      "precision": "zone",
+      "label": "Fossil Sanctuary",
+      "note": "Pojawia się w losowych miejscach. Przeszukaj całą tę mapę; przydział strefy pochodzi ze starszych relacji graczy i wymaga potwierdzenia po zmianie z sierpnia 2026."
+    },
+    {
+      "id": "area-90-2685",
+      "monsterId": "2685",
+      "clientZoneId": 90,
+      "imageSha256": "85330c9f4d2ac0bcc8cde5eaadec7e9dea8c0de759aaa77de8b58eb1e84f4b8a",
+      "layer": "terrain",
+      "sourceId": "area-patch-ocf-temple",
+      "precision": "zone",
+      "label": "Orlo Clan Field Temple",
+      "note": "Znana strefa występowania. Oznaczony obszar obejmuje całą mapę; dokładne miejsce wymaga sprawdzenia w grze."
+    },
+    {
+      "id": "area-138-3583",
+      "monsterId": "3583",
+      "clientZoneId": 138,
+      "imageSha256": "ec6d6194d626f2899ef9632eec3b01dd1caab84d07286993fa11f29e9ae2d4ee",
+      "layer": "terrain",
+      "sourceId": "area-patch-ocf-temple",
+      "precision": "zone",
+      "label": "Cave of Ulverick",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-138-3587",
+      "monsterId": "3587",
+      "clientZoneId": 138,
+      "imageSha256": "ec6d6194d626f2899ef9632eec3b01dd1caab84d07286993fa11f29e9ae2d4ee",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Cave of Ulverick",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-138-3588",
+      "monsterId": "3588",
+      "clientZoneId": 138,
+      "imageSha256": "ec6d6194d626f2899ef9632eec3b01dd1caab84d07286993fa11f29e9ae2d4ee",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Cave of Ulverick",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-143-3632",
+      "monsterId": "3632",
+      "clientZoneId": 143,
+      "imageSha256": "7d995649387ed426f5b64b633c4511f68e526af8d151f6dbe81a534787a41aa3",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Halls of Oblivion",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-143-3638",
+      "monsterId": "3638",
+      "clientZoneId": 143,
+      "imageSha256": "7d995649387ed426f5b64b633c4511f68e526af8d151f6dbe81a534787a41aa3",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Halls of Oblivion",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-143-3644",
+      "monsterId": "3644",
+      "clientZoneId": 143,
+      "imageSha256": "7d995649387ed426f5b64b633c4511f68e526af8d151f6dbe81a534787a41aa3",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Halls of Oblivion",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-143-3650",
+      "monsterId": "3650",
+      "clientZoneId": 143,
+      "imageSha256": "7d995649387ed426f5b64b633c4511f68e526af8d151f6dbe81a534787a41aa3",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Halls of Oblivion",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-148-3734",
+      "monsterId": "3734",
+      "clientZoneId": 148,
+      "imageSha256": "ad580720fb472c96ff2647c95e42fb40c6f953b40b2ff7d42b16152c371c0fed",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Sea of Dawn",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-148-3735",
+      "monsterId": "3735",
+      "clientZoneId": 148,
+      "imageSha256": "ad580720fb472c96ff2647c95e42fb40c6f953b40b2ff7d42b16152c371c0fed",
+      "layer": "terrain",
+      "sourceId": "area-patch-luna-clan-field",
+      "precision": "zone",
+      "label": "Sea of Dawn",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-169-3834",
+      "monsterId": "3834",
+      "clientZoneId": 169,
+      "imageSha256": "d5296850e04936fd0ecf72a38fdfeb6ec1bab7d16b774eb64a1da484bda43e5c",
+      "layer": "terrain",
+      "sourceId": "area-patch-dungeon-follow-up",
+      "precision": "zone",
+      "label": "Sikuku Catacombs",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-169-3836",
+      "monsterId": "3836",
+      "clientZoneId": 169,
+      "imageSha256": "d5296850e04936fd0ecf72a38fdfeb6ec1bab7d16b774eb64a1da484bda43e5c",
+      "layer": "terrain",
+      "sourceId": "area-patch-dungeon-follow-up",
+      "precision": "zone",
+      "label": "Sikuku Catacombs",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-169-3843",
+      "monsterId": "3843",
+      "clientZoneId": 169,
+      "imageSha256": "d5296850e04936fd0ecf72a38fdfeb6ec1bab7d16b774eb64a1da484bda43e5c",
+      "layer": "terrain",
+      "sourceId": "area-patch-dungeon-follow-up",
+      "precision": "zone",
+      "label": "Sikuku Catacombs",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
+    },
+    {
+      "id": "area-169-3875",
+      "monsterId": "3875",
+      "clientZoneId": 169,
+      "imageSha256": "d5296850e04936fd0ecf72a38fdfeb6ec1bab7d16b774eb64a1da484bda43e5c",
+      "layer": "terrain",
+      "sourceId": "area-daily-dungeons",
+      "precision": "zone",
+      "label": "Sikuku Catacombs",
+      "note": "Boss tej instancji. Oznaczenie obejmuje dungeon; konkretna sala nie jest potwierdzona w tym źródle."
     }
   ]
 }

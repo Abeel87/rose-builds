@@ -1,0 +1,133 @@
+{
+  "monsters": [
+    {
+      "id": "3834",
+      "name": "Gloopy",
+      "rank": "King-Guard",
+      "level": 265,
+      "kind": "king",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Sikuku Catacombs",
+          "planet": "Eldeon",
+          "source": "patch-dungeon-follow-up"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "patch-dungeon-follow-up",
+      "levelSource": "client-npc-current",
+      "note": "Boss instancji. Poziom pochodzi z bieżącej tabeli klienta dla wysokopoziomowego wariantu; inne wersje instancji mogą mieć inny poziom. Dokładny punkt i pełna tabela dropów nie są tu potwierdzone.",
+      "noteSource": "patch-dungeon-follow-up"
+    },
+    {
+      "id": "3836",
+      "name": "Dark Shaman Ranka",
+      "rank": "King-Magician",
+      "level": 265,
+      "kind": "king",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Sikuku Catacombs",
+          "planet": "Eldeon",
+          "source": "patch-dungeon-follow-up"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "patch-dungeon-follow-up",
+      "levelSource": "client-npc-current",
+      "note": "Boss instancji. Poziom pochodzi z bieżącej tabeli klienta dla wysokopoziomowego wariantu; inne wersje instancji mogą mieć inny poziom. Dokładny punkt i pełna tabela dropów nie są tu potwierdzone.",
+      "noteSource": "patch-dungeon-follow-up"
+    },
+    {
+      "id": "3843",
+      "name": "Executor Ul'gath",
+      "rank": "King-Fighter",
+      "level": 265,
+      "kind": "king",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Sikuku Catacombs",
+          "planet": "Eldeon",
+          "source": "patch-dungeon-follow-up"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "patch-dungeon-follow-up",
+      "levelSource": "client-npc-current",
+      "note": "Boss instancji. Poziom pochodzi z bieżącej tabeli klienta dla wysokopoziomowego wariantu; inne wersje instancji mogą mieć inny poziom. Dokładny punkt i pełna tabela dropów nie są tu potwierdzone.",
+      "noteSource": "patch-dungeon-follow-up"
+    },
+    {
+      "id": "3735",
+      "name": "Fallen Judge Talratha",
+      "rank": "King-Warrior",
+      "level": 275,
+      "kind": "king",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Sea of Dawn",
+          "planet": "Luna",
+          "source": "patch-luna-clan-field"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "patch-luna-clan-field",
+      "levelSource": "client-npc-current",
+      "note": "Boss instancji. Poziom pochodzi z bieżącej tabeli klienta dla wysokopoziomowego wariantu; inne wersje instancji mogą mieć inny poziom. Dokładny punkt i pełna tabela dropów nie są tu potwierdzone.",
+      "noteSource": "patch-luna-clan-field"
+    },
+    {
+      "id": "3644",
+      "name": "Royal Mummy King",
+      "rank": "King-Warrior",
+      "level": 270,
+      "kind": "king",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Halls of Oblivion",
+          "planet": "Junon",
+          "source": "daily-dungeons"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "daily-dungeons",
+      "levelSource": "client-npc-current",
+      "note": "Boss instancji. Poziom pochodzi z bieżącej tabeli klienta dla wysokopoziomowego wariantu; inne wersje instancji mogą mieć inny poziom. Dokładny punkt i pełna tabela dropów nie są tu potwierdzone.",
+      "noteSource": "daily-dungeons"
+    },
+    {
+      "id": "3650",
+      "name": "Royal Mammy Queen",
+      "rank": "King-Magician",
+      "level": 270,
+      "kind": "king",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Halls of Oblivion",
+          "planet": "Junon",
+          "source": "daily-dungeons"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "daily-dungeons",
+      "levelSource": "client-npc-current",
+      "note": "Boss instancji. Poziom pochodzi z bieżącej tabeli klienta dla wysokopoziomowego wariantu; inne wersje instancji mogą mieć inny poziom. Dokładny punkt i pełna tabela dropów nie są tu potwierdzone.",
+      "noteSource": "daily-dungeons"
+    }
+  ],
+  "records": [],
+  "precision": "dungeon-area",
+  "sourceNpcTable": "/workspace/scratch/520b87b7114a/official-maps/current-client/assets/3ddata/stb/list_npc.stb.json"
+}

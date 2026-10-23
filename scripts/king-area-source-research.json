@@ -1,0 +1,361 @@
+{
+  "retrievedAt": "2026-10-23",
+  "purpose": "Approximate locations for all missing boss entries; distinguish current mechanics from historical coordinates.",
+  "importantUpdates": [
+    {
+      "sourceUrl": "https://forum.roseonlinegame.com/topic/7762-patch-notes-2026-08-25-premium/",
+      "date": "2026-08-25",
+      "fact": "Wandering monster locations and intervals were randomized. Their AI now fights more like standard kings.",
+      "consequence": "Use zone-wide approximate overlays for the six Wandering entries. The 2025 player coordinate points are historical evidence only, not current fixed spawn points."
+    },
+    {
+      "sourceUrl": "https://forum.roseonlinegame.com/topic/7566-patch-notes-2026-01-30-gem-balance-update/",
+      "date": "2026-01-30",
+      "fact": "Super boss locations added Forest of Wisdom, Gorge of Silence and Sunshine Coast; removed Anima Lake.",
+      "consequence": "Correct the previous 2025 four-zone catalog. Retain El Verloon, Breezy and Luxem by applying the published delta, add three zones and remove Anima."
+    },
+    {
+      "sourceUrl": "https://forum.roseonlinegame.com/topic/7702-patch-notes-2026-06-15-clan-costume-buff-changes-and-more/",
+      "date": "2026-06-15",
+      "fact": "Super boss switched to Super Hornet; spawning on the event version of Sunshine Coast was fixed."
+    }
+  ],
+  "sources": {
+    "orlo-guide-2025": {
+      "type": "community",
+      "author": "Aadah",
+      "date": "2025-02-28",
+      "url": "https://forum.roseonlinegame.com/topic/4095-orlo-kingsboss/",
+      "detail": "Post headed WANDERERS' LOCATION has 16 labelled minimap screenshots. Map shapes match the current client terrain. Earlier Kaizy post also textually names Golden Ring for Wandering Asper and Fossil Sanctuary for Wandering Snapper. Timers in this old guide are superseded."
+    },
+    "wandering-random-2026": {
+      "type": "official",
+      "date": "2026-08-25",
+      "url": "https://forum.roseonlinegame.com/topic/7762-patch-notes-2026-08-25-premium/"
+    },
+    "patch-ocf-temple": {
+      "type": "official",
+      "date": "2024-10-31",
+      "url": "https://forum.roseonlinegame.com/topic/6224-patch-notes-2024-10-31-orlo-clan-field-temple/"
+    },
+    "daily-dungeons": {
+      "type": "official-guide",
+      "author": "HoneyBuns (Game Master)",
+      "date": "2025-06-22",
+      "url": "https://forum.roseonlinegame.com/topic/7143-guide-daily-dungeon-quests/"
+    },
+    "worm-gm": {
+      "type": "official-staff-post",
+      "author": "HoneyBuns (Game Master)",
+      "date": "2023-01-29",
+      "url": "https://forum.roseonlinegame.com/topic/4018-mini-worm-dragon-wings/",
+      "detail": "Distinguishes a special Worm Dragon from regular Worm Dragons in Gorge of Silence. Supports the broad map, not a database NPC id or exact point."
+    },
+    "super-worm-patch": {
+      "type": "official",
+      "date": "2023-12-01",
+      "url": "https://forum.roseonlinegame.com/topic/5697-patch-notes-2023-12-01/",
+      "detail": "Separate Super Worm Dragon spawns randomly at one of eight Gorge of Silence locations. Do not assign those coordinates to Worm Dragon201."
+    },
+    "super-boss-2025": {
+      "type": "official",
+      "date": "2025-06-26",
+      "url": "https://forum.roseonlinegame.com/topic/7145-patch-notes-2025-06-26-unique-rework-proximity-system-choice-boxes-super-boss/"
+    },
+    "super-boss-2026-locations": {
+      "type": "official",
+      "date": "2026-01-30",
+      "url": "https://forum.roseonlinegame.com/topic/7566-patch-notes-2026-01-30-gem-balance-update/"
+    },
+    "super-boss-2026-hornet": {
+      "type": "official",
+      "date": "2026-06-15",
+      "url": "https://forum.roseonlinegame.com/topic/7702-patch-notes-2026-06-15-clan-costume-buff-changes-and-more/"
+    },
+    "patch-october": {
+      "type": "official",
+      "date": "2026-10-16",
+      "url": "https://forum.roseonlinegame.com/topic/7789-patch-notes-2026-10-16-dolphin-island-rmlui-desert-of-the-dead/"
+    },
+    "patch-catacombs": {
+      "type": "official",
+      "date": "2024-11-08",
+      "url": "https://forum.roseonlinegame.com/topic/6239-patch-notes-2024-11-08-ocf-templedungeons-follow-up/"
+    },
+    "patch-talratha": {
+      "type": "official",
+      "date": "2023-05-10",
+      "url": "https://forum.roseonlinegame.com/topic/5269-patch-notes-2023-05-10-luna-clan-field-update/"
+    }
+  },
+  "missing14": [
+    {
+      "monsterId": "201",
+      "name": "Worm Dragon",
+      "zones": [
+        "Gorge of Silence"
+      ],
+      "precision": "zone",
+      "sources": [
+        "worm-gm"
+      ],
+      "note": "Public name and broad habitat only. Current NPC201 is a separate SubBoss-Warrior from1387, Giant1388, Super990 and clan variants. Do not reuse their exact markers."
+    },
+    {
+      "monsterId": "2305",
+      "name": "Wandering Asper",
+      "zones": [
+        "Golden Ring"
+      ],
+      "precision": "zone",
+      "sources": [
+        "orlo-guide-2025",
+        "wandering-random-2026"
+      ],
+      "historicalScreenshotPoints": 3
+    },
+    {
+      "monsterId": "2309",
+      "name": "Wandering Mastyx",
+      "zones": [
+        "Fossil Sanctuary"
+      ],
+      "precision": "zone",
+      "sources": [
+        "orlo-guide-2025",
+        "wandering-random-2026"
+      ],
+      "historicalScreenshotPoints": 1
+    },
+    {
+      "monsterId": "wandering-devourer",
+      "name": "Wandering Devourer",
+      "zones": [
+        "Wasteland Ruins Path"
+      ],
+      "precision": "zone",
+      "sources": [
+        "orlo-guide-2025",
+        "wandering-random-2026"
+      ],
+      "historicalScreenshotPoints": 3
+    },
+    {
+      "monsterId": "wandering-terrasaurus",
+      "name": "Wandering Terrasaurus",
+      "zones": [
+        "Fossil Sanctuary"
+      ],
+      "precision": "zone",
+      "sources": [
+        "orlo-guide-2025",
+        "wandering-random-2026"
+      ],
+      "historicalScreenshotPoints": 3
+    },
+    {
+      "monsterId": "wandering-scarab",
+      "name": "Wandering Golden Scarab",
+      "zones": [
+        "Golden Ring"
+      ],
+      "precision": "zone",
+      "sources": [
+        "orlo-guide-2025",
+        "wandering-random-2026"
+      ],
+      "historicalScreenshotPoints": 3
+    },
+    {
+      "monsterId": "wandering-snapper",
+      "name": "Wandering Snapper",
+      "zones": [
+        "Fossil Sanctuary"
+      ],
+      "precision": "zone",
+      "sources": [
+        "orlo-guide-2025",
+        "wandering-random-2026"
+      ],
+      "historicalScreenshotPoints": 3
+    },
+    {
+      "monsterId": "3583",
+      "name": "Anansi Recluse",
+      "zones": [
+        "Cave of Ulverick"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-ocf-temple",
+        "daily-dungeons"
+      ],
+      "note": "Official patch explicitly identifies all three Cave bosses. The guide's map image has no boss labels and cannot by itself locate individual rooms."
+    },
+    {
+      "monsterId": "3587",
+      "name": "Arachne Recluse",
+      "zones": [
+        "Cave of Ulverick"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-ocf-temple",
+        "daily-dungeons"
+      ]
+    },
+    {
+      "monsterId": "3588",
+      "name": "Ulverick",
+      "zones": [
+        "Cave of Ulverick"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-ocf-temple",
+        "daily-dungeons"
+      ]
+    },
+    {
+      "monsterId": "2685",
+      "name": "Kepris",
+      "zones": [
+        "Orlo Clan Field Temple"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-ocf-temple"
+      ],
+      "note": "Separate temple zone. Access through timed OCF portal; no exact boss coordinate in the patch."
+    },
+    {
+      "monsterId": "super-hornet",
+      "name": "Super Hornet",
+      "zones": [
+        "El Verloon Desert",
+        "Breezy Hills",
+        "Valley of Luxem Tower",
+        "Forest of Wisdom",
+        "Gorge of Silence",
+        "Sunshine Coast"
+      ],
+      "precision": "zone",
+      "sources": [
+        "super-boss-2025",
+        "super-boss-2026-locations",
+        "super-boss-2026-hornet"
+      ],
+      "removedZones": [
+        "Anima Lake"
+      ],
+      "note": "Six-map list is an explicit synthesis of initial list and later additions/removal. Countdown in game identifies the precise point and event availability; Sunshine event variant explicitly mentioned."
+    },
+    {
+      "monsterId": "super-ulverick",
+      "name": "Super Ulverick",
+      "zones": [
+        "Desert of the Dead"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-october"
+      ],
+      "note": "Random event timing; patch gives map, no point. Do not use Cave of Ulverick coordinates."
+    },
+    {
+      "monsterId": "dolphin-balloon",
+      "name": "Dolphin Island Balloon",
+      "zones": [
+        "Dolphin Island"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-october"
+      ],
+      "note": "Balloons respawn elsewhere on the map after being destroyed. Zone-wide area is the supported representation."
+    }
+  ],
+  "additionalDungeonBosses": [
+    {
+      "name": "Dark Shaman Ranka",
+      "zones": [
+        "Sikuku Catacombs"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-catacombs",
+        "daily-dungeons"
+      ]
+    },
+    {
+      "name": "Gloopy",
+      "zones": [
+        "Sikuku Catacombs"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-catacombs",
+        "daily-dungeons"
+      ]
+    },
+    {
+      "name": "Executor Ul'gath",
+      "zones": [
+        "Sikuku Catacombs"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-catacombs",
+        "daily-dungeons"
+      ]
+    },
+    {
+      "name": "Fallen Judge Talratha",
+      "zones": [
+        "Sea of Dawn"
+      ],
+      "precision": "zone",
+      "sources": [
+        "patch-talratha",
+        "daily-dungeons"
+      ]
+    },
+    {
+      "name": "Royal Mummy King",
+      "zones": [
+        "Halls of Oblivion"
+      ],
+      "precision": "zone",
+      "sources": [
+        "daily-dungeons"
+      ],
+      "note": "Final room, random choice between King and Queen. Do not confuse Royal Mummy with ordinary Mummy."
+    },
+    {
+      "name": "Royal Mammy Queen",
+      "zones": [
+        "Halls of Oblivion"
+      ],
+      "precision": "zone",
+      "sources": [
+        "daily-dungeons"
+      ],
+      "note": "Guide spells the queen Mammy. Final room, random choice between King and Queen."
+    }
+  ],
+  "historicalCoordinateEvidence": {
+    "recordsPath": "/tmp/rose-wandering-images/projected-wandering-markers.json",
+    "scriptPath": "/tmp/rose-project-wandering.py",
+    "screenshotManifestPath": "/tmp/rose-wandering-images/manifest.json",
+    "visualProjectionProofPath": "/tmp/rose-wandering-images/registered-wandering-proof.jpg",
+    "n": 16,
+    "terrainCorrelationRange": [
+      0.98242,
+      0.99706
+    ],
+    "portalAnchorRmsErrorMaximumSourcePixels": 1.3,
+    "status": "superseded-by-random-location-mechanics-2026-08-25",
+    "radiusMeaning": "Suggested visual uncertainty only, not a measured patrol/spawn radius."
+  },
+  "implementationRecommendation": "Render broad, clearly labelled zone areas for variable/unknown exact locations. Use distinct UI from current client point records. Historical Aadah points can be retained in provenance or a separately labelled archive layer, but should not appear as current guaranteed spawn locations. All14 can now be associated with a sourced map."
+}

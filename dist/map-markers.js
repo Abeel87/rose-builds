@@ -2,6 +2,9 @@ const validId = value => typeof value === 'string' && value.length > 0 && value.
 const unitValue = value => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 1;
 const zoneId = value => Number.isInteger(value) && value > 0;
 const imageHash = value => typeof value === 'string' && /^[a-f\d]{64}$/i.test(value) ? value.toLowerCase() : null;
+export const isAreaMarker = marker => marker?.precision === 'zone' || marker?.precision === 'area';
+const validBounds = bounds => bounds && ['left', 'top', 'right', 'bottom'].every(key => unitValue(bounds[key]))
+  && bounds.left < bounds.right && bounds.top < bounds.bottom;
 
 // Coordinates refer to the full image, including any border in the original map.
 // The caller must pass the resolved floor/area, not its parent atlas entry.
@@ -12,12 +15,21 @@ export function markersForMap(spawns, map, {layer = 'terrain'} = {}) {
   const sources = spawns.sources;
   if (!sources || typeof sources !== 'object' || Array.isArray(sources)) return [];
   const seen = new Set();
-  return spawns.records.filter(marker => {
+  return [...spawns.records, ...(Array.isArray(spawns.areas) ? spawns.areas : [])].filter(marker => {
     if (!marker || !validId(marker.id) || !validId(marker.monsterId) || !validId(marker.sourceId)) return false;
     if (!zoneId(marker.clientZoneId) || !zones.has(marker.clientZoneId) || marker.layer !== layer || imageHash(marker.imageSha256) !== hash) return false;
-    if (!unitValue(marker.x) || !unitValue(marker.y)) return false;
-    if (['radiusX', 'radiusY'].some(key => marker[key] !== undefined && !unitValue(marker[key]))) return false;
-    if (!Object.hasOwn(sources, marker.sourceId) || !['client', 'community'].includes(sources[marker.sourceId]?.type)) return false;
+    if (!Object.hasOwn(sources, marker.sourceId)) return false;
+    if (isAreaMarker(marker)) {
+      // A source that only names a zone must never turn into an invented point.
+      if (!['client', 'community', 'official'].includes(sources[marker.sourceId]?.type)) return false;
+      if (marker.x !== undefined || marker.y !== undefined || !validId(marker.label) || !validId(marker.note)) return false;
+      if (marker.precision === 'area' ? !validBounds(marker.bounds) : marker.bounds !== undefined) return false;
+    } else {
+      if (marker.precision !== undefined && marker.precision !== 'point') return false;
+      if (!unitValue(marker.x) || !unitValue(marker.y)) return false;
+      if (['radiusX', 'radiusY'].some(key => marker[key] !== undefined && !unitValue(marker[key]))) return false;
+      if (!['client', 'community'].includes(sources[marker.sourceId]?.type)) return false;
+    }
     if (seen.has(marker.id)) return false;
     seen.add(marker.id);
     return true;

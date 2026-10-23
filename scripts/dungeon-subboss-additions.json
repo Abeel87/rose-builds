@@ -1,0 +1,91 @@
+{
+  "monsters": [
+    {
+      "id": "3632",
+      "name": "Arcane Rift Guardian",
+      "rank": "SubBoss-Magician",
+      "level": 260,
+      "kind": "boss",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Halls of Oblivion",
+          "planet": "Junon",
+          "source": "daily-dungeons"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "daily-dungeons",
+      "levelSource": "client-npc-current",
+      "note": "Sub-boss instancji. Poziom pochodzi z bieżącej tabeli klienta; warianty instancji mogą mieć inny poziom. Pełna tabela dropów nie jest potwierdzona.",
+      "noteSource": "daily-dungeons"
+    },
+    {
+      "id": "3638",
+      "name": "Arcane Rift Keeper",
+      "rank": "SubBoss-Magician",
+      "level": 265,
+      "kind": "boss",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Halls of Oblivion",
+          "planet": "Junon",
+          "source": "daily-dungeons"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "daily-dungeons",
+      "levelSource": "client-npc-current",
+      "note": "Sub-boss instancji. Poziom pochodzi z bieżącej tabeli klienta; warianty instancji mogą mieć inny poziom. Pełna tabela dropów nie jest potwierdzona.",
+      "noteSource": "daily-dungeons"
+    },
+    {
+      "id": "3734",
+      "name": "Wrealith Wyvern",
+      "rank": "SubBoss-Warrior",
+      "level": 270,
+      "kind": "boss",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Sea of Dawn",
+          "planet": "Luna",
+          "source": "daily-dungeons"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "daily-dungeons",
+      "levelSource": "client-npc-current",
+      "note": "Sub-boss instancji. Poziom pochodzi z bieżącej tabeli klienta; warianty instancji mogą mieć inny poziom. Pełna tabela dropów nie jest potwierdzona.",
+      "noteSource": "daily-dungeons"
+    },
+    {
+      "id": "3875",
+      "name": "Wandering Ephlysia",
+      "rank": "SubBoss-Warrior",
+      "level": 257,
+      "kind": "boss",
+      "habitat": "dungeon",
+      "locations": [
+        {
+          "zone": "Sikuku Catacombs",
+          "planet": "Eldeon",
+          "source": "daily-dungeons"
+        }
+      ],
+      "drops": [],
+      "officialDrops": {},
+      "source": "daily-dungeons",
+      "levelSource": "client-npc-current",
+      "note": "Sub-boss instancji. Poziom pochodzi z bieżącej tabeli klienta; warianty instancji mogą mieć inny poziom. Pełna tabela dropów nie jest potwierdzona. Wandering Ephlysia pojawia się w zmiennym miejscu kanałów; to odrębny przeciwnik od Wandering Kingów Orlo.",
+      "noteSource": "daily-dungeons"
+    }
+  ],
+  "records": [],
+  "precision": "dungeon-area",
+  "sourceNpcTable": "/workspace/scratch/520b87b7114a/official-maps/current-client/assets/3ddata/stb/list_npc.stb.json"
+}

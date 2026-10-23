@@ -4,19 +4,27 @@ Polski niezbędnik gracza **oficjalnego ROSE Online Global (Rednim Games)**. Prz
 
 [Otwórz ROSE Companion](https://abeel87.github.io/rose-builds/)
 
-## Kingi zaznaczone na mapach — wersja 3.3
+## Kingi zaznaczone na mapach — wersja 3.4
 
-**427 miejsc dla 81 Kingów i bossów** jest zaznaczonych bezpośrednio na mapach klikalnymi koronami. Numer i kolor odpowiadają legendzie; kliknięcie pokazuje nazwę, oryginalny wygląd i odnośnik do dropów. Można wybrać konkretnego Kinga, ukryć znaczniki i powiększyć mapę. Korony skalują swoje położenie razem z terenem, a numeracja pozostaje stała przy filtrowaniu.
+**138/138 wpisów rozszerzonego katalogu ma oznaczenie na mapie i oryginalny wizerunek z gry.** Pokrycie obejmuje Kingów, SubBossów, Wandering i wydarzenia. Nie oznacza to znajomości wszystkich aktywnych NPC serwera: tabela klienta zawiera też stare i techniczne warianty.
 
-**Wastelands** pokazuje sześć miejsc w Obszarze 1 (3 Grand Master Devourer, 2 Desert Scavenger King, 1 Ikaness Mecha) oraz pięć w Obszarze 2 (2 / 2 / 1). Każdy punkt jest przypisany do dokładnego ID strefy i sumy SHA256 obrazu, więc nie przenosi się na inne piętro, obszar ani archiwalną mapę. Wybrany King, punkt i widoczność koron pozostają w URL podczas odświeżenia oraz powrotu z opisu bossa. Miniatury map na kartach bossów także pokazują ich korony.
+- **590 miejsc dla 114 przeciwników** pochodzi z bieżących plików klienta Global. Korony mają stałe numery i kolory; kliknięcie otwiera opis, model oraz dropy.
+- **29 oznaczeń obszarów dla pozostałych 24 wpisów** wskazuje całe strefy poszukiwań. Przerywana ramka i znak ≈ odróżniają je od punktów. Brak współrzędnych nie jest zastępowany kropką na środku mapy.
+- Pole **„Znajdź dowolnego Kinga”** otwiera właściwą mapę i piętro. Można też wybrać Kinga w legendzie, powiększyć mapę i wrócić ze szczegółów z zachowanym wyborem.
 
-Dane pochodzą z bloków MonsterSpawn/NPC bieżącego klienta Global, wydanie `ci-38925666467-1`, odczytane 23.10.2026. Przejrzano 1339 plików IFO w 44 strefach. 428 źródłowych obiektów dało 427 odrębnych miejsc na 38 widokach stref; dwa identyczne wpisy Giant Kaiman Ranger połączono w jedną koronę. Współrzędne sprawdzono niezależnie względem map społeczności i dwóch zrzutów Wastelands z widocznymi współrzędnymi gry.
+Katalog uzupełniono o 43 pominięte wcześniej rekordy, niezależnie od dostępności ich tabel dropów: 33 przeciwników z aktualnych IFO i 10 bossów instancji. Nowe modele i tekstury odczytano z bieżącego oficjalnego klienta; nie użyto podobnych zamienników ani ikon Effigy.
 
-Lokalizacje wyprowadzone z punktów uzupełniają widok katalogu przy uruchomieniu, z etykietą **„Punkt z klienta gry”**. Obejmuje to 35 bossów, dla których starszy katalog nie podawał żadnej mapy. Plik bazowego katalogu i źródła istniejących wpisów pozostają zachowane. Dane o lokalizacji nie zmieniają źródeł dropów.
+**Wandering:** [patch 25.08.2026](https://forum.roseonlinegame.com/topic/7762-patch-notes-2026-08-25-premium/) wprowadził losowe pozycje. Pokazujemy całe znane strefy z opisanych relacji graczy, z jawną informacją, że przydział gatunków do map nie został ponownie zweryfikowany po tej zmianie. Historyczne punkty z 2025 nie są bieżącymi spawnami.
 
-**Korona wskazuje okolicę możliwego pojawienia się bossa, nie jego aktualną obecność na serwerze.** Dla 14 z 95 wpisów brak użytecznych dokładnych punktów w sprawdzonych plikach; aplikacja nie zgaduje ich współrzędnych. Niektóre spotkania mogą zależeć od skryptów, wydarzeń lub ustawień serwera. Zakres, pełna lista braków i odtwarzanie ekstrakcji: [raport punktów](docs/king-spawn-data.md), [pokrycie](scripts/spawn-coverage.json), [pochodzenie danych](scripts/spawn-provenance.json), [niezależna kontrola projekcji](docs/projection-qa-report.md).
+**Super Hornet:** sześć stref uwzględnia [zmiany styczniowe](https://forum.roseonlinegame.com/topic/7566-patch-notes-2026-01-30-gem-balance-update/) i [patch czerwcowy](https://forum.roseonlinegame.com/topic/7702-patch-notes-2026-06-15-clan-costume-buff-changes-and-more/): usunięto Anima Lake, dodano Forest of Wisdom, Gorge of Silence oraz eventową Sunshine Coast.
 
-## Mapy i wygląd bossów — wersja 3.2
+**Wastelands** zachowuje 6 miejsc w Obszarze 1 oraz 5 w Obszarze 2. Junon Clan Field ma osobno 19, 31 i 29 punktów na trzech wariantach. Dokładne ID strefy, warstwa i SHA obrazu chronią przed przenoszeniem znaczników na inne piętra lub archiwalne mapy.
+
+Sprawdzono 1544 pliki IFO w 49 strefach migawki `ci-38925666467-1` odczytanej 23.10.2026. Dane klienta nie potwierdzają obecności bossa w danej chwili. Worm Dragon 201 ma jawnie orientacyjne przypisanie po nazwie gatunku; pięć wysokopoziomowych wariantów Birth Island ma niepotwierdzoną dostępność w bieżącej rozgrywce.
+
+Zakres i dowody: [pokrycie](scripts/spawn-coverage.json), [dodatkowe punkty](scripts/additional-king-spawns.json), [Clan Field i pozostałe strefy](scripts/additional-clan-spawns.json), [źródła obszarów](scripts/king-area-source-research.json), [raport 3.4](docs/3.4-validation.md). `node scripts/import-king-areas.mjs` odtwarza oznaczenia obszarowe z przypisanych źródeł; następnie uruchom `node scripts/generate-sw.mjs`.
+
+## Mapy świata i oryginalne modele
 
 Atlas zawiera **77 stref i 81 widoków**, obejmujących wszystkie 82 rekordy lokacji i trybów z bieżącego klienta objęte zakresem aplikacji. Pozostałe 10 rekordów tabeli to jawnie wyłączone sceny tytułowe, techniczne, test obciążeniowy lub wpisy oznaczone jako nieużywane bądź wycofane. Lista oczekujących map jest pusta. Liczby, przypisania i powody wyłączeń zapisano w [world.json](dist/data/world.json) oraz [manifeście bieżących map](scripts/current-client-map-manifest.json).
 
@@ -42,7 +50,7 @@ Dla ośmiu map zachowano dodatkowy widok z oznaczeniami ROSE Online Wiki z 2023 
 
 ### Portrety Kingów i bossów
 
-Każdy z **95 wpisów Kingów, bossów, Wandering i wydarzeń** w katalogu ma podgląd oryginalnego modelu gry: 90 renderów z przypiętego oficjalnego instalatora z listopada 2024 r. oraz pięć renderów z bieżącego updatera. Są to modele, szkielety, tekstury i wyposażone części odczytane z klienta, pokazane w neutralnym świetle. Ikony przedmiotów Effigy pozostają ikonami przedmiotów i nie służą jako portrety potworów. Trzy oficjalne zrzuty — Super Hornet, Super Ulverick i Dolphin Island Balloon — są dodatkowym widokiem. Pochodzenie każdego obrazu i ograniczenia renderera zapisano w [manifeście wyglądu bossów](scripts/boss-appearances-manifest.json).
+Każdy z **138 wpisów Kingów, bossów, Wandering i wydarzeń** w katalogu ma podgląd oryginalnego modelu gry: 90 renderów z przypiętego oficjalnego instalatora z listopada 2024 r. oraz 48 renderów z bieżącego updatera. Są to modele, szkielety, tekstury i wyposażone części odczytane z klienta, pokazane w neutralnym świetle. Ikony przedmiotów Effigy pozostają ikonami przedmiotów i nie służą jako portrety potworów. Trzy oficjalne zrzuty — Super Hornet, Super Ulverick i Dolphin Island Balloon — są dodatkowym widokiem. Pochodzenie każdego obrazu i ograniczenia renderera zapisano w [manifeście wyglądu bossów](scripts/boss-appearances-manifest.json).
 
 Kontrola względem bieżącego wydania potwierdziła nazwy i powiązania 92 wcześniej istniejących NPC oraz identyczne piksele RGBA wszystkich 147 istniejących tekstur ciała; kolejne 10 tekstur dotyczy nowego Balloon. Moon Sister Inguz i Pantharis King wyrenderowano ponownie z aktualnymi parametrami materiałów. Geometria, szkielety i animacje nie przeszły pełnego porównania bajtów, a broń nie była objęta pełnym porównaniem z nowym wydaniem. Dlatego 90 obrazów zachowuje datę źródła 2024. Podglądy pomijają aurę, cząsteczki, bloom i część efektów materiałów; są renderami modeli, a nie zrzutami rozgrywki. Każdy model jest kadrowany osobno, więc obrazy nie przedstawiają wzajemnej skali przeciwników.
 
@@ -54,7 +62,7 @@ Plecak pokazuje **oryginalne ikony dla 15 168 przedmiotów**. Kreator ma portret
 
 ## Funkcje
 
-- Katalog 19 474 przedmiotów i 641 potworów, odwrotne wyszukiwanie dropów po przedmiocie, potworze lub znanej mapie.
+- Katalog 19 474 przedmiotów i 684 potworów, odwrotne wyszukiwanie dropów po przedmiocie, potworze lub znanej mapie.
 - Filtry planet, rodzaju przeciwnika, ekwipunku i oficjalnie potwierdzonych powiązań dropu.
 - Lokalizacje Kingów z osobnym źródłem dla miejsca i nagrody; oficjalne korekty Orlo, Orbów, Wandering i wydarzeń.
 - Kepris i osobna strefa Orlo Clan Field Temple, zgodnie z oficjalnymi patch notes; brak potwierdzonej pełnej tabeli dropów pozostaje jawny.
@@ -65,7 +73,7 @@ Plecak pokazuje **oryginalne ikony dla 15 168 przedmiotów**. Kreator ma portret
 
 ## Zakres i wiarygodność
 
-Baza jest **migawką referencyjną, nie pełną bazą serwera na żywo**. Zawiera 2151 przedmiotów powiązanych z potworami i dodatkowe źródła mapowe. Komplet 95 podglądów bossów oraz obrazy wszystkich objętych zakresem stref nie oznaczają potwierdzenia ich bieżących spawnów i dropów. Nieznane miejsca pozostają oznaczone jako wymagające potwierdzenia. Nie mieszamy danych serwerów prywatnych.
+Baza jest **migawką referencyjną, nie pełną bazą serwera na żywo**. Zawiera 2151 przedmiotów powiązanych z potworami i dodatkowe źródła mapowe. Komplet 138 podglądów bossów oraz obrazy wszystkich objętych zakresem stref nie oznaczają potwierdzenia ich bieżących spawnów i dropów. Precyzja obszarów i niepotwierdzone warianty są opisane przy każdym wpisie. Nie mieszamy danych serwerów prywatnych.
 
 Pobranie bazy i migawki aktualnego klienta: 23.10.2026. Ostatnia uwzględniona aktualizacja oficjalna dla korekt katalogu: 16.10.2026. Snapshot społecznościowy RoseLite/RoseUtils jest przypięty do konkretnego commita; data pobrania nie potwierdza aktualności każdego wpisu w grze. `dist/content.js` zawiera odnośniki do źródeł korekt, `scripts/catalog-overrides.json` jawne zmiany, a manifesty map i wyglądu osobne dane o zasobach klienta. Kepris pochodzi z [patcha Orlo Clan Field Temple z 31.10.2024](https://forum.roseonlinegame.com/topic/6224-patch-notes-2024-10-31-orlo-clan-field-temple/); jego poziom 265 jest wartością z tabeli NPC klienta zmodyfikowanej 13.10.2026, bez deklaracji odczytu serwera na żywo.
 
